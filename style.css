@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+
+
+
+
+/* BODY STYLE */
+
+.ba{
+      background: rgb(15,15,36);
+      background: linear-gradient( rgba(15,15,36,1) 10%,rgba(44,32,84,1) 50%,rgba(114,65,93,1) 63%, rgba(230,105,87,1) 80%, rgba(0,0,46,1) 100%);
+    }*{margin:0; padding: 0;}
+
+
+    .sideline{
+        height: 2280px; position:absolute; margin-left: 70px; margin-top: 400px; z-index: 3000; left:0px;
+    }
+
+/* HEADER STYLE */
+    .header{
+        background-color: black;
+        position: absolute;
+        color: white;
+        width: 100%;
+        height: 70px;
+        top:0px;
+    }
+
+    .smalltext {  font-family: Helvetica;
+        letter-spacing: 1.5px;
+        font-weight: 300;
+        font-size: 16px;
+        padding: 23px 5px 0px;
+        line-height: 30px;
+        color:white;
+        opacity: 0.5;
+        transition: opacity 0.7s;
+    }
+
+    .smalltext:hover { 
+        opacity: 1;
+        font-weight: 400;}
+
+
+
+/* PART ONE STYLE */
+
+.gridsystem1 #popup{
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.gridsystem1 { display: grid;
+    top:0px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    }
+    .gridsystem1 #RadiationText{
+        grid-column-start: 1;
+        grid-column-end: 6;
+        margin-left: 50px;
+        margin-top: 180px;
+        opacity: 0;
+        float:left;
+        }
+        #h1{
+            font-family: Almarai;
+            font-weight:2px;
+            letter-spacing: 2px;
+            font-size: 36px;
+            text-transform: uppercase;
+            padding: 30px 30px 0px;
+            line-height: 24px;
+            color:white;
+            transition: opacity 0.7s;
+        }
+        #para{
+            font-family: Helvetica;
+            letter-spacing: 1.5px;
+            font-weight: 100;
+            font-style: italic;
+            font-size: 18px;
+            padding: 25px 30px 0px;
+            line-height: 30px;
+            color:white;
+            transition: opacity 0.7s;
+        }
+
+    .gridsystem1 #sunanim{
+        grid-column-start: 7;
+        grid-column-end: auto;
+        margin-top: 120px;
+        margin-left: -20px;
+        float: top right;
+        animation: 1.5s ease-out 0s slideInFromTop1; 
+        }
+        .gridsystem1 #circle:hover{
+            filter: invert(2%) sepia(1%) saturate(278%) hue-rotate(6deg) brightness(104%) contrast(97%);
+            animation: oraymove 3s  linear infinite;
+            transform-origin: center;
+            
+        }
+
+        #outsideray{
+            animation: oraymove 3s  linear infinite;
+            transform-origin: center;
+     
+        }
+        @keyframes oraymove{
+           0% { transform: scale(1); }
+          50% { transform: scale(1.1); }
+          100% { transform: scale(1); }
+            }
+            #insideray{
+                animation: iraymove 4s  linear infinite;
+                transform-origin: center;
+         
+            }
+            @keyframes iraymove{
+               0% { transform: scale(1.1); }
+              50% { transform: scale(1); }
+              100% { transform: scale(1.1); }
+                }
+            
+
+           
+
+    .gridsystem1 #Skylayer1{
+        z-index: 0;
+        grid-column-start: 5;
+        grid-column-end: 9;
+        margin-top:70px;
+        position: absolute;
+        opacity: 100%;
+        right: 0px;
+        }        
+
+    .gridsystem1 #Starsystemstatic{
+        grid-column-start: 5;
+        grid-column-end: auto;
+        position: absolute;
+        opacity: 100%;
+        right: 0px;
+        animation: 1.5s ease-out 0s slideInFromRight1; 
+        margin-right: 150px; 
+        margin-top: 390px;
+
+    }
+        @keyframes slideInFromTop1 {
+        
+            0% 
+            {
+                transform: translateY(-50%);
+                opacity: 0%;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 100%;
+            }
+        }
+        @keyframes slideInFromRight1 {
+        
+            0% 
+            {
+                transform: translate(50%);
+                opacity: 0%;
+            }
+            100% {
+                transform: translate(0);
+                opacity: 100%;
+            }
+        }
+
+
+
+    .gridsystem1 #Asteroid{ 
+        margin-top:100px;
+        grid-column-start: 8;
+        width:120px;
+        grid-column-end: auto;
+        right: 0px;
+        margin-right: 50px;
+        animation: 1.5s ease-out 0s slideInFromRight;
+        animation-fill-mode: forwards; 
+        }
+        @keyframes slideInFromRight {
+        
+            0% 
+            {
+                transform: translate(100%, 0);
+                opacity: 0%;
+            }
+            100% {
+                transform: translate(0, 0);
+                opacity: 100%;
+            }
+        }
+
+
+    .gridsystem1 #Skylayer2{
+        grid-column-start: 1;
+        grid-column-end: auto;
+        position: absolute;
+        opacity: 100%;
+        left: 0px;
+        margin-top: 380px;
+        z-index: 0;
+        width: 20%;
+        }
+
+    .gridsystem1 .sidelinetext
+        {
+        font-family: Almarai;
+        letter-spacing: 3px;
+        font-weight: 600;
+        font-size: 19px;
+        text-transform: uppercase;
+        color:white;
+        float: left;
+        margin-top: 500px;
+        margin-left: 83px;
+        position:fixed;
+            
+        }
+
+
+    .gridsystem1 #Planet1{
+        animation: 1.5s ease-out 0s slideInFromLeft;
+        position: absolute;
+        left:0px;
+        margin-left: 120px;
+        margin-top: 500px;
+        animation-fill-mode: forwards; 
+        }
+            
+        @keyframes slideInFromLeft {
+        
+                0% 
+                {
+                    transform: translate(0%, 0);
+                    opacity: 0%;
+                }
+                100% {
+                    transform: translate(10%, 0);
+                    opacity: 100%;
+                }
+            }
+
+    .gridsystem1 #Planet2{
+        position: absolute;
+        right:0px;
+        width: 330px;
+        margin-top: 670px;
+        animation: 1.5s ease-out 0s slideInFromRight;
+        }
+
+    .gridsystem1 #Satellite{
+        grid-column-start: 7;
+        margin-left:170px;
+        grid-column-end: auto;
+        margin-top: 400px;
+        width: 130px;
+        right:0px;
+        animation: 1.5s ease-out 0s slideInFromRight;
+        }
+
+    .gridsystem1 #Skylayer3{
+        z-index: 0;
+        grid-column-start: 4;
+        grid-column-end: 9;
+        margin-top:1050px;
+        position: absolute;
+        opacity: 100%;
+        right: 0px;
+        }
+
+        .gridsystem1 #DeepSpaceText{
+            margin-top:100px;
+            width: 480px;
+            grid-column-start: 7;
+            opacity: 0;
+            }
+
+
+        .gridsystem1 #Starsystem{
+            margin-top: 900px;
+            margin-left: 139px;
+            position: absolute;
+            grid-column-start: 1;
+            width:800px;
+            }
+
+
+    .gridsystem1 #Powerstation{
+        position: absolute;
+        right:0px;
+        margin-right: 450px;;
+        margin-top:1400px;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        width: 220px;
+        }
+        .gridsystem1 #GeoText{
+            width: 550px;
+            grid-column-start: 1;
+            margin-left: 130px;
+            margin-top: 300px;
+            opacity: 0;
+            }
+
+            .gridsystem1 #LowEarthText{
+                position:absolute;
+                z-index: 4000;
+                width: 380px;
+                margin-top: 1700px;
+                right:0px;
+                margin-right: 300px;
+                opacity: 0;
+                }   
+                .gridsystem1 #Rocket{
+                    position: absolute;
+                    right:0px;
+                    width: 300px;
+                    margin-top: 1300px;
+                    margin-right:100px;
+                    animation: 1.5s ease-out 0s slideInFromRight;
+                    }
+                    
+                    
+
+                    .gridsystem1 #Airplane{
+                        animation: Airplanemove 5s linear infinite;
+                        position: absolute;
+                        left:0px;
+                        margin-left: 0px;
+                        margin-top: 1900px;
+                     
+                        }
+                        @keyframes Airplanemove {
+        
+                            0% {
+                                transform: translateX(-50%);
+                                opacity: 100%;
+                            }
+                            
+                            100% {
+                                transform: translateX(600%);
+                                opacity: 100%;
+                            }
+                        }
+        
+
+
+                        .gridsystem1 #AirplaneText{
+                            width: 550px;
+                            grid-column-start: 1;
+                            margin-left: 130px;
+                            margin-top: 450px;
+                            opacity: 0;
+                            }   
+
+
+
+
+.gridsystem2 { display: grid;
+    top:0px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    }
+
+
+        .gridsystem2 #GroundLevel{
+                z-index: 4000;
+                width: 380px;
+                grid-column-start: 1;
+                grid-row-start:1;
+                margin-left:1000px;
+                margin-top: 20px;
+                } 
+
+
+            #TextTitle{
+                font-family: Almarai;
+                font-weight:2px;
+                letter-spacing: 2px;
+                font-size: 20px;
+                text-transform: uppercase;
+                padding: 0px 30px 0px;
+                line-height: 24px;
+                color:white;
+                transition: opacity 0.7s;
+            }
+            #TextBody{
+                font-family: Helvetica;
+                letter-spacing: 1.5px;
+                font-weight: 100;
+                font-style:normal;
+                font-size: 18px;
+                padding: 10px 30px 0px;
+                line-height: 30px;
+                color:white;
+                transition: opacity 0.7s;
+            }
+    
+
+
+
+        /* REVEAL ON SCROLL */
+
+    .gridsystem2 .Vector1{
+            grid-column-start: 1;
+            grid-row-start:1;
+          }
+        
+        .Mountains{
+            width:100%;
+            margin-top:-600px;
+          }
+         #Train{
+             animation: Trainmove 30s  linear infinite;
+            width: 550px;
+            margin-top: -543px;
+    
+            }   
+            @keyframes Trainmove {
+        
+                0% 
+                {
+                    transform: translateX(600%);
+                    opacity: 100%;
+                }
+                100% {
+                    transform: translateX(-50%);
+                    opacity: 100%;
+                }
+            }
+        #Car{
+            animation: Carmove 40s linear infinite;
+                margin-top: 180px;
+                z-index: 1000;
+                width: 422px;
+                
+                } 
+                @keyframes Carmove {
+        
+                    0% 
+                    {
+                        transform: translateX(-50%);
+                        opacity: 100%;
+                    }
+                    100% {
+                        transform: translateX(600%);
+                        opacity: 100%;
+                    }
+                }
+
+
+
+
+          .Buildings{
+            width:100%; 
+            margin-top:-1400px;
+          }
+         
+          .reveal{
+            opacity: 0;
+            transition: all 3s ease-in-out;
+          }
+          
+          .reveal.active{
+            opacity: 1;
+          }
+
