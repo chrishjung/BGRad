@@ -14,6 +14,10 @@
     .sideline{
         height: 2280px; position:absolute; margin-left: 70px; margin-top: 400px; z-index: 3000; left:0px;
     }
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
 
 /* HEADER STYLE */
     .header{
@@ -47,10 +51,11 @@
 .gridsystem1 #popup{
     position: absolute;
     cursor: pointer;
-    z-index: 2;
+    z-index: 10;
 }
 
-.gridsystem1 { display: grid;
+.gridsystem1 { 
+    display: grid;
     top:0px;
     grid-template-columns: repeat(8, 1fr);
     grid-auto-rows: minmax(100px, auto);
@@ -62,6 +67,7 @@
         margin-top: 180px;
         opacity: 0;
         float:left;
+        z-index: 1000;
         }
         #h1{
             font-family: Almarai;
@@ -325,39 +331,15 @@
                     margin-right:100px;
                     animation: 1.5s ease-out 0s slideInFromRight;
                     }
+
+            .gridsystem1 #Particle{
+                position: absolute;
+                    z-index: 100;
+                    margin-top: 850px;
+                    }
                     
-                    
 
-                    .gridsystem1 #Airplane{
-                        animation: Airplanemove 5s linear infinite;
-                        position: absolute;
-                        left:0px;
-                        margin-left: 0px;
-                        margin-top: 1900px;
-                     
-                        }
-                        @keyframes Airplanemove {
-        
-                            0% {
-                                transform: translateX(-50%);
-                                opacity: 100%;
-                            }
-                            
-                            100% {
-                                transform: translateX(600%);
-                                opacity: 100%;
-                            }
-                        }
-        
-
-
-                        .gridsystem1 #AirplaneText{
-                            width: 550px;
-                            grid-column-start: 1;
-                            margin-left: 130px;
-                            margin-top: 450px;
-                            opacity: 0;
-                            }   
+ 
 
 
 
@@ -370,7 +352,7 @@
 
 
         .gridsystem2 #GroundLevel{
-                z-index: 4000;
+                
                 width: 380px;
                 grid-column-start: 1;
                 grid-row-start:1;
@@ -389,6 +371,7 @@
                 line-height: 24px;
                 color:white;
                 transition: opacity 0.7s;
+               
             }
             #TextBody{
                 font-family: Helvetica;
@@ -400,6 +383,7 @@
                 line-height: 30px;
                 color:white;
                 transition: opacity 0.7s;
+                
             }
     
 
@@ -408,36 +392,73 @@
         /* REVEAL ON SCROLL */
 
     .gridsystem2 .Vector1{
+    
             grid-column-start: 1;
             grid-row-start:1;
           }
         
         .Mountains{
-            width:100%;
-            margin-top:-600px;
+            margin-bottom: -550px;
           }
+#bldg{
+    position: absolute;
+    margin-top: 200px;
+}
+        #Airplane{
+            animation: Airplanemove 4s linear infinite;
+            position: absolute;
+            left:0px;
+            margin-left: 0px;
+            margin-top: 0px;
+         
+            }
+            @keyframes Airplanemove {
+
+                0% {
+                    transform: translateX(-50%);
+                    opacity: 100%;
+                }
+                
+                100% {
+                    transform: translateX(200%);
+                    opacity: 100%;
+                }
+            }
+
+
+
+            #AirplaneText{
+                width: 550px;
+                grid-column-start: 1;
+                margin-left: 130px;
+                margin-top: 450px;
+                opacity: 0;
+                }  
          #Train{
-             animation: Trainmove 30s  linear infinite;
+             animation: Trainmove 15s  linear infinite;
+             float: left;
             width: 550px;
-            margin-top: -543px;
+            margin-top: 0px;
+            z-index: 2;
     
             }   
             @keyframes Trainmove {
         
                 0% 
                 {
-                    transform: translateX(600%);
+                    transform: translateX(200%);
                     opacity: 100%;
                 }
                 100% {
-                    transform: translateX(-50%);
+                    transform: translateX(-100%);
                     opacity: 100%;
                 }
             }
+
         #Car{
-            animation: Carmove 40s linear infinite;
-                margin-top: 180px;
-                z-index: 1000;
+            animation: Carmove 20s linear infinite;
+                position: relative;
+            margin-top: 0px;
                 width: 422px;
                 
                 } 
@@ -449,7 +470,7 @@
                         opacity: 100%;
                     }
                     100% {
-                        transform: translateX(600%);
+                        transform: translateX(100%);
                         opacity: 100%;
                     }
                 }
@@ -459,7 +480,7 @@
 
           .Buildings{
             width:100%; 
-            margin-top:-1400px;
+            margin-top:0px;
           }
          
           .reveal{
