@@ -8,21 +8,20 @@
 .ba{
       background: rgb(15,15,36);
       background: linear-gradient( rgba(15,15,36,1) 10%,rgba(44,32,84,1) 50%,rgba(114,65,93,1) 63%, rgba(230,105,87,1) 80%, rgba(0,0,46,1) 100%);
-    }*{margin:0; padding: 0;}
+    }*{margin: 0; padding: 0;}
 
 
     .sideline{
-        height: 2280px; position:absolute; margin-left: 70px; margin-top: 400px; z-index: 3000; left:0px;
+        height: 2280px; position:absolute; margin-left: 70px; margin-top: 400px; z-index: 7000; left:0px;
     }
     html, body {
         max-width: 100%;
-        overflow-x: hidden;
+       
     }
 
 /* HEADER STYLE */
     .header{
         background-color: black;
-        position: absolute;
         color: white;
         width: 100%;
         height: 70px;
@@ -40,19 +39,13 @@
         transition: opacity 0.7s;
     }
 
-    .smalltext:hover { 
+    .smalltext:hover :active :focus{ 
         opacity: 1;
         font-weight: 400;}
 
 
 
 /* PART ONE STYLE */
-
-.gridsystem1 #popup{
-    position: absolute;
-    cursor: pointer;
-    z-index: 10;
-}
 
 .gridsystem1 { 
     display: grid;
@@ -61,46 +54,40 @@
     grid-auto-rows: minmax(100px, auto);
     }
     .gridsystem1 #RadiationText{
+        cursor: pointer;
         grid-column-start: 1;
         grid-column-end: 6;
-        margin-left: 50px;
+        margin-left: 120px;
         margin-top: 180px;
         opacity: 0;
         float:left;
         z-index: 1000;
         }
-        #h1{
-            font-family: Almarai;
-            font-weight:2px;
-            letter-spacing: 2px;
-            font-size: 36px;
-            text-transform: uppercase;
-            padding: 30px 30px 0px;
-            line-height: 24px;
-            color:white;
-            transition: opacity 0.7s;
-        }
-        #para{
-            font-family: Helvetica;
-            letter-spacing: 1.5px;
-            font-weight: 100;
-            font-style: italic;
-            font-size: 18px;
-            padding: 25px 30px 0px;
-            line-height: 30px;
-            color:white;
-            transition: opacity 0.7s;
-        }
+ 
 
     .gridsystem1 #sunanim{
+        cursor: pointer;
         grid-column-start: 7;
         grid-column-end: auto;
-        margin-top: 120px;
-        margin-left: -20px;
+        margin-top: 10px;
+        margin-right: -300px;
         float: top right;
         animation: 1.5s ease-out 0s slideInFromTop1; 
+        z-index: 900;
         }
         .gridsystem1 #circle:hover{
+            filter: invert(2%) sepia(1%) saturate(278%) hue-rotate(6deg) brightness(104%) contrast(97%);
+            animation: oraymove 3s  linear infinite;
+            transform-origin: center;
+            
+        }
+        .gridsystem1 #circle:focus{
+            filter: invert(2%) sepia(1%) saturate(278%) hue-rotate(6deg) brightness(104%) contrast(97%);
+            animation: oraymove 3s  linear infinite;
+            transform-origin: center;
+            
+        }
+        .gridsystem1 #circle:active{
             filter: invert(2%) sepia(1%) saturate(278%) hue-rotate(6deg) brightness(104%) contrast(97%);
             animation: oraymove 3s  linear infinite;
             transform-origin: center;
@@ -132,10 +119,10 @@
            
 
     .gridsystem1 #Skylayer1{
-        z-index: 0;
+        z-index: 1;
         grid-column-start: 5;
         grid-column-end: 9;
-        margin-top:70px;
+        margin-top:0px;
         position: absolute;
         opacity: 100%;
         right: 0px;
@@ -182,12 +169,14 @@
     .gridsystem1 #Asteroid{ 
         margin-top:100px;
         grid-column-start: 8;
+        margin-right: 100px;
         width:120px;
         grid-column-end: auto;
         right: 0px;
-        margin-right: 50px;
+
         animation: 1.5s ease-out 0s slideInFromRight;
         animation-fill-mode: forwards; 
+        z-index: 990;
         }
         @keyframes slideInFromRight {
         
@@ -210,7 +199,7 @@
         opacity: 100%;
         left: 0px;
         margin-top: 380px;
-        z-index: 0;
+        z-index: 1;
         width: 20%;
         }
 
@@ -226,7 +215,7 @@
         margin-top: 500px;
         margin-left: 83px;
         position:fixed;
-            
+        z-index: 1010;
         }
 
 
@@ -237,6 +226,7 @@
         margin-left: 120px;
         margin-top: 500px;
         animation-fill-mode: forwards; 
+        z-index: 990;
         }
             
         @keyframes slideInFromLeft {
@@ -258,70 +248,80 @@
         width: 330px;
         margin-top: 670px;
         animation: 1.5s ease-out 0s slideInFromRight;
+        z-index: 990;
         }
 
     .gridsystem1 #Satellite{
-        grid-column-start: 7;
-        margin-left:170px;
+        cursor: pointer;
+        grid-column-start: 8;
+        grid-row-start: 2;
         grid-column-end: auto;
-        margin-top: 400px;
+        margin-left:-400px;
+        margin-top: 500px;
         width: 130px;
-        right:0px;
+        z-index: 1100;
         animation: 1.5s ease-out 0s slideInFromRight;
         }
 
     .gridsystem1 #Skylayer3{
-        z-index: 0;
-        grid-column-start: 4;
-        grid-column-end: 9;
-        margin-top:1050px;
+        margin-top:1500px;
         position: absolute;
         opacity: 100%;
         right: 0px;
+        z-index: -1;
         }
 
         .gridsystem1 #DeepSpaceText{
-            margin-top:100px;
+            cursor: pointer;
+            margin-top:0px;
             width: 480px;
             grid-column-start: 7;
+            grid-column-end: auto;
+            grid-row-start: 3;
             opacity: 0;
+            z-index: 2010;
             }
 
 
         .gridsystem1 #Starsystem{
+            cursor: pointer;
             margin-top: 900px;
             margin-left: 139px;
             position: absolute;
             grid-column-start: 1;
             width:800px;
+            z-index: 2010;
             }
 
 
     .gridsystem1 #Powerstation{
+        cursor: pointer;
         position: absolute;
         right:0px;
         margin-right: 450px;;
         margin-top:1400px;
         grid-column-start: 1;
-        grid-row-start: 1;
-        width: 220px;
+        width: 300px;
+        z-index: 2020;
         }
         .gridsystem1 #GeoText{
+            cursor: pointer;
             width: 550px;
-            grid-column-start: 1;
-            margin-left: 130px;
-            margin-top: 300px;
+            grid-column-start: 2;
+            margin-left: 350px;
+            margin-top: 600px;
             opacity: 0;
+            z-index: 2011;
             }
 
             .gridsystem1 #LowEarthText{
-                position:absolute;
-                z-index: 4000;
-                width: 380px;
-                margin-top: 1700px;
+                cursor: pointer;
+                grid-column: 5/9;
+                width: 350px;
+                margin-top: 370px;
                 right:0px;
-                margin-right: 300px;
                 opacity: 0;
+                z-index: 3010;
                 }   
                 .gridsystem1 #Rocket{
                     position: absolute;
@@ -330,35 +330,21 @@
                     margin-top: 1300px;
                     margin-right:100px;
                     animation: 1.5s ease-out 0s slideInFromRight;
+                    z-index: 990;
                     }
 
             .gridsystem1 #Particle{
                 position: absolute;
-                    z-index: 100;
-                    margin-top: 850px;
-                    }
+                left: 47%;
+                transform: translate(-50%, -50%);
+                z-index: 1100;
+                margin-top: 1890px;
+                    
+                }
                     
 
- 
 
-
-
-
-.gridsystem2 { display: grid;
-    top:0px;
-    grid-template-columns: repeat(8, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    }
-
-
-        .gridsystem2 #GroundLevel{
-                
-                width: 380px;
-                grid-column-start: 1;
-                grid-row-start:1;
-                margin-left:1000px;
-                margin-top: 20px;
-                } 
+     
 
 
             #TextTitle{
@@ -368,7 +354,19 @@
                 font-size: 20px;
                 text-transform: uppercase;
                 padding: 0px 30px 0px;
-                line-height: 24px;
+                line-height: 324px0;
+                color:white;
+                transition: opacity 0.7s;
+               
+            }
+            #h3{
+                font-family: Almarai;
+                font-weight:2px;
+                letter-spacing: 2px;
+                font-size: 2.5em;
+                text-transform: uppercase;
+                padding: 0px 30px 0px;
+                line-height: 1em;
                 color:white;
                 transition: opacity 0.7s;
                
@@ -390,56 +388,76 @@
 
 
         /* REVEAL ON SCROLL */
-
-    .gridsystem2 .Vector1{
-    
-            grid-column-start: 1;
-            grid-row-start:1;
-          }
-        
-        .Mountains{
-            margin-bottom: -550px;
-          }
-#bldg{
-    position: absolute;
+.gridsystem2{
+    position: relative;
+    text-align: center;
     margin-top: 200px;
 }
+.topright {
+    position: absolute;
+    top: 400px;
+    right: 160px;
+    z-index: 3010;
+  }
+  .topleft {
+    position: absolute;
+    margin-top: -100px;
+    left: 200px;
+    z-index: 3010;
+  }
+
+#GroundLevel{
+            cursor: pointer;
+            width: 350px;
+            opacity: 0;
+          
+                    } 
+        
+        .Mountains{
+            cursor: pointer;
+            margin-top: 0px; 
+            z-index: 3000;
+          }
+
         #Airplane{
-            animation: Airplanemove 4s linear infinite;
+            cursor: pointer;
+            -webkit-animation: Airplanemove 4s linear infinite;
+            animation:Airplanemove 4s linear infinite;
             position: absolute;
             left:0px;
-            margin-left: 0px;
             margin-top: 0px;
-         
+            z-index: 6500;
             }
-            @keyframes Airplanemove {
+            
+            
+                @keyframes Airplanemove {
 
-                0% {
-                    transform: translateX(-50%);
-                    opacity: 100%;
+                    0% {
+                        transform: translateX(-50%);
+                        opacity: 100%;
+                    }
+                    
+                    100% {
+                        transform: translateX(200%);
+                        opacity: 100%;
+                    }
                 }
-                
-                100% {
-                    transform: translateX(200%);
-                    opacity: 100%;
-                }
-            }
-
+                #Airplane:hover{
+                    cursor: pointer;
+                animation-play-state: paused;
+                    }
 
 
             #AirplaneText{
-                width: 550px;
-                grid-column-start: 1;
-                margin-left: 130px;
-                margin-top: 450px;
+                cursor: pointer;
+                margin-left: 200px;
                 opacity: 0;
+                z-index: 5000;
                 }  
          #Train{
              animation: Trainmove 15s  linear infinite;
              float: left;
             width: 550px;
-            margin-top: 0px;
-            z-index: 2;
     
             }   
             @keyframes Trainmove {
@@ -458,7 +476,6 @@
         #Car{
             animation: Carmove 20s linear infinite;
                 position: relative;
-            margin-top: 0px;
                 width: 422px;
                 
                 } 
@@ -476,12 +493,6 @@
                 }
 
 
-
-
-          .Buildings{
-            width:100%; 
-            margin-top:0px;
-          }
          
           .reveal{
             opacity: 0;
