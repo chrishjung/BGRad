@@ -261,6 +261,71 @@
         animation: 1.5s ease-out 0s slideInFromRight;
         }
 
+        .gridsystem1 #Satellite:hover{
+            filter: invert(2%) sepia(1%) saturate(128%) hue-rotate(-10deg) brightness(114%) contrast(87%);
+            
+           
+            
+        }
+        .gridsystem1#Satellite:focus{
+            filter: invert(2%) sepia(1%) saturate(108%) hue-rotate(6deg) brightness(104%) contrast(87%);
+           
+           
+            
+        }
+        .gridsystem1 #Satellite:active{
+            filter: invert(2%) sepia(1%) saturate(108%) hue-rotate(6deg) brightness(104%) contrast(87%);
+            
+          
+            
+        }
+        #satleg1{
+
+            animation: satanim 3s ease-in-out infinite ;
+         transform-origin: 120px 0px ;
+         transform-box: fill-box;
+        }
+        @keyframes satanim {
+        
+            0% 
+            {
+                transform: rotatez(0deg);
+                
+            }
+            50% 
+            {
+                transform: rotatez(-10deg);
+               
+            }
+            100% {
+                transform: rotatez(0deg);
+                
+            }
+            
+        }
+        #satleg2{
+
+            animation: satanim2 3s ease-in-out infinite ;
+         transform-origin: 50px 0px ;
+         transform-box: fill-box;
+        }
+        @keyframes satanim2 {
+        
+            0% 
+            {
+                transform: rotatez(0deg);
+                
+            }
+            50% 
+            {
+                transform: rotatez(20deg);
+               
+            }
+            100% {
+                transform: rotatez(0deg);
+                
+            }
+        }
     .gridsystem1 #Skylayer3{
         margin-top:1500px;
         position: absolute;
@@ -452,6 +517,16 @@
 
                   #starsys1:hover{
                     animation: startwink 3s  linear infinite;
+                    transform-origin: absolute;
+             
+                }
+                #starsys2:hover{
+                    animation: startwink 5s  linear infinite;
+                    transform-origin: absolute;
+             
+                }
+                #starsys3:hover{
+                    animation: startwink 4s  linear infinite;
                     transform-origin: absolute;
              
                 }
