@@ -507,8 +507,8 @@
                         stroke-dashoffset: 2500;
                       }
                       75% {
-                        stroke-dasharray: 500;
-                        stroke-dashoffset: 1000;
+                        stroke-dasharray: 2500;
+                        stroke-dashoffset: 5000;
                       }
                       100% {
                         stroke-dasharray: 2500;
