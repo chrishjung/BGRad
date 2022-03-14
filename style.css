@@ -927,7 +927,7 @@ Screen Sizes
                         
                              .gridsystem1 #DeepSpaceText{
                                 top: 40vw;
-                                margin-top: 200px;
+                                margin-top: 170px;
                                 right: 20vw;
                                 width: 35vw;
                                 }
@@ -936,7 +936,7 @@ Screen Sizes
                                 left: 14vw;
                                 margin-left: 10vw;
                                 top: 29vw;
-                                margin-top: 150px;
+                                margin-top: 130px;
                                 }
                         
                              .gridsystem1 #LowEarthText{
@@ -1024,6 +1024,11 @@ Screen Sizes
                                     margin-right:-40px;
                                     z-index: 3010;
                                     }
+                                    .gridsystem1 #Powerstation{
+                                        margin-right: 100px;
+                                        margin-top: 60vw;
+                                        width: 10vw;
+                                        }
                                 }
          
           .reveal{
