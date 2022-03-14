@@ -925,12 +925,12 @@ Screen Sizes
                         @media (max-width: 480px) {
                             #TextTitle{
                                 font-size: .5rem;
-                                line-height: .45rem; 
+                                line-height: .5rem; 
                             }
             
                             #h3{
                                 font-size: .75rem;
-                                line-height: .7rem;  
+                                line-height: .75rem;  
                             }
             
                             #TextBody{
@@ -986,7 +986,7 @@ Screen Sizes
                                     margin-top: 120px;
                                     }
                             }
-                            @media (max-width: 250px) {
+                            @media (max-width: 370px) {
                                 #TextTitle{
                                     font-size: .25rem;
                                     line-height: .25rem; 
