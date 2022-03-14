@@ -986,7 +986,7 @@ Screen Sizes
                                     margin-top: 120px;
                                     }
                             }
-                            @media (max-width: 370px) {
+                            @media (max-width: 380px) {
                                 #TextTitle{
                                     font-size: .25rem;
                                     line-height: .25rem; 
