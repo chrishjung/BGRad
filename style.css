@@ -955,12 +955,12 @@ Screen Sizes
                             @media (max-width: 250px) {
                                 #TextTitle{
                                     font-size: .25rem;
-                                    line-height: .23rem; 
+                                    line-height: .25rem; 
                                 }
                 
                                 #h3{
                                     font-size: .35rem;
-                                    line-height: .34rem;  
+                                    line-height: .35rem;  
                                 }
                 
                                 #TextBody{
@@ -984,9 +984,9 @@ Screen Sizes
                                 .gridsystem1 #GeoText{
                                     width: 50vw;
                                     left: 14vw;
-                                    margin-left: 10vw;
-                                    top: 29vw;
-                                    margin-top: 150px;
+                                    margin-left: 20vw;
+                                    top: 20vw;
+                                    margin-top: 130px;
                                     }
                             
                                  .gridsystem1 #LowEarthText{
