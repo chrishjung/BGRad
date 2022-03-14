@@ -970,7 +970,7 @@ Screen Sizes
                             .gridsystem1 #AirplaneText{
                                 margin-left: 10vw;
                                 top: 65vw;
-                                margin-top: 200px;
+                                margin-top: 220px;
                                     }  
         
                              .topright {
@@ -1034,15 +1034,14 @@ Screen Sizes
                                 .gridsystem1 #AirplaneText{
                                     margin-left: 10vw;
                                     top: 65vw;
-                                    margin-top: 200px;
                                         }  
             
                                  .topright {
                                     position: absolute;
-                                    top: 20vw;
+                                    top: 19vw;
                                     right: 1vw;
-                                    margin-right:-40px;
-                                    z-index: 3010;
+                                    margin-right:-35px;
+                        
                                     }
                                     .gridsystem1 #Powerstation{
                                         margin-right: 100px;
