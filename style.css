@@ -890,6 +890,17 @@ Screen Sizes
                             margin-right:-40px;
                             z-index: 3010;
                             }
+                        .gridsystem1 #Planet1{
+                            left: 7vw;
+                            top: 9vw;
+                            margin-top: 120px;
+                            }
+
+                         .gridsystem1 #Planet2{
+                            top: 20vw;
+                            margin-top: 180px;
+
+                                    }
                         }
 
                         @media (max-width: 480px) {
@@ -950,7 +961,11 @@ Screen Sizes
                                 margin-right:-40px;
                                 z-index: 3010;
                                 }
-
+                                .gridsystem1 #Planet1{
+                                    left: 7vw;
+                                    top: 9vw;
+                                    margin-top: 120px;
+                                    }
                             }
                             @media (max-width: 250px) {
                                 #TextTitle{
@@ -977,7 +992,7 @@ Screen Sizes
                             
                                  .gridsystem1 #DeepSpaceText{
                                     top: 40vw;
-                                    margin-top: 200px;
+                                    margin-top: 180px;
                                     right: 20vw;
                                     width: 35vw;
                                     }
@@ -1010,6 +1025,12 @@ Screen Sizes
                                     margin-right:-40px;
                                     z-index: 3010;
                                     }
+
+                                    .gridsystem1 #Planet1{
+                                        left: 7vw;
+                                        top: 10vw;
+                                        margin-top: 120px;
+                                        }
                                 }
          
           .reveal{
