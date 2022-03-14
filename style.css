@@ -948,10 +948,10 @@ Screen Sizes
                                 font-family: Almarai;
                                 font-weight:2px;
                                 letter-spacing: 2px;
-                                font-size: 20px;
+                                font-size: 12px;
                                 text-transform: uppercase;
                                 padding: 0px 30px 0px;
-                                line-height: 1.75rem;
+                                line-height: 12px;
                                 color:white;
                                 transition: opacity 0.7s;
                                
@@ -960,10 +960,10 @@ Screen Sizes
                                 font-family: Almarai;
                                 font-weight:2px;
                                 letter-spacing: 2px;
-                                font-size: 24px;
+                                font-size: 14px;
                                 text-transform: uppercase;
                                 padding: 0px 30px 0px;
-                                line-height: 1em;
+                                line-height: 14px;
                                 color:white;
                                 transition: opacity 0.7s;
                                
@@ -973,9 +973,9 @@ Screen Sizes
                                 letter-spacing: 1.5px;
                                 font-weight: 100;
                                 font-style:normal;
-                                font-size: 18px;
+                                font-size: 9px;
                                 padding: 10px 30px 0px;
-                                line-height: 30px;
+                                line-height: 9px;
                                 color:white;
                                 transition: opacity 0.7s;
                                 
