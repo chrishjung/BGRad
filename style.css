@@ -710,41 +710,41 @@ Screen Sizes
 
              @media (max-width: 1200px) {
                 #TextTitle{
-                    font-family: Almarai;
-                    font-weight:2px;
-                    letter-spacing: 2px;
-                    font-size: 20px;
-                    text-transform: uppercase;
-                    padding: 0px 30px 0px;
-                    line-height: 1.75rem;
-                    color:white;
-                    transition: opacity 0.7s;
-                   
-                }
-                #h3{
-                    font-family: Almarai;
-                    font-weight:2px;
-                    letter-spacing: 2px;
-                    font-size: 24px;
-                    text-transform: uppercase;
-                    padding: 0px 30px 0px;
-                    line-height: 1em;
-                    color:white;
-                    transition: opacity 0.7s;
-                   
-                }
-                #TextBody{
-                    font-family: Helvetica;
-                    letter-spacing: 1.5px;
-                    font-weight: 100;
-                    font-style:normal;
-                    font-size: 18px;
-                    padding: 10px 30px 0px;
-                    line-height: 30px;
-                    color:white;
-                    transition: opacity 0.7s;
-                    
-                }
+    font-family: Almarai;
+    font-weight:2px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 0px 30px 0px;
+    line-height: 1.75rem;
+    color:white;
+    transition: opacity 0.7s;
+   
+}
+#h3{
+    font-family: Almarai;
+    font-weight:2px;
+    letter-spacing: 2px;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 0px 30px 0px;
+    line-height: 1em;
+    color:white;
+    transition: opacity 0.7s;
+   
+}
+#TextBody{
+    font-family: Helvetica;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    font-style:normal;
+    font-size: 18px;
+    padding: 10px 30px 0px;
+    line-height: 30px;
+    color:white;
+    transition: opacity 0.7s;
+    
+}
                 .gridsystem1 #RadiationText{
                     width: 40vw;
                     top: 5vw;
@@ -794,39 +794,18 @@ Screen Sizes
 
                 @media (max-width: 1000px) {
                     #TextTitle{
-                        font-family: Almarai;
-                        font-weight:2px;
-                        letter-spacing: 2px;
-                        font-size: 20px;
-                        text-transform: uppercase;
-                        padding: 0px 30px 0px;
-                        line-height: 1.75rem;
-                        color:white;
-                        transition: opacity 0.7s;
-                       
+                        font-size: 1.25rem;
+                        line-height: 1.25rem; 
                     }
+    
                     #h3{
-                        font-family: Almarai;
-                        font-weight:2px;
-                        letter-spacing: 2px;
-                        font-size: 24px;
-                        text-transform: uppercase;
-                        padding: 0px 30px 0px;
-                        line-height: 1em;
-                        color:white;
-                        transition: opacity 0.7s;
-                       
+                        font-size: 1.75rem;
+                        line-height: 1.5rem;  
                     }
+    
                     #TextBody{
-                        font-family: Helvetica;
-                        letter-spacing: 1.5px;
-                        font-weight: 100;
-                        font-style:normal;
-                        font-size: 18px;
-                        padding: 10px 30px 0px;
-                        line-height: 30px;
-                        color:white;
-                        transition: opacity 0.7s;
+                        font-size: .75rem;
+                        line-height: .5rem;
                         
                     }
                     .gridsystem1 #RadiationText{
@@ -945,39 +924,18 @@ Screen Sizes
 
                         @media (max-width: 480px) {
                             #TextTitle{
-                                font-family: Almarai;
-                                font-weight:2px;
-                                letter-spacing: 2px;
-                                font-size: 12px;
-                                text-transform: uppercase;
-                                padding: 0px 30px 0px;
-                                line-height: 12px;
-                                color:white;
-                                transition: opacity 0.7s;
-                               
+                                font-size: .5rem;
+                                line-height: .45rem; 
                             }
+            
                             #h3{
-                                font-family: Almarai;
-                                font-weight:2px;
-                                letter-spacing: 2px;
-                                font-size: 14px;
-                                text-transform: uppercase;
-                                padding: 0px 30px 0px;
-                                line-height: 14px;
-                                color:white;
-                                transition: opacity 0.7s;
-                               
+                                font-size: .75rem;
+                                line-height: .7rem;  
                             }
+            
                             #TextBody{
-                                font-family: Helvetica;
-                                letter-spacing: 1.5px;
-                                font-weight: 100;
-                                font-style:normal;
-                                font-size: 9px;
-                                padding: 10px 30px 0px;
-                                line-height: 9px;
-                                color:white;
-                                transition: opacity 0.7s;
+                                font-size: .35rem;
+                                line-height: .36rem;
                                 
                             }
                             .gridsystem1 #RadiationText{
@@ -1030,39 +988,18 @@ Screen Sizes
                             }
                             @media (max-width: 250px) {
                                 #TextTitle{
-                                    font-family: Almarai;
-                                    font-weight:2px;
-                                    letter-spacing: 2px;
-                                    font-size: 8px;
-                                    text-transform: uppercase;
-                                    padding: 0px 30px 0px;
-                                    line-height: 8px;
-                                    color:white;
-                                    transition: opacity 0.7s;
-                                   
+                                    font-size: .25rem;
+                                    line-height: .25rem; 
                                 }
+                
                                 #h3{
-                                    font-family: Almarai;
-                                    font-weight:2px;
-                                    letter-spacing: 2px;
-                                    font-size: 9px;
-                                    text-transform: uppercase;
-                                    padding: 0px 30px 0px;
-                                    line-height: 9px;
-                                    color:white;
-                                    transition: opacity 0.7s;
-                                   
+                                    font-size: .35rem;
+                                    line-height: .35rem;  
                                 }
+                
                                 #TextBody{
-                                    font-family: Helvetica;
-                                    letter-spacing: 1.5px;
-                                    font-weight: 100;
-                                    font-style:normal;
-                                    font-size: 6px;
-                                    padding: 10px 30px 0px;
-                                    line-height: 6px;
-                                    color:white;
-                                    transition: opacity 0.7s;
+                                    font-size: .2rem;
+                                    line-height: .21rem;
                                     
                                 }
                                 .gridsystem1 #RadiationText{
