@@ -950,7 +950,67 @@ Screen Sizes
                                 margin-right:-40px;
                                 z-index: 3010;
                                 }
+
                             }
+                            @media (max-width: 250px) {
+                                #TextTitle{
+                                    font-size: .25rem;
+                                    line-height: .23rem; 
+                                }
+                
+                                #h3{
+                                    font-size: .35rem;
+                                    line-height: .34rem;  
+                                }
+                
+                                #TextBody{
+                                    font-size: .2rem;
+                                    line-height: .2rem;
+                                    
+                                }
+                                .gridsystem1 #RadiationText{
+                                    width: 40vw;
+                                    top: 5vw;
+                                    margin-top: 70px;
+                                    left: 6vw;
+                                    }
+                            
+                                 .gridsystem1 #DeepSpaceText{
+                                    top: 40vw;
+                                    margin-top: 200px;
+                                    right: 20vw;
+                                    width: 35vw;
+                                    }
+                                .gridsystem1 #GeoText{
+                                    width: 50vw;
+                                    left: 14vw;
+                                    margin-left: 10vw;
+                                    top: 29vw;
+                                    margin-top: 150px;
+                                    }
+                            
+                                 .gridsystem1 #LowEarthText{
+                                    width: 50vw;
+                                    top: 62vw;
+                                    margin-top: 110px;
+                                    right: 32vw;
+                                    margin-right: 50px;
+                
+                                    } 
+                                .gridsystem1 #AirplaneText{
+                                    margin-left: 10vw;
+                                    top: 65vw;
+                                    margin-top: 200px;
+                                        }  
+            
+                                 .topright {
+                                    position: absolute;
+                                    top: 20vw;
+                                    right: 1vw;
+                                    margin-right:-40px;
+                                    z-index: 3010;
+                                    }
+                                }
          
           .reveal{
             opacity: 0;
