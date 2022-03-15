@@ -508,10 +508,12 @@ position: absolute;
         top: 70vw;
         margin-top: 200px;        
         }
-                    
-                #pmain {
+              
+        
+                .pMain {
+                  
                     stroke-dasharray: 4000;
-                    animation: maindash 10s linear infinite;
+                    animation: maindash 10s linear;
                   }
                   
                   @keyframes maindash {
@@ -531,7 +533,8 @@ position: absolute;
                         stroke-dashoffset: 8000;
                       }
                   }
-                  #psecond {  
+                  .pSecond {  
+                    opacity: 1;
                     animation: secdash 10s linear infinite;
                   }
                   
@@ -553,7 +556,7 @@ position: absolute;
                         stroke-dashoffset: 5000;
                       }
                   }
-                  #pthird {
+                  .pThird {
                     stroke-dasharray: 2500;
                     animation: thirddash 10s linear infinite;
                   }
@@ -581,18 +584,23 @@ position: absolute;
                       }
                   }
 
-                  #starsys1:hover{
+                  #starsys1{
                     animation: startwink 3s  linear infinite;
                     transform-origin: absolute;
              
                 }
-                #starsys2:hover{
+                #starsys2{
                     animation: startwink 5s  linear infinite;
                     transform-origin: absolute;
              
                 }
-                #starsys3:hover{
-                    animation: startwink 4s  linear infinite;
+                #starsys3{
+                    animation: startwink2 4s  linear infinite;
+                    transform-origin: absolute;
+             
+                }
+                #starsys4{
+                    animation: startwink2 3s  linear infinite;
                     transform-origin: absolute;
              
                 }
@@ -601,6 +609,11 @@ position: absolute;
                   50% { opacity:1; }
                   100% { opacity:0; }
                     }
+                    @keyframes startwink2{
+                        0% { opacity:0; }
+                       30% { opacity:1; }
+                       100% { opacity:0; }
+                         }
 
     
 
