@@ -937,18 +937,15 @@ Screen Sizes
 
                         @media (max-width: 480px) {
                             #TextTitle{
-                                font-size: .5rem;
-                                line-height: .5rem; 
+                                font-size: .5rem; 
                             }
             
                             #h3{
-                                font-size: .75rem;
-                                line-height: .75rem;  
+                                font-size: .75rem; 
                             }
             
                             #TextBody{
                                 font-size: .35rem;
-                                line-height: .36rem;
                                 
                             }
                             .gridsystem1 #RadiationText{
