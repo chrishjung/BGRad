@@ -510,10 +510,10 @@ position: absolute;
         }
               
         
-                .pMain {
+                .pMain.Show {
                   
                     stroke-dasharray: 4000;
-                    animation: maindash 10s linear;
+                    animation: maindash 10s ease-out infinite;
                   }
                   
                   @keyframes maindash {
@@ -585,34 +585,34 @@ position: absolute;
                   }
 
                   #starsys1{
-                    animation: startwink 3s  linear infinite;
+                    animation: startwink 5s  ease-in-out infinite;
                     transform-origin: absolute;
              
                 }
                 #starsys2{
-                    animation: startwink 5s  linear infinite;
+                    animation: startwink 8s  ease-in-out infinite;
                     transform-origin: absolute;
              
                 }
                 #starsys3{
-                    animation: startwink2 4s  linear infinite;
+                    animation: startwink2 7s  ease-in-out infinite;
                     transform-origin: absolute;
              
                 }
                 #starsys4{
-                    animation: startwink2 3s  linear infinite;
+                    animation: startwink2 10s  ease-in-out infinite;
                     transform-origin: absolute;
              
                 }
                 @keyframes startwink{
                    0% { opacity:0; }
-                  50% { opacity:1; }
+                  50% { opacity:.9; }
                   100% { opacity:0; }
                     }
                     @keyframes startwink2{
-                        0% { opacity:0; }
-                       30% { opacity:1; }
-                       100% { opacity:0; }
+                        0% { opacity:1; }
+                       50% { opacity:0.1; }
+                       100% { opacity:1; }
                          }
 
     
