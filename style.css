@@ -480,13 +480,53 @@ position: absolute;
 
     .gridsystem1 #Powerstation{
         cursor: pointer;
+        perspective: 200;
         position: absolute;
         right: 22vw;
         margin-right: 80px;
         margin-top: 60vw;
-        width: 10vw;
-        z-index: 5050;
+        z-index: 2050;
         }
+        .gridsystem1 #Powerstation:hover{
+            filter: invert(2%) sepia(1%) saturate(128%) hue-rotate(-10deg) brightness(114%) contrast(87%);
+            }
+
+    #Powerstation1 {
+        animation: powerper 10s ease-in-out infinite;
+    }
+    
+        
+        @keyframes powerper {
+            0% {
+            perspective: 200;
+            transform: rotateY(15deg)
+            }
+            50% {
+            perspective: 200;
+            transform: rotateY(-15deg)
+              }
+            100% {
+            perspective: 200;
+            transform: rotateY(15deg)
+              }
+            }
+            #shine {
+                animation: shine 5s ease-in-out infinite;
+            }
+            
+                
+                @keyframes shine {
+                    0% {
+                   opacity: 70;
+                    }
+                    50% {
+                        opacity: 0;
+                      }
+                    100% {
+                        opacity: 70;
+                      }
+                    }
+        
   
     .gridsystem1 #Rocket{
         position: absolute;
@@ -494,7 +534,7 @@ position: absolute;
         top: 50vw;
         margin-top: 150px;
         right: 0px;
-        margin-right: 0px;
+        margin-right: -10px;
         animation: 1.5s ease-out 0s slideInFromRight;
         z-index: 990;
         }
@@ -510,7 +550,7 @@ position: absolute;
         }
               
         
-                .pMain.Show {
+                .pMain {
                   
                     stroke-dasharray: 4000;
                     animation: maindash 10s ease-out infinite;
@@ -652,10 +692,10 @@ position: absolute;
 
         #Airplane{
             cursor: pointer;
-            -webkit-animation: Airplanemove 4s linear infinite;
-            animation:Airplanemove 4s linear infinite;
+            animation:Airplanemove 20s linear infinite;
             position: absolute;
             left:0px;
+            margin-left: 0px;
             margin-top: 0px;
             z-index: 6500;
             }
@@ -681,7 +721,7 @@ position: absolute;
 
 
          #Train{
-             animation: Trainmove 15s  linear infinite;
+             animation: Trainmove 25s  linear infinite;
              float: left;
             width: 550px;
     
@@ -700,7 +740,7 @@ position: absolute;
             }
 
         #Car{
-            animation: Carmove 20s linear infinite;
+            animation: Carmove 30s linear infinite;
                 position: relative;
                 width: 422px;
                 
