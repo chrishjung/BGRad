@@ -1,3 +1,10 @@
+var controller = new ScrollMagic.Controller();
+var scene = new ScrollMagic.Scene({
+triggerElement: '.pSecond'
+})
+.setClassToggle('.pSecond', 'Show')
+.addTo(controller);
+
 function displayRadiationText()
 {
     document.getElementById('RadiationText').style=" transition: opacity 2s; opacity:1"; 
@@ -45,7 +52,7 @@ function hideAirplaneText()
     document.getElementById('AirplaneText').style="transition: opacity 0.5s; opacity:0";
 
 }
-function GeoText()
+function displayGeoText()
 {
     document.getElementById('GeoText').style=" transition: opacity 2s; opacity:1"; 
     animationDuration = "1s";
@@ -67,6 +74,8 @@ function hideGroundLevelText()
     document.getElementById('GroundLevel').style="transition: opacity 0.5s; opacity:0";
 
 }
+
+
 
 
 

@@ -21,10 +21,18 @@ BODY STYLE
         margin-top:150px;
         z-index: 7000; 
     }
+
+    .sidetext {
+        transform-origin: 0 0;
+        top: 80%;
+        margin-left: 3vw;
+    }
+
     html, body {
         max-width: 100%;
        
     }
+
 
 /* =================
 Header Style
@@ -51,6 +59,17 @@ Header Style
     .smalltext:hover :active :focus{ 
         opacity: 1;
         font-weight: 400;}
+
+        #sunanim{
+            cursor: pointer;
+            position: absolute;
+            top: 80px;
+            right: 17vw;
+            width: 35vw;
+            margin-top: 5em;
+            animation: 1.5s ease-out 0s slideInFromTop1; 
+            z-index: 900;
+            }
 
 
 
@@ -89,6 +108,18 @@ Grid System 1 Style
     transition: opacity 0.7s;
    
 }
+#h4{
+    font-family: Almarai;
+    position: fixed;
+    letter-spacing: 2px;
+    font-size: 24px;
+    padding: 0px 0px 0px 0px;
+    transform: rotate(270deg);
+    color:white;
+    transition: opacity 0.7s;
+    z-index:7000; 
+}
+
 #TextBody{
     font-family: Helvetica;
     letter-spacing: 1.5px;
@@ -156,6 +187,7 @@ Grid System 1 Style
             }  
 
     /* Grid System 1 Images */
+
     .gridsystem1 #sunanim{
         cursor: pointer;
         position: absolute;
@@ -226,6 +258,9 @@ position: absolute;
         margin-left: -50em; 
      
 
+    }
+    #Starsystem:hover{
+        filter: invert(2%) sepia(1%) saturate(128%) hue-rotate(-20deg) brightness(104%) contrast(110%);
     }
         @keyframes slideInFromTop1 {
         
@@ -360,16 +395,8 @@ position: absolute;
         }
         .gridsystem1#Satellite:focus{
             filter: invert(2%) sepia(1%) saturate(108%) hue-rotate(6deg) brightness(104%) contrast(87%);
-           
-           
-            
         }
-        .gridsystem1 #Satellite:active{
-            filter: invert(2%) sepia(1%) saturate(108%) hue-rotate(6deg) brightness(104%) contrast(87%);
-            
-          
-            
-        }
+
         #satleg1{
 
             animation: satanim 3s ease-in-out infinite ;
@@ -699,6 +726,10 @@ position: absolute;
             margin-top: 0px;
             z-index: 6500;
             }
+        #Airplane:hover{
+            filter:  saturate(110%)  brightness(90%) contrast(120%);
+        
+        }
             
             
                 @keyframes Airplanemove {
@@ -976,6 +1007,9 @@ Screen Sizes
                         }
 
                         @media (max-width: 480px) {
+                            .smalltext {  
+                                font-size: 12px;
+                            }
                             #TextTitle{
                                 font-size: .5rem; 
                             }
