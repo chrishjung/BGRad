@@ -576,11 +576,13 @@ position: absolute;
         margin-top: 200px;        
         }
               
-        
-                .pMain {
-                  
+        .pMain {
+            opacity: 0;
+        }
+                .pMain.active {
+                    opacity: 1;
                     stroke-dasharray: 4000;
-                    animation: maindash 10s ease-out infinite;
+                    animation: maindash 10s ease-out ;
                   }
                   
                   @keyframes maindash {
@@ -600,9 +602,12 @@ position: absolute;
                         stroke-dashoffset: 8000;
                       }
                   }
-                  .pSecond {  
+                  .pSecond {
+                    opacity: 0;
+                }
+                  .pSecond.active {  
                     opacity: 1;
-                    animation: secdash 10s linear infinite;
+                    animation: secdash 10s linear ;
                   }
                   
                   @keyframes secdash {
@@ -624,8 +629,12 @@ position: absolute;
                       }
                   }
                   .pThird {
+                    opacity: 0;
+                }
+                  .pThird.active {
+                    opacity: 1;
                     stroke-dasharray: 2500;
-                    animation: thirddash 10s linear infinite;
+                    animation: thirddash 10s linear ;
                   }
                   
                   @keyframes thirddash {
@@ -817,6 +826,10 @@ Screen Sizes
     transition: opacity 0.7s;
    
 }
+#h4{
+
+    font-size: 20px;
+}
 #TextBody{
     font-family: Helvetica;
     letter-spacing: 1.5px;
@@ -877,6 +890,9 @@ Screen Sizes
                 }
 
                 @media (max-width: 1000px) {
+                    .sidetext {           
+                        margin-left: 2.5vw;
+                    }
                     #TextTitle{
                         font-size: 1.25rem;
                         line-height: 1.25rem; 
@@ -885,6 +901,10 @@ Screen Sizes
                     #h3{
                         font-size: 1.75rem;
                         line-height: 1.5rem;  
+                    }
+                    #h4{
+
+                        font-size: 1.25rem;
                     }
     
                     #TextBody{
@@ -937,6 +957,10 @@ Screen Sizes
                     }
 
                     @media (max-width: 800px) {
+                        .sidetext {           
+                            top: 50%;
+                            margin-left: 2.5vw;
+                        }
                         #TextTitle{
                             font-size: .85rem;
                             line-height: .80rem; 
@@ -945,6 +969,10 @@ Screen Sizes
                         #h3{
                             font-size: 1rem;
                             line-height: 1rem;  
+                        }
+                        #h4{
+
+                            font-size: .8rem;
                         }
         
                         #TextBody{
@@ -1007,6 +1035,10 @@ Screen Sizes
                         }
 
                         @media (max-width: 480px) {
+                            .sidetext {           
+                                top: 50%;
+                                margin-left: 2.5vw;
+                            }
                             .smalltext {  
                                 font-size: 12px;
                             }
@@ -1016,6 +1048,10 @@ Screen Sizes
             
                             #h3{
                                 font-size: .75rem; 
+                            }
+                            #h4{
+
+                                font-size: .5rem;
                             }
             
                             #TextBody{
@@ -1071,6 +1107,10 @@ Screen Sizes
                                     }
                             }
                             @media (max-width: 380px) {
+                                .sidetext {           
+                                    top: 50%;
+                                    margin-left: 2.5vw;
+                                }
                                 #TextTitle{
                                     font-size: .25rem; 
                                 }
@@ -1078,7 +1118,10 @@ Screen Sizes
                                 #h3{
                                     font-size: .35rem;  
                                 }
-                
+                                #h4{
+
+                                    font-size: .2rem;
+                                }
                                 #TextBody{
                                     font-size: .2rem;
                                     

@@ -1,9 +1,4 @@
-var controller = new ScrollMagic.Controller();
-var scene = new ScrollMagic.Scene({
-triggerElement: '.pSecond'
-})
-.setClassToggle('.pSecond', 'Show')
-.addTo(controller);
+
 
 function displayRadiationText()
 {
@@ -74,8 +69,5 @@ function hideGroundLevelText()
     document.getElementById('GroundLevel').style="transition: opacity 0.5s; opacity:0";
 
 }
-
-
-
 
 

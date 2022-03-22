@@ -1596,7 +1596,7 @@
                </defs>
             </svg>
          </div>
-         <section id="DeepSpaceText" onclick="hideDeepSpaceText()">
+         <section id="DeepSpaceText" class="aos" onclick="hideDeepSpaceText()">
             <p id="TextTitle">Deep Space</p>
             <p id="TextBody">Deep space up to 300,000 particles/cm<sup>2</sup>/h, mainly protons with some particles and
                heavier ions.
@@ -2497,7 +2497,7 @@
                      <path id="pline1" d="M2615.5 3139.9L2180.4 2842.4L1717 2480.4" stroke="#FDC571" stroke-width="6"
                         stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="bevel" />
                   </g>
-                  <path id="pmain" class="pMain Show"
+                  <path id="pmain" class="pMain"
                      d="M1718 2480.3C1643.4 2310.9 1433.3 1775.1 1595.8 1112.3C1734.9 545 2070.6 195.9 2212.8 63.2"
                      stroke="#FDC571" stroke-width="6" stroke-miterlimit="10" stroke-linecap="round" />
                </g>
@@ -18054,67 +18054,7 @@
       </div>
    </div>
    <!---Reveal Text Script-->
-   <script type="text/javascript">
-      window.addEventListener('scroll', reveal);
-
-      function reveal() {
-         var reveals = document.querySelectorAll('.reveal');
-
-         for (var i = 0; i < reveals.length; i++) {
-
-            var windowheight = window.innerHeight;
-            var revealtop = reveals[i].getBoundingClientRect().top;
-            var revealpoint = 280;
-
-            if (revealtop < windowheight - revealpoint) {
-               reveals[i].classList.add('active');
-            }
-            else {
-               reveals[i].classList.remove('active');
-            }
-         }
-      }
-   </script>
-
-   <script type="text/javascript">
-      const openModalButtons = document.querySelectorAll('[data-modal-target]')
-      const closeModalButtons = document.querySelectorAll('[data-close-button]')
-      const overlay = document.getElementById('overlay')
-
-      openModalButtons.forEach(button => {
-         button.addEventListener('click', () => {
-            const modal = document.querySelector(button.dataset.modalTarget)
-            openModal(modal)
-         })
-      })
-
-      overlay.addEventListener('click', () => {
-         const modals = document.querySelectorAll('.modal.active')
-         modals.forEach(modal => {
-            closeModal(modal)
-         })
-      })
-
-      closeModalButtons.forEach(button => {
-         button.addEventListener('click', () => {
-            const modal = button.closest('.modal')
-            closeModal(modal)
-         })
-      })
-
-      function openModal(modal) {
-         if (modal == null) return
-         modal.classList.add('active')
-         overlay.classList.add('active')
-      }
-
-      function closeModal(modal) {
-         if (modal == null) return
-         modal.classList.remove('active')
-         overlay.classList.remove('active')
-      }
-   </script>
+     <script src="./aosElements.js"></script>
 
 </body>
-
 </html>
