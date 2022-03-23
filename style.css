@@ -116,9 +116,7 @@ Grid System 1 Style
 }
 #h4{
     font-family: Almarai;
-    rotate: 270deg;
     position: fixed;
-    transform: rotate(270deg);
     letter-spacing: 2px;
     font-size: 24px;
     padding: 0px 0px 0px 0px;
