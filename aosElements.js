@@ -60,8 +60,7 @@ const sidetext = document.querySelector('.sidetext')
 window.addEventListener('scroll', () =>{
     const scrolled = window.pageYOffset;
     const val = scrolled * 0.5;
-    sidetext.style.transform = `translateY(${-2 *val}%) rotate(270deg)`;
-
+    sidetext.style.transform = `translateY(${-2 *val}%) rotate(270deg)`
 }
 
 )
