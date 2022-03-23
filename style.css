@@ -603,12 +603,6 @@ position: absolute;
                     25% {
                         stroke-dashoffset: 8000;
                       }
-                      50% {
-                        stroke-dashoffset: 8000;
-                      }
-                      75% {
-                        stroke-dashoffset: 8000;
-                      }
                       100% {
                         stroke-dashoffset: 8000;
                       }
