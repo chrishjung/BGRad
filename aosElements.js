@@ -54,6 +54,18 @@ function pmainVisable(element) {
     let distanceFromTop = -600;
     return elementDiv.top - window.innerHeight < distanceFromTop ? true : false;
 }
+
+const sidetext = document.querySelector('.sidetext')
+
+window.addEventListener('scroll', () =>{
+    const scrolled = window.pageYOffset;
+    const val = scrolled * 0.5;
+    sidetext.style.transform = `translateY(${-2 *val}%) rotate(270deg)`;
+
+}
+
+)
+
 function throttle(fn, delay){
     let lastCall = 0;
     return (...arg)=>{

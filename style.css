@@ -24,9 +24,10 @@ BODY STYLE
 
     .sidetext {
         transform-origin: 0 0;
-        top: 80%;
-        margin-left: 3vw;
+        top: 85%;
+        margin-left: 2.9vw;
     }
+ 
 
     html, body {
         max-width: 100%;
@@ -94,7 +95,9 @@ Grid System 1 Style
     line-height: 1.75rem;
     color:white;
     transition: opacity 0.7s;
-   
+}
+#TextTitle:hover{
+    color:rgb(253, 253, 221);  
 }
 #h3{
     font-family: Almarai;
@@ -108,13 +111,17 @@ Grid System 1 Style
     transition: opacity 0.7s;
    
 }
+#h3:hover{
+    color:rgb(253, 253, 221);  
+}
 #h4{
     font-family: Almarai;
+    rotate: 270deg;
     position: fixed;
+    transform: rotate(270deg);
     letter-spacing: 2px;
     font-size: 24px;
     padding: 0px 0px 0px 0px;
-    transform: rotate(270deg);
     color:white;
     transition: opacity 0.7s;
     z-index:7000; 
@@ -130,6 +137,11 @@ Grid System 1 Style
     line-height: 30px;
     color:white;
     transition: opacity 0.7s;
+    
+}
+#TextBody:hover{
+    color:rgb(253, 253, 221);
+
     
 }
     .gridsystem1 #RadiationText{
@@ -615,13 +627,7 @@ position: absolute;
                       stroke-dasharray: 2500;
                         stroke-dashoffset: 2500;
                     }
-                    25% {
-                        stroke-dashoffset: 2500;
-                      }
-                      50% {
-                        stroke-dashoffset: 5000;
-                      }
-                      75% {
+                      25% {
                         stroke-dashoffset: 5000;
                       }
                       100% {
@@ -642,15 +648,7 @@ position: absolute;
                         stroke-dasharray: 2500;
                       stroke-dashoffset: 2500;
                     }
-                    25% {
-                        stroke-dasharray: 2500;
-                        stroke-dashoffset: 2500;
-                      }
-                      50% {
-                        stroke-dasharray: 2500;
-                        stroke-dashoffset: 2500;
-                      }
-                      75% {
+                      25% {
                         stroke-dasharray: 2500;
                         stroke-dashoffset: 5000;
                       }
@@ -814,6 +812,12 @@ Screen Sizes
     transition: opacity 0.7s;
    
 }
+
+.sidetext {
+    top: 75%;
+    margin-left: 2.4vw;
+}
+
 #h3{
     font-family: Almarai;
     font-weight:2px;
@@ -890,8 +894,9 @@ Screen Sizes
                 }
 
                 @media (max-width: 1000px) {
-                    .sidetext {           
-                        margin-left: 2.5vw;
+                    .sidetext {  
+                        top: 70%;         
+                        margin-left: 2vw;
                     }
                     #TextTitle{
                         font-size: 1.25rem;
@@ -957,9 +962,9 @@ Screen Sizes
                     }
 
                     @media (max-width: 800px) {
-                        .sidetext {           
-                            top: 50%;
-                            margin-left: 2.5vw;
+                        .sidetext {
+                            top: 60%;  
+                            margin-left: 1.1vw;
                         }
                         #TextTitle{
                             font-size: .85rem;
@@ -1037,7 +1042,7 @@ Screen Sizes
                         @media (max-width: 480px) {
                             .sidetext {           
                                 top: 50%;
-                                margin-left: 2.5vw;
+                                margin-left: 1vw;
                             }
                             .smalltext {  
                                 font-size: 12px;
@@ -1109,7 +1114,7 @@ Screen Sizes
                             @media (max-width: 380px) {
                                 .sidetext {           
                                     top: 50%;
-                                    margin-left: 2.5vw;
+                                    margin-left: 1vw;
                                 }
                                 #TextTitle{
                                     font-size: .25rem; 
