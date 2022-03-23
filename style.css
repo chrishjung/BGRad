@@ -1110,9 +1110,7 @@ Screen Sizes
                                     top: 9vw;
                                     margin-top: 120px;
                                     }
-                            }
-
-                            .pMain {
+                               .pMain {
                                 opacity: 1;
 
                               }
@@ -1127,6 +1125,7 @@ Screen Sizes
  
                               }
                               
+                            }
                               
                             @media (max-width: 380px) {
                                 .sidetext {           
