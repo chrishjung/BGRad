@@ -575,7 +575,26 @@ position: absolute;
         margin-right: -10px;
         animation: 1.5s ease-out 0s slideInFromRight;
         z-index: 990;
-        }
+     
+    }
+
+    
+    
+            #afterburn {
+    
+                stroke-dasharray: 350;
+            
+                animation: burnanim 1s linear infinite ;
+                }
+                  
+                @keyframes burnanim {
+                 0% {
+                    stroke-dashoffset: 700;
+                }
+                    100% {
+                    stroke-dashoffset: 0;
+                    }
+                }
 
     .gridsystem1 #Particle{
         position: absolute;
