@@ -603,6 +603,12 @@ position: absolute;
                     25% {
                         stroke-dashoffset: 8000;
                       }
+                      50% {
+                        stroke-dashoffset: 8000;
+                      }
+                      75% {
+                        stroke-dashoffset: 8000;
+                      }
                       100% {
                         stroke-dashoffset: 8000;
                       }
@@ -723,6 +729,9 @@ position: absolute;
             margin-top: 0px; 
             z-index: 3000;
           }
+        #window:hover{
+            filter:  saturate(80%) hue-rotate(10deg) brightness(134%) contrast(77%);
+        }
 
         #Airplane{
             cursor: pointer;
@@ -1110,22 +1119,25 @@ Screen Sizes
                                     top: 9vw;
                                     margin-top: 120px;
                                     }
-                               .pMain {
-                                opacity: 1;
+                            }
 
+                            .pMain {
+                                opacity: 1;
+                                stroke-dasharray: 4000;
+                                animation: maindash 10s ease-out ;
                               }
 
                               .pSecond {  
                                 opacity: 1;
-
+                                animation: secdash 10s linear ;
                               }
 
                               .pThird {
                                 opacity: 1;
- 
+                                stroke-dasharray: 2500;
+                                animation: thirddash 10s linear ;
                               }
                               
-                            }
                               
                             @media (max-width: 380px) {
                                 .sidetext {           
