@@ -809,38 +809,30 @@ position: absolute;
          #Train{
              animation: Trainmove 25s  linear infinite;
              float: left;
-            width: 550px;
-    
             }   
             @keyframes Trainmove {
         
                 0% 
                 {
                     transform: translateX(200%);
-                    opacity: 100%;
                 }
                 100% {
                     transform: translateX(-100%);
-                    opacity: 100%;
                 }
             }
 
         #Car{
             animation: Carmove 30s linear infinite;
                 position: relative;
-                width: 422px;
-                
                 } 
                 @keyframes Carmove {
         
                     0% 
                     {
                         transform: translateX(-50%);
-                        opacity: 100%;
                     }
                     100% {
                         transform: translateX(100%);
-                        opacity: 100%;
                     }
                 }
 /* =================
