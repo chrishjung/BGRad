@@ -353,7 +353,7 @@ position: absolute;
 
 
     .gridsystem1 #Planet1{
-        animation: 1.5s ease-out 0s slideInFromLeft;
+       
         position: absolute;
         left:0px;
         width: 20vw;
@@ -361,9 +361,31 @@ position: absolute;
         top: 12vw;
         margin-left: 70px;
         margin-top: 150px;
-        animation-fill-mode: forwards; 
+    
         z-index: 990;
         }
+
+        #mars {
+            animation: 2s ease-out 0.3s slideInFromLeft;
+            animation-fill-mode: forwards;  
+        }
+        #bgplanets {
+            animation: 1.5s ease-out 0s slideInFromLeft;
+            animation-fill-mode: forwards;  
+        }
+
+        #orbit {
+            animation: orbanim 10s  linear infinite;
+            transform-origin: 10px -25px;
+            transform-box: fill-box;
+        
+     
+        }
+        @keyframes orbanim{
+           0% { transform: rotate(0deg); }
+          50% { transform: rotate(180deg); }
+          100% { transform: rotate(360deg); }
+            }
             
         @keyframes slideInFromLeft {
         
