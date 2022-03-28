@@ -57,7 +57,7 @@ Header Style
         transition: opacity 0.7s;
     }
 
-    .smalltext:hover :active :focus{ 
+    .smalltext:hover :active{ 
         opacity: 1;
         font-weight: 400;}
 
