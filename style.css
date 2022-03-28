@@ -215,17 +215,10 @@ Grid System 1 Style
             transform-origin: center;
             
         }
-        .gridsystem1 #circle:focus{
+        .gridsystem1 #circle:focus, :active{
             filter: invert(2%) sepia(1%) saturate(278%) hue-rotate(6deg) brightness(104%) contrast(97%);
             animation: oraymove 3s  linear infinite;
-            transform-origin: center;
-            
-        }
-        .gridsystem1 #circle:active{
-            filter: invert(2%) sepia(1%) saturate(278%) hue-rotate(6deg) brightness(104%) contrast(97%);
-            animation: oraymove 3s ease-in-out ;
-            transform-origin: center;
-            
+            transform-origin: center;  
         }
 
         #outsideray{
@@ -767,7 +760,7 @@ position: absolute;
             margin-top: 0px; 
             z-index: 3000;
           }
-        #window:hover{
+        #window:hover, :active, :focus{
             filter:  saturate(80%) hue-rotate(10deg) brightness(134%) contrast(77%);
         }
 
@@ -807,39 +800,28 @@ position: absolute;
 
          #Train{
              animation: Trainmove 25s  linear infinite;
-             float: left;
-            width: 550px;
     
             }   
             @keyframes Trainmove {
-        
                 0% 
                 {
                     transform: translateX(200%);
-                    opacity: 100%;
                 }
                 100% {
                     transform: translateX(-100%);
-                    opacity: 100%;
                 }
             }
 
         #Car{
             animation: Carmove 30s linear infinite;
-                position: relative;
-                width: 422px;
-                
                 } 
                 @keyframes Carmove {
-        
                     0% 
                     {
                         transform: translateX(-50%);
-                        opacity: 100%;
                     }
                     100% {
                         transform: translateX(100%);
-                        opacity: 100%;
                     }
                 }
 /* =================
