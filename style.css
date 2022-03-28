@@ -356,12 +356,10 @@ position: absolute;
        
         position: absolute;
         left:0px;
-        width: 20vw;
         left: 7vw;
         top: 12vw;
         margin-left: 70px;
         margin-top: 150px;
-    
         z-index: 990;
         }
 
@@ -375,7 +373,7 @@ position: absolute;
         }
 
         #orbit {
-            animation: orbanim 10s  linear infinite;
+            animation: orbanim 10s 2s linear infinite;
             transform-origin: 10px -25px;
             transform-box: fill-box;
         
@@ -383,7 +381,6 @@ position: absolute;
         }
         @keyframes orbanim{
            0% { transform: rotate(0deg); }
-          50% { transform: rotate(180deg); }
           100% { transform: rotate(360deg); }
             }
             
