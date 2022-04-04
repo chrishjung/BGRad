@@ -1030,8 +1030,7 @@ Screen Sizes
                         #orbit {
                             animation: none;
                         }
-                        .gridsystem1 #Rocket{
-                            animation: none;
+                      
 
                         }
                         #Car{
@@ -1044,14 +1043,16 @@ Screen Sizes
                             -moz-animation: Trainmove 60s  linear infinite;
                             animation: Trainmove 60s  linear infinite;
                            }   
+                           #afterburn {
+                            stroke-dasharray: 350;
+                            animation: none ;
+                            }
                         .pMain {
                             opacity: 1;
                             stroke-dasharray: 4000;
                             -webkit-animation: maindash 10s ease-out infinite;
                             -moz-animation: maindash 10s ease-out infinite;
                             animation: maindash 10s ease-out infinite;
-                            
-
                           }
 
                           .pSecond {  
