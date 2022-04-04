@@ -314,7 +314,6 @@ position: absolute;
         width: 10vw;
         margin-top: 6vw;
         right: 10vw;
-
         animation: 1.5s ease-out 0s slidediagonal;
         animation-fill-mode: forwards; 
         z-index: 990;
@@ -582,15 +581,15 @@ position: absolute;
         @keyframes powerper {
             0% {
             perspective: 200;
-            transform: rotateY(15deg)
+            transform: rotateY(20deg)
             }
             50% {
             perspective: 200;
-            transform: rotateY(-15deg)
+            transform: rotateY(-20deg)
               }
             100% {
             perspective: 200;
-            transform: rotateY(15deg)
+            transform: rotateY(20deg)
               }
             }
             #shine {
