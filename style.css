@@ -851,7 +851,8 @@ position: absolute;
 
 
          .Train.active{
-             animation: Trainmove 25s  linear infinite;
+             animation: Trainmove 25s  linear;
+             animation-fill-mode: forwards;
              float: left;
             }   
             @keyframes Trainmove {
@@ -869,6 +870,7 @@ position: absolute;
 
         .Car.active{
             animation: Carmove 30s ease-out;
+            animation-fill-mode: forwards;
                 position: relative;
                 
                 } 
