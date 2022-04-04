@@ -1,20 +1,57 @@
 
-let pthirdElements = Array.from(document.querySelectorAll('.pThird'));
+let carElements = Array.from(document.querySelectorAll('.Car'));
 //console.log(aosElements);
-window.addEventListener('scroll', throttle(scanElements3, 50))
-function scanElements3() {
-    pthirdElements.forEach(element => {
-        if (pthirdVisable(element)) {
+window.addEventListener('scroll', throttle(scanElementscar, 50))
+function scanElementscar() {
+    carElements.forEach(element => {
+        if (carVisable(element)) {
             element.classList.add('active');
         } else {
             element.classList.remove('active');
         }
     });
 }
-function pthirdVisable(element) {
+function carVisable(element) {
     const elementDiv = element.getBoundingClientRect();
-    let distanceFromTop3 = 30;
-    return elementDiv.top - window.innerHeight < distanceFromTop3 ? true : false;
+    let distanceFromTopcar = 800;
+    return elementDiv.top - window.innerHeight < distanceFromTopcar ? true : false;
+}
+
+let rocketElements = Array.from(document.querySelectorAll('.Rocket, .afterburn, .pThird'));
+//console.log(aosElements);
+window.addEventListener('scroll', throttle(scanElementsrocket, 50))
+function scanElementsrocket() {
+    rocketElements.forEach(element => {
+        if (rocketVisable(element)) {
+            element.classList.add('active');
+        } else {
+            element.classList.remove('active');
+        }
+    });
+}
+function rocketVisable(element) {
+    const elementDiv = element.getBoundingClientRect();
+    let distanceFromToprocket = 20;
+    return elementDiv.top - window.innerHeight < distanceFromToprocket ? true : false;
+}
+
+
+let trainElements = Array.from(document.querySelectorAll('.Train'));
+//console.log(aosElements);
+window.addEventListener('scroll', throttle(scanElementstrain, 50))
+function scanElementstrain() {
+    trainElements.forEach(element => {
+        if (trainVisable(element)) {
+            element.classList.add('active');
+        } else {
+            element.classList.remove('active');
+        }
+    });
+}
+function trainVisable(element) {
+    const elementDiv = element.getBoundingClientRect();
+    let distanceFromToptrain = 200;
+    return elementDiv.top - window.innerHeight < distanceFromToptrain ? true : false;
 }
 
 let psecondElements = Array.from(document.querySelectorAll('.pSecond'));

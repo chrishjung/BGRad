@@ -10,6 +10,8 @@ BODY STYLE
 .ba{
       background: rgb(15,15,36);
       background: linear-gradient( rgba(15,15,36,1) 10%,rgba(44,32,84,1) 50%,rgba(114,65,93,1) 63%, rgba(230,105,87,1) 80%, rgba(0,0,46,1) 100%);
+      overflow-x: hidden;
+      overflow-y: auto;
     }
     *{ margin: 0; padding: 0;
     }
@@ -35,8 +37,6 @@ BODY STYLE
 
     html, body {
         max-width: 100%;
-        overflow-x: hidden;
-        overflow-y: auto;
     }
 
 
@@ -315,9 +315,24 @@ position: absolute;
         margin-top: 6vw;
         right: 10vw;
 
-        animation: 1.5s ease-out 0s slideInFromRight;
+        animation: 1.5s ease-out 0s slidediagonal;
         animation-fill-mode: forwards; 
         z-index: 990;
+        }
+
+        @keyframes slidediagonal {
+        
+            0% 
+            {
+                transition: transform;
+                transform: translate(100%, -100%);
+                opacity: 0%;
+            }
+            100% {
+                transition: transform;
+                transform: translate(0, 0);
+                opacity: 100%;
+            }
         }
         @keyframes slideInFromRight {
         
@@ -383,7 +398,8 @@ position: absolute;
             animation-fill-mode: forwards;  
         }
         #orbit {
-            animation: orbanim 10s 2s linear infinite;
+            animation: orbanim 10s 2s linear;
+            animation-iteration-count: 2;
             transform-origin: 10px -25px;
             transform-box: fill-box;
         }
@@ -595,25 +611,39 @@ position: absolute;
                     }
         
   
-    .gridsystem1 #Rocket{
+    .gridsystem1 .Rocket{
         position: absolute;
         width: 23vw;
         top: 50vw;
-        margin-top: 150px;
+        margin-top: 400px;
         right: 0px;
-        margin-right: -10px;
+        margin-right: -10vw;
         animation: 1.5s ease-out 0s slideInFromRight;
         z-index: 990;
      
     }
 
+    .Rocket.active{
+        animation: flyanim 5s ease-in-out forwards ;
+    } 
+
+    @keyframes flyanim {
+        0% {
+       transform: translate(0px, 0px);
+        }
+ 
+          100% {
+            transform: translate(-80px, -300px);
+          }
+      }
+
     
-    
-            #afterburn {
+            .afterburn.active {
     
                 stroke-dasharray: 350;
             
-                animation: burnanim 1s linear infinite ;
+                animation: burnanim 1s linear ;
+                animation-iteration-count: 5;
                 }
                   
                 @keyframes burnanim {
@@ -782,6 +812,9 @@ position: absolute;
         #window:hover{
             filter:  saturate(80%) hue-rotate(10deg) brightness(134%) contrast(77%);
         }
+        #window:active{
+            filter:  saturate(80%) hue-rotate(10deg) brightness(134%) contrast(77%);
+        }
 
         #Airplane{
             cursor: pointer;
@@ -793,7 +826,7 @@ position: absolute;
             z-index: 6500;
             }
         #Airplane:hover{
-            filter:  saturate(110%)  brightness(90%) contrast(120%);
+            filter:  saturate(180%)  brightness(90%) sepia(20%) contrast(120%) hue-rotate(150deg) ;
         
         }
             
@@ -817,7 +850,7 @@ position: absolute;
 
 
 
-         #Train{
+         .Train.active{
              animation: Trainmove 25s  linear infinite;
              float: left;
             }   
@@ -826,7 +859,7 @@ position: absolute;
                 0% 
                 {
                     transition: transform;
-                    transform: translateX(200%);
+                    transform: translateX(150%);
                 }
                 100% {
                     transition: transform;
@@ -834,8 +867,8 @@ position: absolute;
                 }
             }
 
-        #Car{
-            animation: Carmove 30s linear infinite;
+        .Car.active{
+            animation: Carmove 30s ease-out;
                 position: relative;
                 
                 } 
@@ -1101,6 +1134,9 @@ Screen Sizes
                     }
 
                     @media (max-width: 800px) {
+                        .gridsystem1 .Rocket{
+                            top: 10vw;
+                        }
                         .sidetext {
                             top: 550px;  
                             margin-left: 2.3vw;
