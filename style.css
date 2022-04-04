@@ -1001,6 +1001,30 @@ Screen Sizes
                         margin-right:0px;
                         z-index: 3010;
                         }
+                        #Car{
+                            -webkit-animation: Carmove 30s linear infinite;
+                                } 
+                        #Train{
+                            -webkit-animation: Trainmove 25s  linear infinite;
+                           }   
+                        .pMain {
+                            opacity: 1;
+                            stroke-dasharray: 4000;
+                            -webkit-animation: maindash 10s ease-out infinite;
+
+                          }
+
+                          .pSecond {  
+                            opacity: 1;
+                            -webkit-animation: secdash 10s ease-in infinite;
+
+                          }
+
+                          .pThird {
+                            opacity: 1;
+                            stroke-dasharray: 2500;
+                            -webkit-animation: thirddash 10s ease-in infinite;
+                          }
                     }
 
                     @media (max-width: 800px) {
@@ -1079,31 +1103,7 @@ Screen Sizes
                             margin-top: 160px;
 
                                     }
-                                    #Car{
-                                        -webkit-animation: Carmove 30s linear infinite;
-                                            } 
-                                    #Train{
-                                        -webkit-animation: Trainmove 25s  linear infinite;
-                                       }   
-                                    .pMain {
-                                        opacity: 1;
-                                        stroke-dasharray: 4000;
-                                        -webkit-animation: maindash 10s ease-out infinite;
-        
-                                      }
-        
-                                      .pSecond {  
-                                        opacity: 1;
-                                        -webkit-animation: secdash 10s ease-in infinite;
-        
-                                      }
-        
-                                      .pThird {
-                                        opacity: 1;
-                                        stroke-dasharray: 2500;
-                                        -webkit-animation: thirddash 10s ease-in infinite;
-        
-                                      }
+
                         }
 
                         @media (max-width: 480px) {
