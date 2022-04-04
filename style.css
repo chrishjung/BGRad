@@ -10,7 +10,12 @@ BODY STYLE
 .ba{
       background: rgb(15,15,36);
       background: linear-gradient( rgba(15,15,36,1) 10%,rgba(44,32,84,1) 50%,rgba(114,65,93,1) 63%, rgba(230,105,87,1) 80%, rgba(0,0,46,1) 100%);
-    }*{margin: 0; padding: 0;}
+    overflow-x: hidden;
+    overflow-y: auto;
+    }
+    *{ margin: 0; padding: 0;
+    }
+
 
 
     .sideline{
@@ -20,6 +25,7 @@ BODY STYLE
         top: 20vw; 
         margin-top:150px;
         z-index: 7000; 
+     
     }
 
     .sidetext {
@@ -31,7 +37,6 @@ BODY STYLE
 
     html, body {
         max-width: 100%;
-       
     }
 
 
@@ -377,14 +382,12 @@ position: absolute;
             animation: 1.5s ease-out 0s slideInFromLeft;
             animation-fill-mode: forwards;  
         }
-
         #orbit {
             animation: orbanim 10s 2s linear infinite;
             transform-origin: 10px -25px;
             transform-box: fill-box;
-        
-     
         }
+
         @keyframes orbanim{
            0% { transform: rotate(0deg); }
           50% { transform: rotate(180deg); }
@@ -1011,6 +1014,23 @@ Screen Sizes
                         right: 3vw;
                         margin-right:0px;
                         z-index: 3010;
+                        }
+                        #starline1 {
+                            animation: none;
+                          }
+                        #starline2 {
+                            animation: none;
+                          }
+                          #starline3 {
+                            animation: none;
+                          }
+                          #starcurve {
+                            animation: none;
+                          }
+                        #orbit {
+                            animation: orbanim 60s 2s linear infinite;
+                            -webkit-animation: orbanim 60s 2s linear infinite;
+                            -moz-animation: orbanim 60s 2s linear infinite;
                         }
                         #Car{
                             -webkit-animation: Carmove 60s linear infinite;
