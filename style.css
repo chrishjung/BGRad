@@ -1028,19 +1028,21 @@ Screen Sizes
                             animation: none;
                           }
                         #orbit {
-                            animation: orbanim 60s 2s linear infinite;
-                            -webkit-animation: orbanim 60s 2s linear infinite;
-                            -moz-animation: orbanim 60s 2s linear infinite;
+                            animation: none;
+                        }
+                        .gridsystem1 #Rocket{
+                            animation: none;
+
                         }
                         #Car{
-                            -webkit-animation: Carmove 60s linear infinite;
-                            -moz-animation: Carmove 60s linear infinite;
-                            animation: Carmove 60s linear infinite;
+                            -webkit-animation: Carmove 80s linear infinite;
+                            -moz-animation: Carmove 80s linear infinite;
+                            animation: Carmove 80s linear infinite;
                                 } 
                         #Train{
-                            -webkit-animation: Trainmove 40s  linear infinite;
-                            -moz-animation: Trainmove 40s  linear infinite;
-                            animation: Trainmove 40s  linear infinite;
+                            -webkit-animation: Trainmove 60s  linear infinite;
+                            -moz-animation: Trainmove 60s  linear infinite;
+                            animation: Trainmove 60s  linear infinite;
                            }   
                         .pMain {
                             opacity: 1;
