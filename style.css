@@ -1055,7 +1055,7 @@ Screen Sizes
                             animation: maindash 10s ease-out infinite;
                           }
 
-                          .pSecond, .pSecond.active {  
+                          .pSecond {  
                             opacity: 1;
                             -webkit-animation: secdash 10s ease-in infinite;
                             -moz-animation: secdash 10s ease-in infinite;
@@ -1063,7 +1063,30 @@ Screen Sizes
 
                           }
 
-                          .pThird, .pThird.active {
+                          .pThird {
+                            opacity: 1;
+                            stroke-dasharray: 2500;
+                            -webkit-animation: thirddash 10s ease-in infinite;
+                            -moz-animation: thirddash 10s ease-in infinite;
+                            animation: thirddash 10s ease-in infinite;
+                          }
+                          .pMain.active {
+                            opacity: 1;
+                            stroke-dasharray: 4000;
+                            -webkit-animation: maindash 10s ease-out infinite;
+                            -moz-animation: maindash 10s ease-out infinite;
+                            animation: maindash 10s ease-out infinite;
+                          }
+
+                          .pSecond.active {  
+                            opacity: 1;
+                            -webkit-animation: secdash 10s ease-in infinite;
+                            -moz-animation: secdash 10s ease-in infinite;
+                            animation: secdash 10s ease-in infinite;
+
+                          }
+
+                          .pThird.active {
                             opacity: 1;
                             stroke-dasharray: 2500;
                             -webkit-animation: thirddash 10s ease-in infinite;
