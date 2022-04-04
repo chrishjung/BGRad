@@ -1027,7 +1027,7 @@ Screen Sizes
                             stroke-dasharray: 4000;
                             -webkit-animation: maindash 10s ease-out infinite;
                             -moz-animation: maindash 10s ease-out infinite;
-                            animation: Trainmove 25s  linear infinite;
+                            animation: maindash 10s ease-out infinite;
                             
 
                           }
