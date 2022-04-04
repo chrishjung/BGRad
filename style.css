@@ -1013,14 +1013,14 @@ Screen Sizes
                         z-index: 3010;
                         }
                         #Car{
-                            -webkit-animation: Carmove 30s linear infinite;
-                            -moz-animation: Carmove 30s linear infinite;
-                            animation: Carmove 30s linear infinite;
+                            -webkit-animation: Carmove 60s linear infinite;
+                            -moz-animation: Carmove 60s linear infinite;
+                            animation: Carmove 60s linear infinite;
                                 } 
                         #Train{
-                            -webkit-animation: Trainmove 25s  linear infinite;
-                            -moz-animation: Trainmove 25s  linear infinite;
-                            animation: Trainmove 25s  linear infinite;
+                            -webkit-animation: Trainmove 40s  linear infinite;
+                            -moz-animation: Trainmove 40s  linear infinite;
+                            animation: Trainmove 40s  linear infinite;
                            }   
                         .pMain {
                             opacity: 1;
