@@ -1071,7 +1071,7 @@ Screen Sizes
 
                     @media (max-width: 800px) {
                         .sidetext {
-                            top: 50%;  
+                            top: 550px;  
                             margin-left: 2.3vw;
                         }
                         #TextTitle{
@@ -1150,7 +1150,7 @@ Screen Sizes
 
                         @media (max-width: 480px) {
                             .sidetext {           
-                                top: 50%;
+                                top: 400px;
                                 margin-left: 2vw;
                             }
                             .smalltext {  
@@ -1226,7 +1226,7 @@ Screen Sizes
                               
                             @media (max-width: 380px) {
                                 .sidetext {           
-                                    top: 50%;
+                                    top: 400px;
                                     margin-left: 1.2vw;
                                 }
                                 #TextTitle{
