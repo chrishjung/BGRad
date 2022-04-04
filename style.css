@@ -10,8 +10,6 @@ BODY STYLE
 .ba{
       background: rgb(15,15,36);
       background: linear-gradient( rgba(15,15,36,1) 10%,rgba(44,32,84,1) 50%,rgba(114,65,93,1) 63%, rgba(230,105,87,1) 80%, rgba(0,0,46,1) 100%);
-    overflow-x: hidden;
-    overflow-y: auto;
     }
     *{ margin: 0; padding: 0;
     }
@@ -37,6 +35,9 @@ BODY STYLE
 
     html, body {
         max-width: 100%;
+        max-height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
     }
 
 
