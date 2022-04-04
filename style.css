@@ -1030,8 +1030,13 @@ Screen Sizes
                         #orbit {
                             animation: none;
                         }
-                      
+                        #satleg1{
 
+                            animation: none ;
+                        }
+                        #satleg2{
+                
+                            animation: none;
                         }
                         #Car{
                             -webkit-animation: Carmove 80s linear infinite;
