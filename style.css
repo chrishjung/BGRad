@@ -277,10 +277,12 @@ position: absolute;
         
             0% 
             {
+                transition: transform;
                 transform: translateY(-50%);
                 opacity: 0%;
             }
             100% {
+                transition: transform;
                 transform: translateY(0);
                 opacity: 100%;
             }
@@ -289,10 +291,12 @@ position: absolute;
         
             0% 
             {
+                transition: transform;
                 transform: translate(50%);
                 opacity: 0%;
             }
             100% {
+                transition: transform;
                 transform: translate(0);
                 opacity: 100%;
             }
@@ -314,10 +318,12 @@ position: absolute;
         
             0% 
             {
+                transition: transform;
                 transform: translate(100%, 0);
                 opacity: 0%;
             }
             100% {
+                transition: transform;
                 transform: translate(0, 0);
                 opacity: 100%;
             }
@@ -943,7 +949,7 @@ Screen Sizes
                 @media (max-width: 1000px) {
                     .sidetext {  
                         top: 70%;         
-                        margin-left: 2vw;
+                        margin-left: 2.5vw;
                     }
                     #TextTitle{
                         font-size: 1.25rem;
@@ -1009,16 +1015,19 @@ Screen Sizes
                         #Car{
                             -webkit-animation: Carmove 30s linear infinite;
                             -moz-animation: Carmove 30s linear infinite;
+                            animation: Carmove 30s linear infinite;
                                 } 
                         #Train{
                             -webkit-animation: Trainmove 25s  linear infinite;
                             -moz-animation: Trainmove 25s  linear infinite;
+                            animation: Trainmove 25s  linear infinite;
                            }   
                         .pMain {
                             opacity: 1;
                             stroke-dasharray: 4000;
                             -webkit-animation: maindash 10s ease-out infinite;
                             -moz-animation: maindash 10s ease-out infinite;
+                            animation: Trainmove 25s  linear infinite;
                             
 
                           }
@@ -1027,6 +1036,7 @@ Screen Sizes
                             opacity: 1;
                             -webkit-animation: secdash 10s ease-in infinite;
                             -moz-animation: secdash 10s ease-in infinite;
+                            animation: secdash 10s ease-in infinite;
 
                           }
 
@@ -1035,13 +1045,14 @@ Screen Sizes
                             stroke-dasharray: 2500;
                             -webkit-animation: thirddash 10s ease-in infinite;
                             -moz-animation: thirddash 10s ease-in infinite;
+                            animation: thirddash 10s ease-in infinite;
                           }
                     }
 
                     @media (max-width: 800px) {
                         .sidetext {
                             top: 50%;  
-                            margin-left: 1.3vw;
+                            margin-left: 2.3vw;
                         }
                         #TextTitle{
                             font-size: .85rem;
@@ -1120,7 +1131,7 @@ Screen Sizes
                         @media (max-width: 480px) {
                             .sidetext {           
                                 top: 50%;
-                                margin-left: 1.1vw;
+                                margin-left: 2vw;
                             }
                             .smalltext {  
                                 font-size: 12px;
@@ -1196,7 +1207,7 @@ Screen Sizes
                             @media (max-width: 380px) {
                                 .sidetext {           
                                     top: 50%;
-                                    margin-left: 1.1vw;
+                                    margin-left: 1.2vw;
                                 }
                                 #TextTitle{
                                     font-size: .25rem; 
