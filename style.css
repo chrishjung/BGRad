@@ -1054,7 +1054,7 @@ Screen Sizes
                         z-index: 3010;
                         }
                        
-@media screen and (-webkit-min-device-pixel-ratio:0) { 
+
                         #starline1 {
                             animation: none;
                           }
@@ -1076,8 +1076,12 @@ Screen Sizes
                                 } 
                                 .pMain {
                                   opacity: 1;
-                                  -webkit-animation: maindash 12s linear;
-                                };
+                                  animation: maindash 12s linear;
+                                }
+                                .pMain.active {
+                                    opacity: 1;
+                                    animation: maindash 12s linear;
+                                  }
                                   }
                                   #Train{
                                     animation: Trainmove 25s  linear;
@@ -1087,14 +1091,26 @@ Screen Sizes
                             
                                   .pSecond {  
                                     opacity: 1;
-                                    -webkit-animation: secdash 15s 3s linear forwards;
+                                    animation: secdash 15s 3s linear forwards;
+                                    stroke-dashoffset: 2500;
+                                    stroke-dasharray: 2500;
+                                  }
+                                  .pSecond.active {  
+                                    opacity: 1;
+                                    animation: secdash 15s 3s linear forwards;
                                     stroke-dashoffset: 2500;
                                     stroke-dasharray: 2500;
                                   }
                             
+                                  .pThird.active {
+                                    opacity: 1;
+                                    animation: thirddash 15s 3s linear forwards;
+                                    stroke-dashoffset: 2500;
+                                    stroke-dasharray: 2500;
+                                  }
                                   .pThird {
                                     opacity: 1;
-                                    -webkit-animation: thirddash 15s 3s linear forwards;
+                                    animation: thirddash 15s 3s linear forwards;
                                     stroke-dashoffset: 2500;
                                     stroke-dasharray: 2500;
                                   }
@@ -1109,13 +1125,11 @@ Screen Sizes
                                       100% {
                                         transform: translate(-30px, -100px);
                                       }
-                                  }
-                                }
                     }
 
                     @media (max-width: 800px) {
                         .gridsystem1 .Rocket{
-                            top: 10vw;
+                            top: 8vw;
                         }
                         .sidetext {
                             top: 550px;  
