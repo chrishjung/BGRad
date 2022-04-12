@@ -5,10 +5,19 @@ window.addEventListener('scroll', throttle(scanElementscar, 50))
 function scanElementscar() {
     carElements.forEach(element => {
         if (carVisable(element)) {
-            element.classList.add('active');
-        } else {
-            element.classList.remove('active');
-        }
+           var item = document.getElementById('Car');
+           item.animate([
+               {transform: 'translateX(-50%)', },
+               {transform: 'translateX(100%)', },
+           ], {
+               duration: 15000,
+               easing: 'linear',
+               iterations: 1,
+               direction: 'normal',
+               fill: 'forwards'
+            
+           });
+        } 
     });
 }
 function carVisable(element) {

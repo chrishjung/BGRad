@@ -869,24 +869,11 @@ position: absolute;
                 }
             }
 
-        .Car.active{
-            animation: Carmove 30s ease-out;
-            animation-fill-mode: forwards;
-                position: relative;
+        .Car{
+            position: relative;  
+            } 
+
                 
-                } 
-                @keyframes Carmove {
-        
-                    0% 
-                    {
-                        transition: transform;
-                        transform: translateX(-50%);
-                    }
-                    100% {
-                        transition: transform;
-                        transform: translateX(100%);
-                    }
-                }
 /* =================
 Screen Sizes
 ===================*/
