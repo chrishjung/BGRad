@@ -1041,7 +1041,6 @@ Screen Sizes
                         z-index: 3010;
                         }
                        
-
                         #starline1 {
                             animation: none;
                           }
@@ -1061,46 +1060,14 @@ Screen Sizes
                         #Car{
                             animation: Carmove 80s linear infinite;
                                 } 
-                                .pMain {
-                                  opacity: 1;
-                                  animation: maindash 12s linear;
-                                }
-                                .pMain.active {
-                                    opacity: 1;
-                                    animation: maindash 12s linear;
-                                  }
-                                  }
+
+                                  
                                   #Train{
                                     animation: Trainmove 25s  linear;
                                     animation-fill-mode: forwards;
                                     float: left;
                                   }
                             
-                                  .pSecond {  
-                                    opacity: 1;
-                                    animation: secdash 15s 3s linear forwards;
-                                    stroke-dashoffset: 2500;
-                                    stroke-dasharray: 2500;
-                                  }
-                                  .pSecond.active {  
-                                    opacity: 1;
-                                    animation: secdash 15s 3s linear forwards;
-                                    stroke-dashoffset: 2500;
-                                    stroke-dasharray: 2500;
-                                  }
-                            
-                                  .pThird.active {
-                                    opacity: 1;
-                                    animation: thirddash 15s 3s linear forwards;
-                                    stroke-dashoffset: 2500;
-                                    stroke-dasharray: 2500;
-                                  }
-                                  .pThird {
-                                    opacity: 1;
-                                    animation: thirddash 15s 3s linear forwards;
-                                    stroke-dashoffset: 2500;
-                                    stroke-dasharray: 2500;
-                                  }
                                   #Rocket{
                                     animation: flyanim 5s 2s ease-in-out forwards ;
                                 } 
@@ -1271,6 +1238,31 @@ Screen Sizes
                                     top: 9vw;
                                     margin-top: 120px;
                                     }
+                                    .pSecond {  
+                                        opacity: 1;
+                                        animation: secdash 15s 3s linear forwards;
+                                        stroke-dashoffset: 2500;
+                                        stroke-dasharray: 2500;
+                                      }
+                                      .pSecond.active {  
+                                        opacity: 1;
+                                        animation: secdash 15s 3s linear forwards;
+                                        stroke-dashoffset: 2500;
+                                        stroke-dasharray: 2500;
+                                      }
+                                
+                                      .pThird.active {
+                                        opacity: 1;
+                                        animation: thirddash 15s 3s linear forwards;
+                                        stroke-dashoffset: 2500;
+                                        stroke-dasharray: 2500;
+                                      }
+                                      .pThird {
+                                        opacity: 1;
+                                        animation: thirddash 15s 3s linear forwards;
+                                        stroke-dashoffset: 2500;
+                                        stroke-dasharray: 2500;
+                                      }
                             }
 
 
@@ -1352,4 +1344,4 @@ Screen Sizes
           .reveal.active{
             opacity: 1;
           }
-
+        }
