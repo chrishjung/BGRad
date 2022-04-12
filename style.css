@@ -38,6 +38,8 @@ BODY STYLE
     html, body {
         max-width: 100%;
     }
+    
+    element { max-width: 100vw; overflow-x: hidden; }
 
 
 /* =================
