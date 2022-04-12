@@ -614,11 +614,11 @@ position: absolute;
         position: absolute;
         width: 23vw;
         top: 50vw;
-        margin-top: 400px;
+        margin-top: 100px;
         right: 0px;
         margin-right: -10vw;
         animation: 1.5s ease-out 0s slideInFromRight;
-        z-index: 990;
+        z-index: 1990;
      
     }
 
