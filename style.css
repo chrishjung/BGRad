@@ -39,10 +39,7 @@ BODY STYLE
         max-width: 100%;
     }
 
-    .container {
-        max-width: 100% !important;
-        overflow-x: hidden !important;
-    }
+
 
 
 
@@ -93,7 +90,6 @@ Grid System 1 Style
     .gridsystem1 { 
     display: fixed;
     margin-top: 80px;
-    overflow: hidden;
     }
 
  /* Grid System 1 Text */
