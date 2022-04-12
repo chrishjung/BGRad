@@ -1083,7 +1083,7 @@ Screen Sizes
 
                     @media (max-width: 800px) {
                         .gridsystem1 .Rocket{
-                            top: 8vw;
+                            top: 70vw;
                         }
                         .sidetext {
                             top: 550px;  
@@ -1238,6 +1238,18 @@ Screen Sizes
                                     top: 9vw;
                                     margin-top: 120px;
                                     }
+                                    .pMain {  
+                                        opacity: 1;
+                                        animation: maindash 10s linear forwards;
+                                        stroke-dashoffset: 4000;
+                                        stroke-dasharray: 4000;
+                                      }
+                                      .pMain.active {  
+                                        opacity: 1;
+                                        animation: maindash 10s linear forwards;
+                                        stroke-dashoffset: 4000;
+                                        stroke-dasharray: 4000;
+                                      }
                                     .pSecond {  
                                         opacity: 1;
                                         animation: secdash 15s 3s linear forwards;
