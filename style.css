@@ -858,6 +858,7 @@ position: absolute;
              animation: Trainmove 25s  linear;
              animation-fill-mode: forwards;
              float: left;
+             position: absolute;
             }   
             @keyframes Trainmove {
         
@@ -865,10 +866,12 @@ position: absolute;
                 {
                     transition: transform;
                     transform: translateX(110%);
+                    opacity: 100%;
                 }
                 100% {
                     transition: transform;
                     transform: translateX(-100%);
+                    opacity: 100%;
                 }
             }
 
@@ -876,6 +879,7 @@ position: absolute;
             position: relative;  
             animation: Carmove 60s  linear;
             animation-fill-mode: forwards;
+            position: absolute;
             } 
             @keyframes Carmove {
         
@@ -883,10 +887,12 @@ position: absolute;
                 {
                     transition: transform;
                     transform: translateX(-10%);
+                    opacity: 100%;
                 }
                 100% {
                     transition: transform;
                     transform: translateX(100%);
+                    opacity: 100%;
                 }
             }
 
@@ -1087,7 +1093,7 @@ Screen Sizes
                         }
                             
                         #Rocket{
-                        animation: flyanim 5s 2s ease-in-out forwards ;
+                        animation: flyanim 10s 2s ease-in-out forwards ;
                                 } 
                                   @keyframes flyanim {
                                     0% {
@@ -1258,43 +1264,6 @@ Screen Sizes
                                     top: 9vw;
                                     margin-top: 120px;
                                     }
-                                    .pMain {  
-                                        opacity: 1;
-                                        animation: maindash 20s linear forwards;
-                                        stroke-dashoffset: 4000;
-                                        stroke-dasharray: 4000;
-                                      }
-                                      .pMain.active {  
-                                        opacity: 1;
-                                        animation: maindash 20s linear forwards;
-                                        stroke-dashoffset: 4000;
-                                        stroke-dasharray: 4000;
-                                      }
-                                    .pSecond {  
-                                        opacity: 1;
-                                        animation: secdash 30s 5s linear forwards;
-                                        stroke-dashoffset: 2500;
-                                        stroke-dasharray: 2500;
-                                      }
-                                      .pSecond.active {  
-                                        opacity: 1;
-                                        animation: secdash 30s 5s linear forwards;
-                                        stroke-dashoffset: 2500;
-                                        stroke-dasharray: 2500;
-                                      }
-                                
-                                      .pThird.active {
-                                        opacity: 1;
-                                        animation: thirddash 30s 5s linear forwards;
-                                        stroke-dashoffset: 2500;
-                                        stroke-dasharray: 2500;
-                                      }
-                                      .pThird {
-                                        opacity: 1;
-                                        animation: thirddash 30s 5s linear forwards;
-                                        stroke-dashoffset: 2500;
-                                        stroke-dasharray: 2500;
-                                      }
                             }
 
 
