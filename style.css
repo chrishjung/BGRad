@@ -1082,12 +1082,12 @@ Screen Sizes
                         }
 
                         #Car{
-                            animation: Carmove 120s linear infinite;
+                            animation: Carmove 60s linear infinite;
                                 } 
 
                                   
                         #Train{
-                        animation: Trainmove 105s  linear;
+                        animation: Trainmove 45s  linear;
                         animation-fill-mode: forwards;
                         float: left;
                         }
