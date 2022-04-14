@@ -1193,25 +1193,25 @@ Screen Sizes
                                         .pMain {
                                             opacity: 100%;
                                             stroke-dasharray: 4000;
-                                            animation: maindash 20s linear;
+                                            animation: maindash 20s linear forwards;
                                         }
                                         .pMain.active {
                                             opacity: 100%;
                                             stroke-dasharray: 4000;
-                                            animation: maindash 20s linear;
+                                            animation: maindash 20s linear forwards;
                                             }
                                 
                                             .pSecond {
                                             opacity: 100%;
                                             stroke-dasharray: 2500;
                                             stroke-dashoffset: 2500;
-                                            animation: secdash 20s 4s linear ;
+                                            animation: secdash 20s 4s linear forwards;
                                             }
                                             .pSecond.active {  
                                             opacity: 100%;
                                             stroke-dasharray: 2500;
                                             stroke-dashoffset: 2500;
-                                            animation: secdash 20s 4s linear ;
+                                            animation: secdash 20s 4s linear forwards;
                                             }
                                                   
                                                   
@@ -1219,13 +1219,13 @@ Screen Sizes
                                             opacity: 100%;
                                             stroke-dasharray: 2500;
                                             stroke-dashoffset: 2500;
-                                            animation: thirddash 20s 4s linear ;
+                                            animation: thirddash 20s 4s linear forwards;
                                             }
                                             .pThird.active {
                                             opacity: 100%;
                                             stroke-dasharray: 2500;
                                             stroke-dashoffset: 2500;
-                                            animation: thirddash 20s 4s linear ;
+                                            animation: thirddash 20s 4s linear forwards;
                                             }
                                                   
                         }
