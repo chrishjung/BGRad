@@ -864,7 +864,7 @@ position: absolute;
                 0% 
                 {
                     transition: transform;
-                    transform: translateX(150%);
+                    transform: translateX(110%);
                 }
                 100% {
                     transition: transform;
@@ -872,9 +872,24 @@ position: absolute;
                 }
             }
 
-        .Car{
+        .Car.active{
             position: relative;  
+            animation: Carmove 60s  linear;
+            animation-fill-mode: forwards;
             } 
+            @keyframes Carmove {
+        
+                0% 
+                {
+                    transition: transform;
+                    transform: translateX(-10%);
+                }
+                100% {
+                    transition: transform;
+                    transform: translateX(100%);
+                }
+            }
+
 
                 
 /* =================
@@ -1061,18 +1076,18 @@ Screen Sizes
                         }
 
                         #Car{
-                            animation: Carmove 80s linear infinite;
+                            animation: Carmove 120s linear infinite;
                                 } 
 
                                   
-                                  #Train{
-                                    animation: Trainmove 25s  linear;
-                                    animation-fill-mode: forwards;
-                                    float: left;
-                                  }
+                        #Train{
+                        animation: Trainmove 105s  linear;
+                        animation-fill-mode: forwards;
+                        float: left;
+                        }
                             
-                                  #Rocket{
-                                    animation: flyanim 5s 2s ease-in-out forwards ;
+                        #Rocket{
+                        animation: flyanim 5s 2s ease-in-out forwards ;
                                 } 
                                   @keyframes flyanim {
                                     0% {
@@ -1080,7 +1095,7 @@ Screen Sizes
                                     }
                              
                                       100% {
-                                        transform: translate(-30px, -100px);
+                                        transform: translate(-20px, -80px);
                                       }
                     }
 
@@ -1245,38 +1260,38 @@ Screen Sizes
                                     }
                                     .pMain {  
                                         opacity: 1;
-                                        animation: maindash 10s linear forwards;
+                                        animation: maindash 20s linear forwards;
                                         stroke-dashoffset: 4000;
                                         stroke-dasharray: 4000;
                                       }
                                       .pMain.active {  
                                         opacity: 1;
-                                        animation: maindash 10s linear forwards;
+                                        animation: maindash 20s linear forwards;
                                         stroke-dashoffset: 4000;
                                         stroke-dasharray: 4000;
                                       }
                                     .pSecond {  
                                         opacity: 1;
-                                        animation: secdash 15s 3s linear forwards;
+                                        animation: secdash 30s 5s linear forwards;
                                         stroke-dashoffset: 2500;
                                         stroke-dasharray: 2500;
                                       }
                                       .pSecond.active {  
                                         opacity: 1;
-                                        animation: secdash 15s 3s linear forwards;
+                                        animation: secdash 30s 5s linear forwards;
                                         stroke-dashoffset: 2500;
                                         stroke-dasharray: 2500;
                                       }
                                 
                                       .pThird.active {
                                         opacity: 1;
-                                        animation: thirddash 15s 3s linear forwards;
+                                        animation: thirddash 30s 5s linear forwards;
                                         stroke-dashoffset: 2500;
                                         stroke-dasharray: 2500;
                                       }
                                       .pThird {
                                         opacity: 1;
-                                        animation: thirddash 15s 3s linear forwards;
+                                        animation: thirddash 30s 5s linear forwards;
                                         stroke-dashoffset: 2500;
                                         stroke-dasharray: 2500;
                                       }
