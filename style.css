@@ -1190,6 +1190,44 @@ Screen Sizes
                                         margin-top: 63vw;
                                         }
 
+                                        .pMain {
+                                            opacity: 100%;
+                                            stroke-dasharray: 4000;
+                                            animation: maindash 20s linear;
+                                        }
+                                        .pMain.active {
+                                            opacity: 100%;
+                                            stroke-dasharray: 4000;
+                                            animation: maindash 20s linear;
+                                            }
+                                
+                                            .pSecond {
+                                            opacity: 100%;
+                                            stroke-dasharray: 2500;
+                                            stroke-dashoffset: 2500;
+                                            animation: secdash 20s 4s linear ;
+                                            }
+                                            .pSecond.active {  
+                                            opacity: 100%;
+                                            stroke-dasharray: 2500;
+                                            stroke-dashoffset: 2500;
+                                            animation: secdash 20s 4s linear ;
+                                            }
+                                                  
+                                                  
+                                            .pThird {
+                                            opacity: 100%;
+                                            stroke-dasharray: 2500;
+                                            stroke-dashoffset: 2500;
+                                            animation: thirddash 20s 4s linear ;
+                                            }
+                                            .pThird.active {
+                                            opacity: 100%;
+                                            stroke-dasharray: 2500;
+                                            stroke-dashoffset: 2500;
+                                            animation: thirddash 20s 4s linear ;
+                                            }
+                                                  
                         }
 
                         @media (max-width: 480px) {
