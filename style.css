@@ -1091,10 +1091,7 @@ Screen Sizes
                                   opacity: 1;
                                   animation: maindashsm 12s ease-out infinite;
                                 }
-                                .pMain.active {
-                                    opacity: 0;
-                                    animation: maindashsm 12s ease-out infinite;
-                                  }
+                                
                                   }
                                   @keyframes maindashsm {
                                     0% {
@@ -1113,15 +1110,17 @@ Screen Sizes
                                         opacity: 1;
                                       }
                                   }
+                                   #Train {
+                                    transform: translate(-45%, 0%);
+                                
+                                  }
+
                             
                                   .pSecond {  
                                     opacity: 0;
                                     animation: secdashsm 12s ease-out infinite;
                                   }
-                                  .pSecond.active {  
-                                    opacity: 0;
-                                    animation: secdashsm 12s ease-out infinite;
-                                  }
+                                 
                                   @keyframes secdashsm {
                                     0% {
                                         opacity: 0;
@@ -1140,10 +1139,7 @@ Screen Sizes
                                       }
                                     }
                             
-                                  .pThird.active {
-                                    opacity: 0;
-                                    animation: thirddashsm 12s ease-out infinite;
-                                  }
+                                 
                                   .pThird {
                                     opacity: 0;
                                     animation: thirddashsm 12s ease-out infinite;
