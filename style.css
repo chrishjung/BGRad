@@ -1080,11 +1080,11 @@ Screen Sizes
                                     0% 
                                     {
                         
-                                        transform: translate(40%, 0%);
+                                        transform: translate(55%, 0%);
                                     }
                                     100% {
                                         
-                                        transform: translate(40%, .25%);
+                                        transform: translate(55%, .25%);
                                     }
                                 }
                                 .pMain {
@@ -1122,11 +1122,11 @@ Screen Sizes
                                     0% 
                                     {
                                         transition: transform;
-                                        transform: translate(0%, 0%);
+                                        transform: translate(-40%, 0%);
                                     }
                                     100% {
                                         transition: transform;
-                                        transform: translate(-10%, 0%);
+                                        transform: translate(-45%, 0%);
                                     }
                                 }
                             
