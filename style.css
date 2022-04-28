@@ -40,10 +40,6 @@ BODY STYLE
     }
 
 
-
-
-
-
 /* =================
 Header Style
 ===================*/
@@ -90,6 +86,7 @@ Grid System 1 Style
     .gridsystem1 { 
     display: fixed;
     margin-top: 80px;
+    overflow: hidden;
     }
 
  /* Grid System 1 Text */
@@ -617,11 +614,11 @@ position: absolute;
         position: absolute;
         width: 23vw;
         top: 50vw;
-        margin-top: 100px;
+        margin-top: 400px;
         right: 0px;
         margin-right: -10vw;
         animation: 1.5s ease-out 0s slideInFromRight;
-        z-index: 1990;
+        z-index: 990;
      
     }
 
@@ -663,7 +660,7 @@ position: absolute;
         left: 40%;
         transform: translate(-50%, -50%);
         z-index: 1100;
-        top: 71vw;
+        top: 70vw;
         margin-top: 200px;        
         }
               
@@ -858,46 +855,38 @@ position: absolute;
              animation: Trainmove 25s  linear;
              animation-fill-mode: forwards;
              float: left;
-             position: absolute;
             }   
             @keyframes Trainmove {
         
                 0% 
                 {
                     transition: transform;
-                    transform: translateX(110%);
-                    opacity: 100%;
+                    transform: translateX(150%);
                 }
                 100% {
                     transition: transform;
                     transform: translateX(-100%);
-                    opacity: 100%;
                 }
             }
 
         .Car.active{
-            position: relative;  
-            animation: Carmove 60s  linear;
+            animation: Carmove 30s ease-out;
             animation-fill-mode: forwards;
-            position: absolute;
-            } 
-            @keyframes Carmove {
-        
-                0% 
-                {
-                    transition: transform;
-                    transform: translateX(-10%);
-                    opacity: 100%;
-                }
-                100% {
-                    transition: transform;
-                    transform: translateX(100%);
-                    opacity: 100%;
-                }
-            }
-
-
+                position: relative;
                 
+                } 
+                @keyframes Carmove {
+        
+                    0% 
+                    {
+                        transition: transform;
+                        transform: translateX(-50%);
+                    }
+                    100% {
+                        transition: transform;
+                        transform: translateX(100%);
+                    }
+                }
 /* =================
 Screen Sizes
 ===================*/
@@ -1065,6 +1054,7 @@ Screen Sizes
                         z-index: 3010;
                         }
                        
+
                         #starline1 {
                             animation: none;
                           }
@@ -1082,18 +1072,118 @@ Screen Sizes
                         }
 
                         #Car{
-                            animation: Carmove 60s linear infinite;
-                                } 
-
-                                  
-                        #Train{
-                        animation: Trainmove 45s  linear;
-                        animation-fill-mode: forwards;
-                        float: left;
-                        }
+                            animation: Carmovesm .2s linear infinite;
                             
-                        #Rocket{
-                        animation: flyanim 10s 2s ease-in-out forwards ;
+                                } 
+                                @keyframes Carmovesm {
+        
+                                    0% 
+                                    {
+                        
+                                        transform: translate(40%, 0%);
+                                    }
+                                    100% {
+                                        
+                                        transform: translate(40%, .25%);
+                                    }
+                                }
+                                .pMain {
+                                  opacity: 1;
+                                  animation: maindashsm 12s ease-out infinite;
+                                }
+                                .pMain.active {
+                                    opacity: 0;
+                                    animation: maindashsm 12s ease-out infinite;
+                                  }
+                                  }
+                                  @keyframes maindashsm {
+                                    0% {
+                                        opacity: 0;
+                                    }
+                                    45% {
+                                        opacity: 1;
+                                      }
+                                      50% {
+                                        opacity: 1;
+                                      }
+                                      75% {
+                                        opacity: 1;
+                                      }
+                                      100% {
+                                        opacity: 1;
+                                      }
+                                  }
+                                  #Train{
+                                    animation: Trainmovesm 5s  linear infinite alternate;
+                                    float: left;
+                                  }
+                                  @keyframes Trainmovesm {
+        
+                                    0% 
+                                    {
+                                        transition: transform;
+                                        transform: translate(0%, 0%);
+                                    }
+                                    100% {
+                                        transition: transform;
+                                        transform: translate(-10%, 0%);
+                                    }
+                                }
+                            
+                                  .pSecond {  
+                                    opacity: 0;
+                                    animation: secdashsm 12s ease-out infinite;
+                                  }
+                                  .pSecond.active {  
+                                    opacity: 0;
+                                    animation: secdashsm 12s ease-out infinite;
+                                  }
+                                  @keyframes secdashsm {
+                                    0% {
+                                        opacity: 0;
+                                    }
+                                    45% {
+                                        opacity: 0;
+                                      }
+                                      50% {
+                                        opacity: 0;
+                                      }
+                                      75% {
+                                        opacity: 1;
+                                      }
+                                      100% {
+                                        opacity: 1;
+                                      }
+                                    }
+                            
+                                  .pThird.active {
+                                    opacity: 0;
+                                    animation: thirddashsm 12s ease-out infinite;
+                                  }
+                                  .pThird {
+                                    opacity: 0;
+                                    animation: thirddashsm 12s ease-out infinite;
+                                  }
+
+                                  @keyframes thirddashsm {
+                                    0% {
+                                        opacity: 0;
+                                    }
+                                      50% {
+                                        opacity: 0;
+                                      }
+                                      75% {
+                                        opacity: 0;
+                                      }
+                                      90% {
+                                        opacity: 1;
+                                      }
+                                      100% {
+                                        opacity: 1;
+                                      }
+                                    }
+                                  #Rocket{
+                                    animation: flyanim 5s 2s ease-in-out forwards ;
                                 } 
                                   @keyframes flyanim {
                                     0% {
@@ -1101,14 +1191,13 @@ Screen Sizes
                                     }
                              
                                       100% {
-                                        transform: translate(-20px, -80px);
+                                        transform: translate(-30px, -100px);
                                       }
                     }
 
                     @media (max-width: 800px) {
-  
                         .gridsystem1 .Rocket{
-                            top: 70vw;
+                            top: 8vw;
                         }
                         .sidetext {
                             top: 550px;  
@@ -1186,52 +1275,13 @@ Screen Sizes
 
                                     }
                                     .gridsystem1 #Powerstation{
-                                        margin-right: 47vw;
-                                        margin-top: 65vw;
+                                        margin-right: 60px;
+                                        margin-top: 62vw;
                                         }
 
-                                        .pMain {
-                                            opacity: 100%;
-                                            stroke-dasharray: 4000;
-                                            animation: maindash 20s linear forwards;
-                                        }
-                                        .pMain.active {
-                                            opacity: 100%;
-                                            stroke-dasharray: 4000;
-                                            animation: maindash 20s linear forwards;
-                                            }
-                                
-                                            .pSecond {
-                                            opacity: 100%;
-                                            stroke-dasharray: 2500;
-                                            stroke-dashoffset: 2500;
-                                            animation: secdash 20s 4s linear forwards;
-                                            }
-                                            .pSecond.active {  
-                                            opacity: 100%;
-                                            stroke-dasharray: 2500;
-                                            stroke-dashoffset: 2500;
-                                            animation: secdash 20s 4s linear forwards;
-                                            }
-                                                  
-                                                  
-                                            .pThird {
-                                            opacity: 100%;
-                                            stroke-dasharray: 2500;
-                                            stroke-dashoffset: 2500;
-                                            animation: thirddash 20s 4s linear forwards;
-                                            }
-                                            .pThird.active {
-                                            opacity: 100%;
-                                            stroke-dasharray: 2500;
-                                            stroke-dashoffset: 2500;
-                                            animation: thirddash 20s 4s linear forwards;
-                                            }
-                                                  
                         }
 
                         @media (max-width: 480px) {
-                           
                             .sidetext {           
                                 top: 400px;
                                 margin-left: 2vw;
@@ -1368,7 +1418,11 @@ Screen Sizes
                                     margin-right:-35px;
                         
                                     }
-                                   
+                                    .gridsystem1 #Powerstation{
+                                        margin-right: 100px;
+                                        margin-top: 60vw;
+                                        width: 10vw;
+                                        }
                                 }
          
           .reveal{
@@ -1379,4 +1433,4 @@ Screen Sizes
           .reveal.active{
             opacity: 1;
           }
-        }
+
