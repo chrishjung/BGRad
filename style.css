@@ -850,11 +850,14 @@ position: absolute;
                     }
 
 
-
+.Train{
+    opacity: 0;
+}
          .Train.active{
-             animation: Trainmove 25s  linear;
+             animation: Trainmove 20s  linear;
              animation-fill-mode: forwards;
              float: left;
+             opacity: 1;
             }   
             @keyframes Trainmove {
         
@@ -868,11 +871,14 @@ position: absolute;
                     transform: translateX(-100%);
                 }
             }
-
+.Car{
+    opacity: 0;
+}
         .Car.active{
-            animation: Carmove 30s ease-out;
+            animation: Carmove 20s ease-out;
             animation-fill-mode: forwards;
                 position: relative;
+                opacity: 1;
                 
                 } 
                 @keyframes Carmove {
@@ -884,7 +890,7 @@ position: absolute;
                     }
                     100% {
                         transition: transform;
-                        transform: translateX(100%);
+                        transform: translateX(55%);
                     }
                 }
 /* =================
@@ -1255,7 +1261,7 @@ Screen Sizes
 
                                     }
                                     .gridsystem1 #Powerstation{
-                                        margin-right: 60px;
+                                        margin-right: 65px;
                                         margin-top: 62vw;
                                         }
 
