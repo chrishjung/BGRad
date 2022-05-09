@@ -1079,6 +1079,7 @@ Screen Sizes
 
                         #Car{
                             animation: Carmovesm .2s linear infinite;
+                            opacity: 1;
                             
                                 } 
                                 @keyframes Carmovesm {
@@ -1118,6 +1119,7 @@ Screen Sizes
                                   }
                                    #Train {
                                     transform: translate(-45%, 0%);
+                                    opacity: 1;
                                 
                                   }
 
