@@ -622,7 +622,7 @@ position: absolute;
      
     }
 
-    .Rocket.active{
+    #Rocket.active{
         animation: flyanim 5s ease-in-out forwards ;
     } 
 
@@ -963,7 +963,7 @@ Screen Sizes
                     left: 14vw;
                     margin-left: 10vw;
                     top: 32vw;
-                    margin-top: 180px;
+                    margin-top: 130px;
                     }
             
                  .gridsystem1 #LowEarthText{
@@ -971,7 +971,7 @@ Screen Sizes
                     top: 60vw;
                     margin-top: 100px;
                     right: 32vw;
-                    margin-right: 50px;
+                    margin-right: 70px;
 
                     } 
                 .gridsystem1 #AirplaneText{
@@ -1014,7 +1014,7 @@ Screen Sizes
     
                     #TextBody{
                         font-size: .75rem;
-                        line-height: .5rem;
+                        line-height: .6rem;
                         
                     }
                     .gridsystem1 #RadiationText{
@@ -1094,7 +1094,7 @@ Screen Sizes
                                     }
                                 }
                                 .pMain {
-                                  opacity: 1;
+                                  opacity: 0;
                                   animation: maindashsm 12s ease-out infinite;
                                 }
                                 
@@ -1168,10 +1168,11 @@ Screen Sizes
                                         opacity: 1;
                                       }
                                     }
-                                  #Rocket{
-                                    animation: flyanim 5s 2s ease-in-out forwards ;
+                                    .gridsystem1 .Rocket{
+                                    animation: flyanim2 5s 2s ease-in-out forwards ;
+                                    margin-top: 450px;
                                 } 
-                                  @keyframes flyanim {
+                                  @keyframes flyanim2 {
                                     0% {
                                    transform: translate(0px, 0px);
                                     }
@@ -1183,7 +1184,7 @@ Screen Sizes
 
                     @media (max-width: 800px) {
                         .gridsystem1 .Rocket{
-                            top: 8vw;
+                            top: 9vw;
                         }
                         .sidetext {
                             top: 550px;  
@@ -1288,6 +1289,7 @@ Screen Sizes
                             }
             
                             #TextBody{
+                                margin-top: -10px;
                                 font-size: .35rem;
                                 
                             }
@@ -1349,18 +1351,23 @@ Screen Sizes
                                     margin-left: 1.2vw;
                                 }
                                 #TextTitle{
-                                    font-size: .25rem; 
+                                    font-size: .35rem; 
+                                    line-height: .35rem;
+                                  
                                 }
                 
                                 #h3{
-                                    font-size: .35rem;  
+                                    font-size: .35rem;
+                                    line-height: .36rem;  
                                 }
                                 #h4{
 
                                     font-size: .2rem;
                                 }
                                 #TextBody{
+                                    margin-top: -5px;
                                     font-size: .2rem;
+                                    line-height: .22rem;
                                     
                                 }
                                 .gridsystem1 #RadiationText{
@@ -1386,7 +1393,7 @@ Screen Sizes
                             
                                  .gridsystem1 #LowEarthText{
                                     width: 50vw;
-                                    top: 62vw;
+                                    top: 61vw;
                                     margin-top: 120px;
                                     right: 32vw;
                                     margin-right: 50px;
