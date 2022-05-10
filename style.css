@@ -1117,7 +1117,12 @@ Screen Sizes
                                         opacity: 1;
                                       }
                                   }
-                                   #Train {
+                                   .Train {
+                                    transform: translate(-45%, 0%);
+                                    opacity: 1;
+                                
+                                  }
+                                  .Train.active {
                                     transform: translate(-45%, 0%);
                                     opacity: 1;
                                 
@@ -1125,6 +1130,10 @@ Screen Sizes
 
                             
                                   .pSecond {  
+                                    opacity: 0;
+                                    animation: secdashsm 12s ease-out infinite;
+                                  }
+                                  .pSecond.active {  
                                     opacity: 0;
                                     animation: secdashsm 12s ease-out infinite;
                                   }
@@ -1149,6 +1158,10 @@ Screen Sizes
                             
                                  
                                   .pThird {
+                                    opacity: 0;
+                                    animation: thirddashsm 12s ease-out infinite;
+                                  }
+                                  .pThird.active {
                                     opacity: 0;
                                     animation: thirddashsm 12s ease-out infinite;
                                   }
@@ -1332,9 +1345,9 @@ Screen Sizes
         
                              .topright {
                                 position: absolute;
-                                top: 20vw;
-                                right: 1vw;
-                                margin-right:-50px;
+                                top: 50vw;
+                                right: 20vw;
+                                margin-right: 50px;
                                 z-index: 3010;
                                 }
                                 .gridsystem1 #Planet1{
@@ -1408,14 +1421,14 @@ Screen Sizes
             
                                  .topright {
                                     position: absolute;
-                                    top: 19vw;
-                                    right: 1vw;
-                                    margin-right:-35px;
+                                    top: 52vw;
+                                    right: 8vw;
+                                    margin-right: 35px;
                         
                                     }
                                     .gridsystem1 #Powerstation{
                                         margin-right: 150px;
-                                        margin-top: 60vw;
+                                        margin-top: 65vw;
                                         width: 10vw;
                                         }
                                 }
