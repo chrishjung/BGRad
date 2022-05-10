@@ -1118,6 +1118,10 @@ Screen Sizes
                                   opacity: 0;
                                   animation: maindashsm 12s ease-out infinite;
                                 }
+                                .pMain.active {
+                                    opacity: 0;
+                                    animation: maindashsm 12s ease-out infinite;
+                                  }
                                 
                                   @keyframes maindashsm {
                                     0% {
@@ -1143,9 +1147,22 @@ Screen Sizes
                                   }
                                   .Train.active {
                                     transform: translate(-45%, 0%);
+                                    animation: Trainmovesm 10s ease-in-out alternate infinite;
                                     opacity: 1;
                                 
                                   }
+                                  @keyframes Trainmovesm {
+        
+                                    0% 
+                                    {
+                                        transition: transform;
+                                        transform: translateX(-45%);
+                                    }
+                                    100% {
+                                        transition: transform;
+                                        transform: translateX(-30%);
+                                    }
+                                }
 
                     .gridsystem1 .Rocket{
                     animation: flyanim2 5s 2s ease-in-out forwards ;
