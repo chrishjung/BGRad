@@ -833,6 +833,10 @@ position: absolute;
         #Buildings:hover > #window {
             filter:  saturate(80%) hue-rotate(10deg) brightness(134%) contrast(77%);
         }
+        #Buildings:hover #Headlights {
+            filter:  saturate(80%) hue-rotate(10deg) brightness(134%) contrast(77%);
+            opacity: 0.1;
+        }
         #window:active{
             filter:  saturate(80%) hue-rotate(10deg) brightness(134%) contrast(77%);
         }
