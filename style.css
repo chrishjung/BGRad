@@ -1252,8 +1252,12 @@ Screen Sizes
                                         margin-top: 62vw;
                                         }
 
-                        }
+                        
                         .pSecond {  
+                            opacity: 0;
+                            animation: secdashsm 12s ease-out infinite;
+                          }
+                          .pSecond.active {  
                             opacity: 0;
                             animation: secdashsm 12s ease-out infinite;
                           }
@@ -1282,7 +1286,10 @@ Screen Sizes
                             opacity: 0;
                             animation: thirddashsm 12s ease-out infinite;
                           }
-
+                          .pThird.active {
+                            opacity: 0;
+                            animation: thirddashsm 12s ease-out infinite;
+                          }
 
                           @keyframes thirddashsm {
                             0% {
@@ -1301,6 +1308,7 @@ Screen Sizes
                                 opacity: 1;
                               }
                             }
+                        }
 
                         @media (max-width: 480px) {
                             .sidetext {           
