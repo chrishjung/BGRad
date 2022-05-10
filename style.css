@@ -1207,6 +1207,10 @@ Screen Sizes
                                     animation: flyanim2 5s 2s ease-in-out forwards ;
                                     margin-top: 450px;
                                 } 
+                                .Rocket.active{
+                                    animation: flyanim2 5s 2s ease-in-out forwards ;
+                                    margin-top: 450px;
+                                } 
                                   @keyframes flyanim2 {
                                     0% {
                                    transform: translate(0px, 0px);
