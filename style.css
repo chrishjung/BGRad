@@ -1070,7 +1070,7 @@ Screen Sizes
                         margin-left: 10vw;
                         top: 65vw;
                         margin-top: 200px;
-                            }  
+                        }  
 
                      .topright {
                         position: absolute;
@@ -1119,7 +1119,6 @@ Screen Sizes
                                   animation: maindashsm 12s ease-out infinite;
                                 }
                                 
-                                  }
                                   @keyframes maindashsm {
                                     0% {
                                         opacity: 0;
@@ -1148,8 +1147,6 @@ Screen Sizes
                                 
                                   }
 
-                            
-
                                     .gridsystem1 .Rocket{
                                     animation: flyanim2 5s 2s ease-in-out forwards ;
                                     margin-top: 450px;
@@ -1167,9 +1164,12 @@ Screen Sizes
                                         transform: translate(-30px, -100px);
                                       }
                     }
+                }
 
                     @media (max-width: 800px) {
+
                         .gridsystem1 .Rocket{
+
                             top: 9vw;
                         }
                         .sidetext {
