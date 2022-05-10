@@ -1149,60 +1149,7 @@ Screen Sizes
                                   }
 
                             
-                                  .pSecond {  
-                                    opacity: 0;
-                                    animation: secdashsm 12s ease-out infinite;
-                                  }
-                                  .pSecond.active {  
-                                    opacity: 0;
-                                    animation: secdashsm 12s ease-out infinite;
-                                  }
-                                 
-                                  @keyframes secdashsm {
-                                    0% {
-                                        opacity: 0;
-                                    }
-                                    45% {
-                                        opacity: 0;
-                                      }
-                                      50% {
-                                        opacity: 0;
-                                      }
-                                      75% {
-                                        opacity: 1;
-                                      }
-                                      100% {
-                                        opacity: 1;
-                                      }
-                                    }
-                            
-                                 
-                                  .pThird {
-                                    opacity: 0;
-                                    animation: thirddashsm 12s ease-out infinite;
-                                  }
-                                  .pThird.active {
-                                    opacity: 0;
-                                    animation: thirddashsm 12s ease-out infinite;
-                                  }
 
-                                  @keyframes thirddashsm {
-                                    0% {
-                                        opacity: 0;
-                                    }
-                                      50% {
-                                        opacity: 0;
-                                      }
-                                      75% {
-                                        opacity: 0;
-                                      }
-                                      90% {
-                                        opacity: 1;
-                                      }
-                                      100% {
-                                        opacity: 1;
-                                      }
-                                    }
                                     .gridsystem1 .Rocket{
                                     animation: flyanim2 5s 2s ease-in-out forwards ;
                                     margin-top: 450px;
@@ -1306,6 +1253,54 @@ Screen Sizes
                                         }
 
                         }
+                        .pSecond {  
+                            opacity: 0;
+                            animation: secdashsm 12s ease-out infinite;
+                          }
+                     
+                         
+                          @keyframes secdashsm {
+                            0% {
+                                opacity: 0;
+                            }
+                            45% {
+                                opacity: 0;
+                              }
+                              50% {
+                                opacity: 0;
+                              }
+                              75% {
+                                opacity: 1;
+                              }
+                              100% {
+                                opacity: 1;
+                              }
+                            }
+                    
+                         
+                          .pThird {
+                            opacity: 0;
+                            animation: thirddashsm 12s ease-out infinite;
+                          }
+
+
+                          @keyframes thirddashsm {
+                            0% {
+                                opacity: 0;
+                            }
+                              50% {
+                                opacity: 0;
+                              }
+                              75% {
+                                opacity: 0;
+                              }
+                              90% {
+                                opacity: 1;
+                              }
+                              100% {
+                                opacity: 1;
+                              }
+                            }
 
                         @media (max-width: 480px) {
                             .sidetext {           
