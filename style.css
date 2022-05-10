@@ -559,6 +559,26 @@ position: absolute;
                     stroke-dashoffset: 4000;
                   }
               }
+              #starcloud {
+                
+                animation: starcld 20s ease-in-out alternate infinite;  
+              }
+
+              @keyframes starcld {
+                0% {
+                    transition: transform;
+                  transform: translate(0,0);
+                }
+                50% {
+                    transition: transform;
+                    transform: translate(2%,-2%);
+                  }
+                  100% {
+                    transition: transform;
+                    transform: translate(3%,1%);
+                  }
+              }
+
 
     .gridsystem1 #Powerstation{
         cursor: pointer;
