@@ -1103,6 +1103,8 @@ Screen Sizes
 
                         #Car{
                             animation: Carmovesm .2s linear infinite;
+                            -webkit-transform: translateZ(0);
+                            transform: translateZ(0);
                             opacity: 1;
                             
                                 } 
@@ -1146,11 +1148,15 @@ Screen Sizes
                                   }
                                    .Train {
                                     transform: translate(-45%, 0%);
+                                    -webkit-transform: translateZ(0);
+                            transform: translateZ(0);
                                     opacity: 1;
                                 
                                   }
                                   .Train.active {
                                     transform: translate(-45%, 0%);
+                                    -webkit-transform: translateZ(0);
+                            transform: translateZ(0);
                                     animation: Trainmovesm 10s ease-in-out alternate infinite;
                                     opacity: 1;
                                 
@@ -1170,6 +1176,8 @@ Screen Sizes
 
                     .gridsystem1 .Rocket{
                     animation: flyanim2 5s 2s ease-in-out forwards ;
+                    -webkit-transform: translateZ(0);
+                            transform: translateZ(0);
                     margin-top: 450px;
                     } 
                     .Rocket.active{
