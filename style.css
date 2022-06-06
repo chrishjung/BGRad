@@ -1288,7 +1288,12 @@ Screen Sizes
                                         margin-top: 62vw;
                                         }
 
-                        
+.gridsystem1 #Satellite{
+-webkit-transform: translateZ(0);
+transform: translateZ(0);
+animation: 3s ease-out 0s maindashsm forwards;
+-webkit-animation: 3s ease-out 0s maindashsm forwards;
+}
                         .pSecond {  
                             opacity: 0;
                             animation: secdashsm 12s ease-out infinite;
