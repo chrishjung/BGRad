@@ -825,7 +825,6 @@ position: absolute;
 
 
 #GroundLevel{
-            cursor: pointer;
             width: 350px;
             opacity: 0;
           
@@ -836,14 +835,14 @@ position: absolute;
             margin-top: 0px; 
             z-index: 3000;
           }
-        #Buildings:hover > #window {
+        #Car:hover > #window {
             filter:  saturate(80%) hue-rotate(10deg) brightness(134%) contrast(77%);
         }
-        #Buildings:hover #Headlights {
+        #Car:hover #Headlights {
             filter:  saturate(80%) hue-rotate(10deg) brightness(134%) contrast(77%);
             opacity: 0.1;
         }
-        #Buildings:active > #window{
+        #Car:active > #window{
             filter:  saturate(80%) hue-rotate(10deg) brightness(134%) contrast(77%);
         }
 
@@ -1108,6 +1107,7 @@ Screen Sizes
                         }
 
                         #Car{
+                            cursor: pointer;
                             animation: Carmovesm .2s linear infinite;
                             -webkit-transform: translateZ(0);
                             transform: translateZ(0);
