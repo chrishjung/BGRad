@@ -393,6 +393,7 @@ position: absolute;
         #mars {
             animation: 2s ease-out 0.3s slideInFromLeft;
             animation-fill-mode: forwards;  
+            opacity: 0;
         }
         #bgplanets {
             animation: 1.5s ease-out 0s slideInFromLeft;
@@ -429,12 +430,13 @@ position: absolute;
         right: 3em;
         top: 20vw;
         margin-top: 200px;
-        animation: 1.5s ease-out 0s slideInFromRight;
+        animation: 1.5s ease-out 0s slideInFromRight forwards;
         z-index: 990;
         }
 
     .gridsystem1 #Satellite{
         position: absolute;
+        opacity: 0;
         cursor: pointer;
         right: 7vw;
         margin-right: 25px;
@@ -443,7 +445,7 @@ position: absolute;
         z-index: 3100;
         -webkit-transform: translateZ(0);
         transform: translateZ(0);
-        animation: 1.5s ease-out 0s slideInFromRight;
+        animation: 1.5s ease-out 0s slideInFromRight forwards;
         }
 
         .gridsystem1 #Satellite:hover{
