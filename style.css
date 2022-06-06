@@ -439,6 +439,8 @@ position: absolute;
         top: 33vw;
         margin-top: 175px;
         z-index: 3100;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
         animation: 1.5s ease-out 0s slideInFromRight;
         }
 
