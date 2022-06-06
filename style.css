@@ -885,6 +885,8 @@ position: absolute;
          .Train.active{
              animation: Trainmove 20s  linear;
              animation-fill-mode: forwards;
+             -webkit-transform: translateZ(0);
+             transform: translateZ(0);
              float: left;
              opacity: 1;
             }   
@@ -893,10 +895,14 @@ position: absolute;
                 0% 
                 {
                     transition: transform;
+                    -webkit-transform: translateZ(0);
+                    transform: translateZ(0);
                     transform: translateX(150%);
                 }
                 100% {
                     transition: transform;
+                    -webkit-transform: translateZ(0);
+                    transform: translateZ(0);
                     transform: translateX(-100%);
                 }
             }
@@ -1156,31 +1162,14 @@ Screen Sizes
                                     transform: translate(-45%, 0%);
                                     -webkit-transform: translateZ(0);
                             transform: translateZ(0);
+                            animation: Trainmove 20s  linear;
+                            -webkit-animation: Trainmove 20s  linear;
+                            animation-fill-mode: forwards;
                                     opacity: 1;
                                 
                                   }
-                                  .Train.active {
-                                    transform: translate(-45%, 0%);
-                                    -webkit-transform: translateZ(0);
-                            transform: translateZ(0);
-                                    animation: Trainmovesm 20s ease-in-out infinite;
-                                    opacity: 1;
-                                
-                                  }
-                                  @keyframes Trainmovesm {
-        
-                                    0% 
-                                    {
-                                        transition: transform;
-                                        -webkit-transform: translateZ(0);
-                                        transform: translateZ(0);
-                                        transform: translateX(45%);
-                                    }
-                                    100% {
-                                        transition: transform;
-                                        transform: translateX(-65%);
-                                    }
-                                }
+                                  
+                                  
 
                     .gridsystem1 .Rocket{
                     animation: flyanim2 5s 2s ease-in-out forwards ;
@@ -1286,6 +1275,19 @@ Screen Sizes
                                     .gridsystem1 #Powerstation{
                                         margin-right: 65px;
                                         margin-top: 62vw;
+                                        }
+
+                                        #starsys1{
+                                            animation: none;
+                                        }
+                                        #starsys2{
+                                            animation: none;
+                                        }
+                                        #starsys3{
+                                            animation: none;
+                                        }
+                                        #starsys4{
+                                            animation: none;
                                         }
 
 .gridsystem1 #Satellite{
