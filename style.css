@@ -1159,7 +1159,7 @@ Screen Sizes
                                     transform: translate(-45%, 0%);
                                     -webkit-transform: translateZ(0);
                             transform: translateZ(0);
-                                    animation: Trainmovesm 20s ease-in-out alternate infinite;
+                                    animation: Trainmovesm 20s ease-in-out infinite;
                                     opacity: 1;
                                 
                                   }
@@ -1168,11 +1168,13 @@ Screen Sizes
                                     0% 
                                     {
                                         transition: transform;
+                                        -webkit-transform: translateZ(0);
+                                        transform: translateZ(0);
                                         transform: translateX(45%);
                                     }
                                     100% {
                                         transition: transform;
-                                        transform: translateX(-55%);
+                                        transform: translateX(-65%);
                                     }
                                 }
 
