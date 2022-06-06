@@ -298,6 +298,8 @@ position: absolute;
             {
                 transition: transform;
                 transform: translate(50%);
+                transform: translateZ(0);
+                -webkit-transform: translateZ(0);
                 opacity: 0%;
             }
             100% {
