@@ -1260,6 +1260,10 @@ Screen Sizes
       opacity:0;
     }
   }
+.Headlights {
+  animation: Trainmovesml 1s ease-in-out infinite alternate;
+  -webkit-animation: Trainmovesml 1s ease-in-out infinite alternate;
+}
 
   .gridsystem1 .Rocket {
     animation: flyanim2 5s 2s ease-in-out forwards;
