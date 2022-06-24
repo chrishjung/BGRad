@@ -1164,22 +1164,13 @@ Screen Sizes
 
   #Car {
     cursor: pointer;
-    animation: Carmovesm 0.2s linear infinite;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+    animation: none;
+    -webkit-transform: translate3D(50%,0,0);
+    transform: translate3D(50%,0,0);
     opacity: 1;
   }
 
-  @keyframes Carmovesm {
-    0% {
-      transform: translate(55%, 0%);
-    }
-
-    100% {
-      transform: translate(55%, 0.25%);
-    }
-  }
-
+ 
   .pMain {
     opacity: 0;
     animation: maindashsm 12s ease-out infinite;
