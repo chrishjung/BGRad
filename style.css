@@ -1224,7 +1224,7 @@ Screen Sizes
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     animation: Trainmovesml 5s ease-in 2s;
-    -webkit-animation: Trainmovesml 20s ease-in 5s;
+    -webkit-animation: Trainmovesml 5s ease-in 5s;
     animation-fill-mode: forwards;
     opacity: 0;
   }
