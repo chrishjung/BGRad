@@ -878,7 +878,7 @@ Grid System 1 Style
 }
 
 #GroundLevel {
-  width: 350px;
+  width: 300px;
   opacity: 0;
 }
 
@@ -1142,14 +1142,6 @@ Screen Sizes
     margin-top: 200px;
   }
 
-  .topright {
-    position: absolute;
-    top: 20vw;
-    right: 3vw;
-    margin-right: 0px;
-    z-index: 3010;
-  }
-
   #starline1 {
     animation: none;
   }
@@ -1293,6 +1285,10 @@ Screen Sizes
 }
 
 @media (max-width: 800px) {
+#GroundLevel {
+  width: 200px;
+  opacity: 0;
+}
   .gridsystem1 .Rocket {
     top: 9vw;
   }
@@ -1363,7 +1359,7 @@ Screen Sizes
   .topright {
     position: absolute;
     top: 21vw;
-    right: 2vw;
+    right: 1vw;
     margin-right: -50px;
   }
 
@@ -1553,7 +1549,7 @@ Screen Sizes
     position: absolute;
     top: 50vw;
     right: 20vw;
-    margin-right: 50px;
+    margin-right: 100px;
     z-index: 3010;
   }
 
@@ -1625,8 +1621,8 @@ Screen Sizes
   .topright {
     position: absolute;
     top: 52vw;
-    right: 8vw;
-    margin-right: 35px;
+    right: 9vw;
+    margin-right: 125px;
   }
 
   .gridsystem1 #Powerstation {
