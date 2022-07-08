@@ -1214,16 +1214,16 @@ Screen Sizes
    .Train {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    animation: Trainmovesml 5s ease-in 2s;
-    -webkit-animation: Trainmovesml 5s ease-in 2s;
+    animation: Trainmovesml 5s ease-in 4s;
+    -webkit-animation: Trainmovesml 5s ease-in 4s;
     animation-fill-mode: forwards;
     opacity: 0;
   }
    .Train2 {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    animation: Train2movesml 6s linear;
-    -webkit-animation: Train2movesml 6s linear;
+    animation: Train2movesml 8s linear;
+    -webkit-animation: Train2movesml 8s linear;
     animation-fill-mode: forwards;
     opacity: 0;
   }
@@ -1231,6 +1231,7 @@ Screen Sizes
     0% {
       opacity:0;
     }
+    
 
     100% {
       opacity:1;
@@ -1240,7 +1241,10 @@ Screen Sizes
     0% {
       opacity:0;
     }
-    40% {
+        20% {
+      opacity:0;
+    }
+    50% {
       opacity:1;
     }
     90% {
