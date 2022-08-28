@@ -17,11 +17,6 @@ BODY STYLE
   overflow-y: auto;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .sideline {
   position: absolute;
   height: 100vw;
@@ -80,6 +75,65 @@ Header Style
   animation: 1.5s ease-out 0s slideInFromTop1;
   z-index: 900;
 }
+/* =================
+Welcome Modal
+===================*/
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: 200ms ease-in-out;
+  border: 1px solid white;
+  border-radius: 10px;
+  z-index: 9000;
+  background-color: black;
+  width: 500px;
+  max-width: 80%;
+}
+
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+.modal-welcome {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: all;
+  z-index: 8999;
+}
+
+
 
 /* =================
 Grid System 1 Style
@@ -114,7 +168,7 @@ Grid System 1 Style
   letter-spacing: 2px;
   font-size: 24px;
   text-transform: uppercase;
-  padding: 0px 30px 0px;
+  padding: 10px 15px;
   line-height: 1em;
   color: white;
   transition: opacity 0.7s;
@@ -142,7 +196,7 @@ Grid System 1 Style
   font-weight: 100;
   font-style: normal;
   font-size: 18px;
-  padding: 10px 30px 0px;
+  padding: 10px 15px;
   line-height: 30px;
   color: white;
   transition: opacity 0.7s;
@@ -888,13 +942,10 @@ Grid System 1 Style
   z-index: 3000;
 }
 
-
-
 #Car:hover #Headlights {
   filter: saturate(80%) hue-rotate(10deg) brightness(134%) contrast(77%);
   opacity: 0.1;
 }
-
 
 #Airplane {
   cursor: pointer;
@@ -931,9 +982,9 @@ Grid System 1 Style
 .Train {
   opacity: 0;
 }
-  .Train2 {
-    opacity: 0;
-  }
+.Train2 {
+  opacity: 0;
+}
 
 .Train.active {
   animation: Trainmove 20s linear;
@@ -1165,12 +1216,11 @@ Screen Sizes
   #Car {
     cursor: pointer;
     animation: none;
-    -webkit-transform: translate3D(50%,0,0);
-    transform: translate3D(50%,0,0);
+    -webkit-transform: translate3D(50%, 0, 0);
+    transform: translate3D(50%, 0, 0);
     opacity: 1;
   }
 
- 
   .pMain {
     opacity: 0;
     animation: maindashsm 12s ease-out infinite;
@@ -1211,7 +1261,7 @@ Screen Sizes
     animation-fill-mode: forwards;
     opacity: 0;
   }
-   .Train {
+  .Train {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     animation: Trainmovesml 5s ease-in 4s;
@@ -1219,7 +1269,7 @@ Screen Sizes
     animation-fill-mode: forwards;
     opacity: 0;
   }
-   .Train2 {
+  .Train2 {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     animation: Train2movesml 8s linear;
@@ -1227,38 +1277,37 @@ Screen Sizes
     animation-fill-mode: forwards;
     opacity: 0;
   }
- @keyframes Trainmovesml {
+  @keyframes Trainmovesml {
     0% {
-      opacity:0;
+      opacity: 0;
     }
-    
 
     100% {
-      opacity:1;
+      opacity: 1;
     }
   }
-   @keyframes Train2movesml {
+  @keyframes Train2movesml {
     0% {
-      opacity:0;
+      opacity: 0;
     }
-        20% {
-      opacity:0;
+    20% {
+      opacity: 0;
     }
     50% {
-      opacity:1;
+      opacity: 1;
     }
     90% {
-      opacity:1;
+      opacity: 1;
     }
 
     100% {
-      opacity:0;
+      opacity: 0;
     }
   }
-.Headlights {
-  animation: Trainmovesml 1s ease-in-out infinite alternate;
-  -webkit-animation: Trainmovesml 1s ease-in-out infinite alternate;
-}
+  .Headlights {
+    animation: Trainmovesml 1s ease-in-out infinite alternate;
+    -webkit-animation: Trainmovesml 1s ease-in-out infinite alternate;
+  }
 
   .gridsystem1 .Rocket {
     animation: flyanim2 5s 2s ease-in-out forwards;
@@ -1284,10 +1333,10 @@ Screen Sizes
 }
 
 @media (max-width: 800px) {
-#GroundLevel {
-  width: 200px;
-  opacity: 0;
-}
+  #GroundLevel {
+    width: 200px;
+    opacity: 0;
+  }
   .gridsystem1 .Rocket {
     top: 9vw;
   }
@@ -1352,8 +1401,8 @@ Screen Sizes
     margin-top: 220px;
   }
   #Airplane {
-  width: 35vw;
-}
+    width: 35vw;
+  }
 
   .topright {
     position: absolute;
@@ -1377,17 +1426,15 @@ Screen Sizes
     margin-right: 40px;
     margin-top: 62vw;
   }
-   .powerstation {
+  .powerstation {
     width: 17vw;
   }
-  .starsystem{
-  width: 50vw;
+  .starsystem {
+    width: 50vw;
   }
   .gridsystem1 #Starsystem {
-
-  margin-top: 60px;
- 
-}
+    margin-top: 60px;
+  }
 
   #starsys1 {
     animation: none;
@@ -1409,9 +1456,9 @@ Screen Sizes
     width: 45vw;
   }
   .gridsystem1 #Satellite {
-  right: 1vw;
-  margin-right: 2px;
-}
+    right: 1vw;
+    margin-right: 2px;
+  }
 
   .pSecond {
     opacity: 0;
@@ -1479,9 +1526,9 @@ Screen Sizes
 }
 
 @media (max-width: 480px) {
-.sun {
-  width: 40vw;
-}
+  .sun {
+    width: 40vw;
+  }
   .sidetext {
     top: 400px;
     margin-left: 2vw;

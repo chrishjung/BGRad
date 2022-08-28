@@ -1,73 +1,70 @@
-
-
-function displayRadiationText()
-{
-    document.getElementById('RadiationText').style=" transition: opacity 2s; opacity:1"; 
-    animationDuration = "1s";
+function closeModal() {
+  document.getElementById("modal").style =
+    "  transform: translate(-50%, -50%) scale(0);";
+  document.getElementById("overlay").style =
+    " transition: opacity 2s; opacity:0; pointer-events: none;";
 }
 
-function hideRadiationText()
-{
-    document.getElementById('RadiationText').style="transition: opacity 0.5s; opacity:0";
-
+function displayRadiationText() {
+  document.getElementById("RadiationText").style =
+    " transition: opacity 2s; opacity:1";
+  animationDuration = "1s";
 }
 
-function displayDeepSpaceText()
-{
-    document.getElementById('DeepSpaceText').style=" transition: opacity 2s; opacity:1"; 
-    animationDuration = "1s";
+function hideRadiationText() {
+  document.getElementById("RadiationText").style =
+    "transition: opacity 0.5s; opacity:0";
 }
 
-function hideDeepSpaceText()
-{
-    document.getElementById('DeepSpaceText').style="transition: opacity 0.5s; opacity:0";
-
+function displayDeepSpaceText() {
+  document.getElementById("DeepSpaceText").style =
+    " transition: opacity 2s; opacity:1";
+  animationDuration = "1s";
 }
 
-function displayLowEarthText()
-{
-    document.getElementById('LowEarthText').style=" transition: opacity 2s; opacity:1"; 
-    animationDuration = "1s";
+function hideDeepSpaceText() {
+  document.getElementById("DeepSpaceText").style =
+    "transition: opacity 0.5s; opacity:0";
 }
 
-function hideLowEarthText()
-{
-    document.getElementById('LowEarthText').style="transition: opacity 0.5s; opacity:0";
-
+function displayLowEarthText() {
+  document.getElementById("LowEarthText").style =
+    " transition: opacity 2s; opacity:1";
+  animationDuration = "1s";
 }
 
-function AirplaneText()
-{
-    document.getElementById('AirplaneText').style=" transition: opacity 2s; opacity:1"; 
-    animationDuration = "1s";
+function hideLowEarthText() {
+  document.getElementById("LowEarthText").style =
+    "transition: opacity 0.5s; opacity:0";
 }
 
-function hideAirplaneText()
-{
-    document.getElementById('AirplaneText').style="transition: opacity 0.5s; opacity:0";
-
-}
-function displayGeoText()
-{
-    document.getElementById('GeoText').style=" transition: opacity 2s; opacity:1"; 
-    animationDuration = "1s";
+function AirplaneText() {
+  document.getElementById("AirplaneText").style =
+    " transition: opacity 2s; opacity:1";
+  animationDuration = "1s";
 }
 
-function hideGeoText()
-{
-    document.getElementById('GeoText').style="transition: opacity 0.5s; opacity:0";
-
+function hideAirplaneText() {
+  document.getElementById("AirplaneText").style =
+    "transition: opacity 0.5s; opacity:0";
 }
-function GroundLevelText()
-{
-    document.getElementById('GroundLevel').style=" transition: opacity 2s; opacity:1"; 
-    animationDuration = "1s";
-}
-
-function hideGroundLevelText()
-{
-    document.getElementById('GroundLevel').style="transition: opacity 0.5s; opacity:0";
-
+function displayGeoText() {
+  document.getElementById("GeoText").style =
+    " transition: opacity 2s; opacity:1";
+  animationDuration = "1s";
 }
 
+function hideGeoText() {
+  document.getElementById("GeoText").style =
+    "transition: opacity 0.5s; opacity:0";
+}
+function GroundLevelText() {
+  document.getElementById("GroundLevel").style =
+    " transition: opacity 2s; opacity:1";
+  animationDuration = "1s";
+}
 
+function hideGroundLevelText() {
+  document.getElementById("GroundLevel").style =
+    "transition: opacity 0.5s; opacity:0";
+}

@@ -8,10 +8,6 @@
    <title>Triumf Background Radiation Page</title>
    <link rel="stylesheet" href="./style.css">
    <script src="./data.js"></script>
-
-
-
-
 </head>
 
 <body class="ba">
@@ -28,6 +24,18 @@
       </div>
 
 
+ <div class="modal" id="modal">
+      <div class="modal-header" id="h3">
+        <div class="title">Background Radiation</div>
+        <button onclick="closeModal()" class="close-button">&times;</button>
+      </div>
+      <div class="modal-welcome" id="TextBody">
+          Welcome to the Triumf Background Cosmic Radiation Page. Click on an
+          interactive animated element to learn more about background radiation.
+          Can you find all 6?
+      </div>
+    </div>
+    <div id="overlay"></div>
 
       <div class="gridsystem1">
          <section id="RadiationText" onclick="hideRadiationText()">
