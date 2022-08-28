@@ -29,7 +29,7 @@ BODY STYLE
 .sidetext {
   transform-origin: 0 0;
   top: 85%;
-  margin-left: 3.1vw;
+  margin-left: 2.5vw;
 }
 
 html,
@@ -53,7 +53,7 @@ Header Style
   letter-spacing: 1.5px;
   font-weight: 300;
   font-size: 16px;
-  padding: 10px 15px;
+  padding: 10px 15px, 0px;
   line-height: 30px;
   color: white;
   opacity: 0.5;
@@ -149,7 +149,7 @@ Grid System 1 Style
   letter-spacing: 2px;
   font-size: 20px;
   text-transform: uppercase;
-  padding: 10px 15px;
+  padding: 10px 15px 0px;
   line-height: 1.75rem;
   color: white;
   transition: opacity 0.7s;
@@ -181,7 +181,7 @@ Grid System 1 Style
   position: fixed;
   letter-spacing: 2px;
   font-size: 24px;
-  padding: 10px 15px;
+  padding: 0px 0px;
   color: white;
   transition: opacity 0.7s;
   z-index: 7000;
@@ -440,8 +440,6 @@ Grid System 1 Style
   color: white;
   left: 0px;
   top: 0px;
-  margin-top: 500px;
-  margin-left: 83px;
   position: absolute;
   z-index: 1010;
 }
@@ -666,7 +664,7 @@ Grid System 1 Style
   cursor: pointer;
   perspective: 200;
   position: absolute;
-  right: 22vw;
+  right: 18vw;
   margin-right: 80px;
   margin-top: 60vw;
   z-index: 2050;
@@ -1042,7 +1040,7 @@ Screen Sizes
     letter-spacing: 2px;
     font-size: 20px;
     text-transform: uppercase;
-    padding: 10px 15px;
+    padding: 10px 15px 0px;
     line-height: 1.75rem;
     color: white;
     transition: opacity 0.7s;
@@ -1050,7 +1048,7 @@ Screen Sizes
 
   .sidetext {
     top: 75%;
-    margin-left: 2.4vw;
+    margin-left: 2.1vw;
   }
 
   #h3 {
@@ -1059,7 +1057,7 @@ Screen Sizes
     letter-spacing: 2px;
     font-size: 24px;
     text-transform: uppercase;
-    padding: 10px 15px;
+    padding: 10px 15px 0px;
     line-height: 1em;
     color: white;
     transition: opacity 0.7s;
@@ -1075,7 +1073,7 @@ Screen Sizes
     font-weight: 100;
     font-style: normal;
     font-size: 18px;
-    padding: 10px 15px;
+    padding: 10px 15px 0px;
     line-height: 30px;
     color: white;
     transition: opacity 0.7s;
@@ -1132,7 +1130,7 @@ Screen Sizes
 @media (max-width: 1000px) {
   .sidetext {
     top: 70%;
-    margin-left: 2.5vw;
+    margin-left: 1.6vw;
   }
 
   #TextTitle {
@@ -1340,7 +1338,7 @@ Screen Sizes
 
   .sidetext {
     top: 550px;
-    margin-left: 2.3vw;
+    margin-left: 1.6vw;
   }
 
   #TextTitle {
@@ -1403,8 +1401,8 @@ Screen Sizes
 
   .topright {
     position: absolute;
-    top: 21vw;
-    right: 1vw;
+    top: 17vw;
+    right: 7vw;
     margin-right: -50px;
   }
 
@@ -1528,7 +1526,7 @@ Screen Sizes
   }
   .sidetext {
     top: 400px;
-    margin-left: 2vw;
+    margin-left: 1.2vw;
   }
 
   .smalltext {
@@ -1606,7 +1604,7 @@ Screen Sizes
 @media (max-width: 380px) {
   .sidetext {
     top: 400px;
-    margin-left: 1.2vw;
+    margin-left: 0.3vw;
   }
 
   #TextTitle {
@@ -1622,7 +1620,7 @@ Screen Sizes
   }
 
   #TextBody {
-    margin-top: -5px;
+    margin-top: -15px;
     font-size: 0.2rem;
   }
 
