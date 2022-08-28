@@ -121,7 +121,7 @@ Welcome Modal
 
 #overlay {
   position: fixed;
-  opacity: 0;
+  opacity: 1;
   transition: 200ms ease-in-out;
   top: 0;
   left: 0;
