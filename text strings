@@ -1,0 +1,33 @@
+//text strings to be integrated as introductory preface and integrated into artwork display 
+
+//ARTWORK ENGLISH HEADER
+  RADIATION ENVIRONMENTS  
+  Sources of radiation include galactic cosmic rays, solar energetic particles, and the Earth’s radiation belts 
+
+//ARTWORK ENGLISH BODY 
+  DEEP SPACE  
+  up to 300,000 particles/cm2/h, mainly protons with some α particles and heavier ions
+  GEOSYNCHRONOUS ORBIT 
+  up to 500,000 particles/cm2/h, mainly electrons and protons
+  LOW EARTH ORBIT  
+  up to 100,000 particles/ cm2/h, mainly protons and electrons 
+  AIRPLANE ALTITUDES 
+  6000 – 9000 neutrons/cm2/h 
+  GROUND LEVEL 
+  10-15 neutrons/cm2/h, ~60 muons /cm2/h 
+  
+//ARTWORK FRENCH HEADER
+  LE RAYONNEMENT RADIOACTIF DANS DIVERS ENVIRONNEMENTS
+  La radiation environnementale naturelle provient de plusieurs sources telles que le rayonnement cosmique extragalactique, le vent solaire et les ceintures de radiation qui encerclent la Terre
+
+//ARTWORK FRENCH BODY 
+  DANS ESPACE LOINTAIN 
+  jusqu’à 300 000 particules/cm2/h, surtout des protons, mais contient aussi des particules α et des ions lourds 
+  EN ORBITE GÉOSTATIONNAIRE
+  jusqu'à 500 000 particules/cm2/h, surtout des électrons et des protons
+  EN ORBITE TERRESTRE BASSE 
+  jusqu’à 100 000 particules/cm2/h, surtout des protons et des électrons
+  AUX ALTITUDES DE VOL DES AVIONS 
+  6000-9000 neutrons/cm2/h 
+  AU SOL 
+  10-15 neutrons/cm2/h, ~60 muons /cm2/h 
