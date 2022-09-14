@@ -1676,7 +1676,7 @@ Screen Sizes
   }
 
   .gridsystem1 #RadiationText {
-    width: 40vw;
+    width: 50vw;
     top: 5vw;
     margin-top: 70px;
     left: 6vw;
@@ -1690,16 +1690,16 @@ Screen Sizes
   }
 
   .gridsystem1 #GeoText {
-    width: 50vw;
+    width: 42vw;
     left: 14vw;
-    margin-left: 20vw;
+    margin-left: 30vw;
     top: 20vw;
     margin-top: 130px;
   }
 
   .gridsystem1 #LowEarthText {
     width: 40vw;
-    top: 61vw;
+    top: 50vw;
     margin-top: 120px;
     right: 40vw;
     margin-right: 50px;
