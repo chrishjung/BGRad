@@ -1569,7 +1569,7 @@ Screen Sizes
 
 @media (max-width: 480px) {
   .modal {
-    width: 80vw;
+    width: 85vw;
     max-width: 90%;
     text-align: center;
   }
