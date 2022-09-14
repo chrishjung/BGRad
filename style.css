@@ -5,7 +5,6 @@ BODY STYLE
 ===================*/
 
 .ba {
-  background: rgb(15, 15, 36);
   background: linear-gradient(
     rgba(15, 15, 36, 1) 10%,
     rgba(44, 32, 84, 1) 50%,
@@ -88,9 +87,14 @@ Welcome Modal
   border: 1px solid white;
   border-radius: 10px;
   z-index: 9000;
-  background-color: black;
-  width: 500px;
+  background: linear-gradient(
+    rgba(15, 15, 36, 1) 10%,
+    rgba(44, 32, 84, 1) 60%,
+    rgba(114, 65, 93, 1) 100%
+  );
+  width: 70vw;
   max-width: 80%;
+  text-align: center;
 }
 
 .modal-header {
@@ -99,14 +103,8 @@ Welcome Modal
   align-items: center;
 }
 
-.modal-header .title {
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
 .modal-header .close-button {
   cursor: pointer;
-
   border: none;
   outline: none;
   background: none;
@@ -117,6 +115,22 @@ Welcome Modal
 
 .modal-welcome {
   padding: 10px 15px;
+  font-family: Helvetica;
+  letter-spacing: 1.5px;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 18px;
+  padding: 10px 15px;
+  line-height: 30px;
+  color: white;
+  transition: opacity 0.7s;
+}
+
+.language-buttons {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
 }
 
 #overlay {
@@ -130,6 +144,13 @@ Welcome Modal
   background-color: rgba(0, 0, 0, 0.5);
   pointer-events: all;
   z-index: 8999;
+}
+.en {
+  display: block;
+}
+
+.fr {
+  display: none;
 }
 
 /* =================
@@ -145,11 +166,12 @@ Grid System 1 Style
 /* Grid System 1 Text */
 #TextTitle {
   font-family: Almarai;
-  font-weight: 2px;
+  font-weight: 500px;
   letter-spacing: 2px;
   font-size: 20px;
   text-transform: uppercase;
-  padding: 10px 15px 0px;
+  padding: 5px 15px 0px;
+  margin-bottom: 0px;
   line-height: 1.75rem;
   color: white;
   transition: opacity 0.7s;
@@ -161,12 +183,13 @@ Grid System 1 Style
 
 #h3 {
   font-family: Almarai;
-  font-weight: 2px;
+  margin-bottom: 0px;
+  font-weight: 600;
   letter-spacing: 2px;
   font-size: 24px;
   text-transform: uppercase;
-  padding: 10px 15px;
-  line-height: 1em;
+  padding: 0px 15px;
+  line-height: 1.1em;
   color: white;
   transition: opacity 0.7s;
 }
@@ -189,14 +212,14 @@ Grid System 1 Style
 
 #TextBody {
   font-family: Helvetica;
-  letter-spacing: 1.5px;
-  font-weight: 100;
+  letter-spacing: 1.8px;
+  font-weight: 400;
   font-style: normal;
   font-size: 18px;
-  padding: 10px 15px;
-  line-height: 30px;
+  line-height: 28px;
   color: white;
   transition: opacity 0.7s;
+  padding: 0px 15px;
 }
 
 #TextBody:hover {
@@ -1036,14 +1059,12 @@ Screen Sizes
 @media (max-width: 1200px) {
   #TextTitle {
     font-family: Almarai;
-    font-weight: 2px;
+    font-weight: 500;
     letter-spacing: 2px;
-    font-size: 20px;
-    text-transform: uppercase;
-    padding: 10px 15px 0px;
+    font-size: 18px;
     line-height: 1.75rem;
-    color: white;
-    transition: opacity 0.7s;
+    padding: 0px 15px;
+    
   }
 
   .sidetext {
@@ -1053,11 +1074,12 @@ Screen Sizes
 
   #h3 {
     font-family: Almarai;
-    font-weight: 2px;
+    font-weight: 600;
     letter-spacing: 2px;
     font-size: 24px;
     text-transform: uppercase;
-    padding: 10px 15px 0px;
+    padding: 0px 15px;
+    margin-bottom: 0px;
     line-height: 1em;
     color: white;
     transition: opacity 0.7s;
@@ -1069,14 +1091,18 @@ Screen Sizes
 
   #TextBody {
     font-family: Helvetica;
+    margin-top: 0px;
     letter-spacing: 1.5px;
     font-weight: 100;
     font-style: normal;
     font-size: 18px;
-    padding: 10px 15px 0px;
     line-height: 30px;
     color: white;
     transition: opacity 0.7s;
+  }
+  .modal-welcome {
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .gridsystem1 #RadiationText {
@@ -1134,13 +1160,15 @@ Screen Sizes
   }
 
   #TextTitle {
-    font-size: 1.25rem;
+    font-size: 1.05rem;
     line-height: 1.25rem;
+    padding: 0px 5px;
   }
 
   #h3 {
-    font-size: 1.75rem;
+    font-size: 1.15rem;
     line-height: 1.5rem;
+    padding: 0px 5px;
   }
 
   #h4 {
@@ -1148,10 +1176,18 @@ Screen Sizes
   }
 
   #TextBody {
-    font-size: 0.75rem;
-    line-height: 0.6rem;
+    font-size: 0.8rem;
+    line-height: 0.9rem;
+    padding: 0px 5px;
   }
 
+  .modal-welcome {
+    letter-spacing: 1.2px;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 14px;
+  }
   .gridsystem1 #RadiationText {
     width: 40vw;
     top: 5vw;
@@ -1342,13 +1378,17 @@ Screen Sizes
   }
 
   #TextTitle {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     line-height: 0.8rem;
+    margin-left: 0px;
+    padding-left: 4px;
   }
 
   #h3 {
-    font-size: 1rem;
+    font-size: 0.85rem;
     line-height: 1rem;
+    margin-left: 0px;
+    padding-left: 4px;
   }
 
   #h4 {
@@ -1358,6 +1398,14 @@ Screen Sizes
   #TextBody {
     font-size: 0.5rem;
     line-height: 0.5rem;
+  }
+  .modal-welcome {
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 10px;
+    line-height: 11px;
   }
 
   .gridsystem1 #RadiationText {
@@ -1383,10 +1431,10 @@ Screen Sizes
   }
 
   .gridsystem1 #LowEarthText {
-    width: 50vw;
+    width: 37vw;
     top: 60vw;
     margin-top: 120px;
-    right: 32vw;
+    right: 44vw;
     margin-right: 50px;
   }
 
@@ -1535,10 +1583,12 @@ Screen Sizes
 
   #TextTitle {
     font-size: 0.5rem;
+    padding: 0px 3px;
   }
 
   #h3 {
-    font-size: 0.75rem;
+    font-size: 0.6rem;
+    padding: 0px 5px;
   }
 
   #h4 {
@@ -1546,7 +1596,6 @@ Screen Sizes
   }
 
   #TextBody {
-    margin-top: -10px;
     font-size: 0.35rem;
   }
 
@@ -1573,11 +1622,11 @@ Screen Sizes
   }
 
   .gridsystem1 #LowEarthText {
-    width: 50vw;
+    width: 40vw;
     top: 62vw;
     margin-top: 110px;
-    right: 32vw;
-    margin-right: 50px;
+    right: 43vw;
+    
   }
 
   .gridsystem1 #AirplaneText {
@@ -1620,7 +1669,6 @@ Screen Sizes
   }
 
   #TextBody {
-    margin-top: -15px;
     font-size: 0.2rem;
   }
 
@@ -1647,10 +1695,10 @@ Screen Sizes
   }
 
   .gridsystem1 #LowEarthText {
-    width: 50vw;
+    width: 40vw;
     top: 61vw;
     margin-top: 120px;
-    right: 32vw;
+    right: 40vw;
     margin-right: 50px;
   }
 

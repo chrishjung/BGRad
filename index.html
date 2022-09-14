@@ -19,30 +19,55 @@
       <div class="header">
          <img class="homebutton" src="./icon/TRIUMF_Logo_DOL.svg" style="width: 305px; padding: 20px 10px">
          <img class="menubutton" src="./icon/Menuicon.svg" style="height: 14px; padding: 29px 20px; float: right;">
-         <a class="smalltext" href="#en" data-reload style="float: right;">En</a>
-         <a class="smalltext" href="#fr" data-reload style="float: right;">Fr</a>
+   
       </div>
 
 
  <div class="modal" id="modal">
-      <div class="modal-header" id="h3">
-        <div class="title">Background Radiation</div>
+      <div class="modal-header" id="h3" style="margin-top: 15px;padding-bottom: 0px;">
+        <div></div>
+        <div class="h3" style=" text-align: center">Background Radiation</div>
         <button onclick="closeModal()" class="close-button">&times;</button>
       </div>
-      <div class="modal-welcome" id="TextBody">
-          Welcome to the Triumf Background Cosmic Radiation Page. Click on an
-          interactive animated element to learn more about background radiation.
-          Can you find all 6?
+      <div class="modal-welcome" style="padding-top: 0px;">
+      <div class="en">
+            <p>This artwork illustrates the sources, the types, and the intensity of the background radiation that is present in natural environments of interest for the scientist-users of TRIUMF.  
+  
+  The TRIUMF Irradiation Facilities (PIF & NIF) operate beamline infrastructure that enables commercial and research use of protons and neutrons beams of various energies to a wide community of users from around the world.  <br><br>
+  
+  Electronic components can be damaged and fail when energetic particles in the environment interact with the atoms of the material in the components.  The proton and neutron beams of the TRIUMF Irradiation Facilities reproduce the natural environment but at a much higher intensity, to quickly check if and how electronic components are likely to fail.  For example, the total radiation dose of a 5-year space mission can be achieved in just a few hours, without needing to go to space! <br><br>
+ 
+  For nearly 25 years, one of these beamlines was used to extract a lower energy proton beam from TRIUMF’s main cyclotron for the proton radiotherapy clinical treatment of severe cases of ocular melanoma, in collaboration with BC Cancer and UBC Ophthalmology. This was the first clinical use of proton beams for cancer treatment in Canada.<br><br>
+  
+  In 2021, this infographic was awarded a Registered Graphic Designers, RGD In-House award for Science Communication Design. <br><br>
+  
+  Click on the animated objects to learn more about background radiation at its elevation in the atmosphere. <br></p>
+  </div>
+  <div class="fr"><p>Cette illustration présente un aperçu des sources, des types et de l’intensité de la radioactivité naturelle présente dans divers environnements qui intéressent les scientifiques-utilisateurs de TRIUMF. <br><br>
+
+  Les installations d’irradiation PIF & NIF de TRIUMF comportent des lignes de faisceau aux protons et aux neutrons de diverses énergies. Elles sont utilisées à des fins commerciales ou de recherche par une vaste communauté d’utilisateurs qui viennent de partout dans le monde.<br><br>
+  
+  Les composantes électroniques peuvent être endommagées lorsqu’une particule énergétique interagit avec un atome du matériel de ces composantes.  Les faisceaux de protons et de neutrons des installations d’irradiation de TRIUMF sont semblables à l’environnement de rayonnement naturel mais ils sont d’une intensité beaucoup plus élevée.  Cela nous permet d’étudier rapidement le comportement de ces composantes en présence de radiation.  Ainsi, par exemple, on peut exposer en quelques heures une composante électronique à une dose totale de radiation qui correspond à une mission spatiale de 5 ans, sans quitter la Terre! <br><br>
+
+  Pendant 25 ans, l’une de ces lignes de faisceau a aussi été utilisée pour la radiothérapie aux protons de patients atteints de mélanome oculaire.  Opéré en collaboration avec BC Cancer et le département d’ophtalmologie de UBC, ce centre de traitement, utilisant un faisceau de protons extrait à basse énergie du cyclotron principal de TRIUMF, a été le premier centre clinique de radiothérapie aux protons en opération au Canada. <br><br>
+
+  En 2021, l’illustration a remporté un prix “RGD In-House Award” de la “Association of Registered Graphic Designers” du Canada dans la catégorie “Science Communication Design”.</p></div>
+
+  <div class="language-buttons"><p id="TextBody" onclick="changeEnglish()">English</p><p>&nbsp|&nbsp</p><p id="TextBody" onclick="changeFrench()">Français</p></div>
       </div>
     </div>
     <div id="overlay"></div>
 
       <div class="gridsystem1">
-         <section id="RadiationText" onclick="hideRadiationText()">
+        <section id="RadiationText" onclick="hideRadiationText()">
+         <div class = "en">
             <p id="h3">Radiation Environments</p>
             <p id="TextBody">Sources of radiation include galactic cosmic rays, solar energy particles, and the Earth's
                radiation belt.
-            </p>
+            </p></div>
+            <div class = "fr">
+            <p id="h3">LE RAYONNEMENT RADIOACTIF DANS DIVERS ENVIRONNEMENTS</p><p id="TextBody">La radiation environnementale naturelle provient de plusieurs sources telles que le rayonnement cosmique extragalactique, le vent solaire et les ceintures de radiation qui encerclent la Terre.
+            </p></div>
          </section>
          <div id="sunanim" onclick="displayRadiationText()">
             <svg class="sun" width="25vw" viewBox="0 0 1306 1262" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1519,10 +1544,17 @@
             </svg>
          </div>
          <section id="DeepSpaceText" class="aos" onclick="hideDeepSpaceText()">
+         <div class="en">
             <p id="TextTitle">Deep Space</p>
             <p id="TextBody">Deep space up to 300,000 particles/cm<sup>2</sup>/h, mainly protons with some particles and
-               heavier ions.
+               heavier ions
             </p>
+            </div>
+             <div class="fr">
+            <p id="TextTitle">DANS ESPACE LOINTAIN</p>
+            <p id="TextBody">jusqu’à 300 000 particules/cm<sup>2</sup>/h, surtout des protons, mais contient aussi des particules α et des ions lourds 
+            </p>
+            </div>
          </section>
          <section id="Skylayer3">
             <svg width="30vw" viewBox="0 0 553 700" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2156,9 +2188,14 @@
          </span>
 
          <section id="GeoText" onclick="hideGeoText()">
-            <p id="TextTitle">Geosynchronous Orbit</p>
-            <p id="TextBody">Up to 500,000 particles/cm<sup>2</sup>/h, mainly electrons and protons.
+            <div class="en"><p id="TextTitle">Geosynchronous Orbit</p>
+            <p id="TextBody">Up to 500,000 particles/cm<sup>2</sup>/h, mainly electrons and protons
             </p>
+            </div>
+             <div class="fr"><p id="TextTitle">EN ORBITE GÉOSTATIONNAIRE</p>
+            <p id="TextBody">jusqu'à 500 000 particules/cm<sup>2</sup>/h, surtout des électrons et des protons
+            </p>
+            </div>
          </section>
 
          <span id="Rocket" class="Rocket">
@@ -2281,9 +2318,16 @@
          </span>
 
          <section id="LowEarthText" onclick="hideLowEarthText()">
+           <div class="en">
             <p id="TextTitle">Low Earth Orbit</p>
-            <p id="TextBody">Up to 100,000 particles/cm<sup>2</sup>/h, mainly protons and electrons.
+            <p id="TextBody">Up to 100,000 particles/cm<sup>2</sup>/h, mainly protons and electrons
             </p>
+            </div>
+             <div class="fr">
+            <p id="TextTitle">EN ORBITE TERRESTRE BASSE</p>
+            <p id="TextBody">jusqu’à 100 000 particules/cm<sup>2</sup>/h, surtout des protons et des électrons
+            </p>
+            </div>
          </section>
          <span id="Particle">
             <svg width="65vw"  viewBox="0 0 3248 4716" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2343,18 +2387,32 @@
          </span>
 
          <section id="AirplaneText" onclick="hideAirplaneText()">
+            <div class="en">
             <p id="TextTitle">Airplane Altitude</p>
-            <p id="TextBody">6000-9000 neutrons/cm<sup>2</sup>/h.
+            <p id="TextBody">6000 - 9000 neutrons/cm<sup>2</sup>/h
             </p>
+            </div>
+            <div class="fr">
+            <p id="TextTitle">AUX ALTITUDES DE VOL DES AVIONS</p>
+            <p id="TextBody">6000 - 9000 neutrons/cm<sup>2</sup>/h.
+            </p>
+            </div>
          </section>
 
       </div>
       <div class="gridsystem2">
          <div class="topright">
             <section id="GroundLevel" onclick="hideGroundLevelText()">
+            <div class="en">
                <p id="TextTitle">Ground Level</p>
                <p id="TextBody">10-15 neutrons/cm<sup>2</sup>/h, ~ 60 muons/cm<sup>2</sup>/h.
                </p>
+               </div>
+               <div class="fr">
+               <p id="TextTitle">AU SOL</p>
+               <p id="TextBody">10-15 neutrons/cm<sup>2</sup>/h, ~ 60 muons/cm<sup>2</sup>/h.
+               </p>
+               </div>
             </section>
          </div>
 
@@ -14113,21 +14171,21 @@
 <stop offset="0.6989" stop-color="#182740"/>
 <stop offset="1" stop-color="#132B41"/>
 </linearGradient>
-<linearGradient id="paint1207_linear_16_1190" x1="nan" y1="nan" x2="nan" y2="nan" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint1207_linear_16_1190" x1="0" y1="0" x2="0" y2="0" gradientUnits="userSpaceOnUse">
 <stop offset="0.0222" stop-color="#274077"/>
 <stop offset="0.171" stop-color="#324B80"/>
 <stop offset="0.4565" stop-color="#4F6B9D"/>
 <stop offset="0.8466" stop-color="#86ABD2"/>
 <stop offset="1" stop-color="#A5CFEF"/>
 </linearGradient>
-<linearGradient id="paint1208_linear_16_1190" x1="nan" y1="nan" x2="nan" y2="nan" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint1208_linear_16_1190" x1="0" y1="0" x2="0" y2="0" gradientUnits="userSpaceOnUse">
 <stop offset="0.0222" stop-color="#274077"/>
 <stop offset="0.171" stop-color="#324B80"/>
 <stop offset="0.4565" stop-color="#4F6B9D"/>
 <stop offset="0.8466" stop-color="#86ABD2"/>
 <stop offset="1" stop-color="#A5CFEF"/>
 </linearGradient>
-<linearGradient id="paint1209_linear_16_1190" x1="nan" y1="nan" x2="nan" y2="nan" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint1209_linear_16_1190" x1="0" y1="0" x2="0" y2="0" gradientUnits="userSpaceOnUse">
 <stop offset="0.0222" stop-color="#274077"/>
 <stop offset="0.171" stop-color="#324B80"/>
 <stop offset="0.4565" stop-color="#4F6B9D"/>
