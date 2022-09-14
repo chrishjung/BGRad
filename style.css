@@ -131,6 +131,7 @@ Welcome Modal
   cursor: pointer;
   align-items: center;
   justify-content: center;
+  font-weight: 200;
 }
 
 #overlay {
@@ -1126,10 +1127,10 @@ Screen Sizes
   }
 
   .gridsystem1 #LowEarthText {
-    width: 350px;
+    width: 35vw;
     top: 60vw;
     margin-top: 100px;
-    right: 32vw;
+    right: 48vw;
     margin-right: 70px;
   }
 
@@ -1209,10 +1210,10 @@ Screen Sizes
   }
 
   .gridsystem1 #LowEarthText {
-    width: 50vw;
+    width: 40vw;
     top: 60vw;
     margin-top: 100px;
-    right: 32vw;
+    right: 46vw;
     margin-right: 50px;
   }
 
@@ -1567,6 +1568,11 @@ Screen Sizes
 }
 
 @media (max-width: 480px) {
+  
+  .modal {
+    max-width: 90%;
+    text-align: center;
+  }
   .sun {
     width: 40vw;
   }
@@ -1594,7 +1600,7 @@ Screen Sizes
   }
 
   #TextBody {
-    font-size: 0.35rem;
+    font-size: 0.5rem;
   }
 
   .gridsystem1 #RadiationText {
@@ -1654,11 +1660,11 @@ Screen Sizes
   }
 
   #TextTitle {
-    font-size: 0.35rem;
+    font-size: 0.5rem;
   }
 
   #h3 {
-    font-size: 0.35rem;
+    font-size: 0.5rem;
   }
 
   #h4 {
@@ -1666,7 +1672,7 @@ Screen Sizes
   }
 
   #TextBody {
-    font-size: 0.2rem;
+    font-size: 0.5rem;
   }
 
   .gridsystem1 #RadiationText {
