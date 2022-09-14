@@ -610,7 +610,6 @@ Grid System 1 Style
   left: 5vw;
   position: absolute;
   grid-column-start: 1;
-  width: 800px;
   z-index: 2010;
 }
 
@@ -1064,7 +1063,6 @@ Screen Sizes
     font-size: 18px;
     line-height: 1.75rem;
     padding: 0px 15px;
-    
   }
 
   .sidetext {
@@ -1626,7 +1624,6 @@ Screen Sizes
     top: 62vw;
     margin-top: 110px;
     right: 43vw;
-    
   }
 
   .gridsystem1 #AirplaneText {
