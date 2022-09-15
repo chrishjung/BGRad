@@ -3,6 +3,13 @@ function closeModal() {
     "  transform: translate(-50%, -50%) scale(0);"
   document.getElementById("overlay").style =
     " transition: opacity 2s; opacity:0; pointer-events: none;"
+
+
+  var element = document.getElementById("gridsystem1");
+  element.classList.remove("paused");
+var element = document.getElementById("gridsystem2");
+  element.classList.remove("paused");
+
 }
 
 function displayRadiationText() {

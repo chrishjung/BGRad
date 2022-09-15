@@ -142,7 +142,7 @@ Welcome Modal
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   pointer-events: all;
   z-index: 8999;
 }
@@ -158,20 +158,27 @@ Welcome Modal
 Grid System 1 Style
 ===================*/
 
-.gridsystem1 {
+#gridsystem1 {
   display: fixed;
   margin-top: 80px;
   overflow: hidden;
+  animation: none;
+}
+
+.paused * {
+  animation: none !important;
+  transition: none !important;
+  
 }
 
 /* Grid System 1 Text */
 #TextTitle {
   font-family: Almarai;
-  font-weight: 500px;
+  font-weight: 600px;
   letter-spacing: 2px;
-  font-size: 20px;
+  font-size: 24px;
   text-transform: uppercase;
-  padding: 5px 15px 0px;
+  padding: 0px 15px;
   margin-bottom: 0px;
   line-height: 1.75rem;
   color: white;
@@ -185,9 +192,9 @@ Grid System 1 Style
 #h3 {
   font-family: Almarai;
   margin-bottom: 0px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 2px;
-  font-size: 24px;
+  font-size: 28px;
   text-transform: uppercase;
   padding: 0px 15px;
   line-height: 1.1em;
@@ -220,6 +227,7 @@ Grid System 1 Style
   line-height: 28px;
   color: white;
   transition: opacity 0.7s;
+  margin-top: 5px;
   padding: 0px 15px;
 }
 
@@ -227,7 +235,7 @@ Grid System 1 Style
   color: rgb(253, 253, 221);
 }
 
-.gridsystem1 #RadiationText {
+#gridsystem1 #RadiationText {
   cursor: pointer;
   position: absolute;
   width: 35vw;
@@ -238,7 +246,7 @@ Grid System 1 Style
   z-index: 4010;
 }
 
-.gridsystem1 #DeepSpaceText {
+#gridsystem1 #DeepSpaceText {
   position: absolute;
   cursor: pointer;
   top: 40vw;
@@ -249,7 +257,7 @@ Grid System 1 Style
   z-index: 4010;
 }
 
-.gridsystem1 #GeoText {
+#gridsystem1 #GeoText {
   position: absolute;
   cursor: pointer;
   width: 550px;
@@ -261,7 +269,7 @@ Grid System 1 Style
   z-index: 4011;
 }
 
-.gridsystem1 #LowEarthText {
+#gridsystem1 #LowEarthText {
   cursor: pointer;
   position: absolute;
   width: 350px;
@@ -273,7 +281,7 @@ Grid System 1 Style
   z-index: 4010;
 }
 
-.gridsystem1 #AirplaneText {
+#gridsystem1 #AirplaneText {
   position: absolute;
   cursor: pointer;
   margin-left: 10vw;
@@ -285,7 +293,7 @@ Grid System 1 Style
 
 /* Grid System 1 Images */
 
-.gridsystem1 #sunanim {
+#gridsystem1 #sunanim {
   cursor: pointer;
   position: absolute;
   top: 80px;
@@ -296,21 +304,21 @@ Grid System 1 Style
   z-index: 900;
 }
 
-.gridsystem1 #circle:hover {
+#gridsystem1 #circle:hover {
   filter: invert(2%) sepia(1%) saturate(278%) hue-rotate(6deg) brightness(104%)
     contrast(97%);
   animation: oraymove 3s linear infinite;
   transform-origin: center;
 }
 
-.gridsystem1 #circle:focus {
+#gridsystem1 #circle:focus {
   filter: invert(2%) sepia(1%) saturate(278%) hue-rotate(6deg) brightness(104%)
     contrast(97%);
   animation: oraymove 3s linear infinite;
   transform-origin: center;
 }
 
-.gridsystem1 #circle:active {
+#gridsystem1 #circle:active {
   filter: invert(2%) sepia(1%) saturate(278%) hue-rotate(6deg) brightness(104%)
     contrast(97%);
   animation: oraymove 3s ease-in-out;
@@ -355,7 +363,7 @@ Grid System 1 Style
   }
 }
 
-.gridsystem1 #Skylayer1 {
+#gridsystem1 #Skylayer1 {
   position: absolute;
   opacity: 100%;
   top: 70px;
@@ -363,7 +371,7 @@ Grid System 1 Style
   z-index: 1;
 }
 
-.gridsystem1 #Starsystemstatic {
+#gridsystem1 #Starsystemstatic {
   position: absolute;
   width: 25vw;
   opacity: 100%;
@@ -406,7 +414,7 @@ Grid System 1 Style
   }
 }
 
-.gridsystem1 #Asteroid {
+#gridsystem1 #Asteroid {
   position: absolute;
   width: 10vw;
   margin-top: 6vw;
@@ -444,7 +452,7 @@ Grid System 1 Style
   }
 }
 
-.gridsystem1 #Skylayer2 {
+#gridsystem1 #Skylayer2 {
   grid-column-start: 1;
   grid-column-end: auto;
   opacity: 100%;
@@ -455,7 +463,7 @@ Grid System 1 Style
   width: 20%;
 }
 
-.gridsystem1 .sidelinetext {
+#gridsystem1 .sidelinetext {
   font-family: Almarai;
   letter-spacing: 3px;
   font-weight: 600;
@@ -468,7 +476,7 @@ Grid System 1 Style
   z-index: 1010;
 }
 
-.gridsystem1 #Planet1 {
+#gridsystem1 #Planet1 {
   position: absolute;
   left: 0px;
   left: 7vw;
@@ -522,7 +530,7 @@ Grid System 1 Style
   }
 }
 
-.gridsystem1 #Planet2 {
+#gridsystem1 #Planet2 {
   position: absolute;
   right: 3em;
   top: 20vw;
@@ -531,7 +539,7 @@ Grid System 1 Style
   z-index: 990;
 }
 
-.gridsystem1 #Satellite {
+#gridsystem1 #Satellite {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -545,12 +553,12 @@ Grid System 1 Style
   animation: 1.5s ease-out 0s slideInFromRight forwards;
 }
 
-.gridsystem1 #Satellite:hover {
+#gridsystem1 #Satellite:hover {
   filter: invert(2%) sepia(1%) saturate(128%) hue-rotate(-10deg)
     brightness(114%) contrast(87%);
 }
 
-.gridsystem1#Satellite:focus {
+#gridsystem1#Satellite:focus {
   filter: invert(2%) sepia(1%) saturate(108%) hue-rotate(6deg) brightness(104%)
     contrast(87%);
 }
@@ -595,7 +603,7 @@ Grid System 1 Style
   }
 }
 
-.gridsystem1 #Skylayer3 {
+#gridsystem1 #Skylayer3 {
   position: absolute;
   top: 30vw;
   margin-top: 300px;
@@ -604,7 +612,7 @@ Grid System 1 Style
   z-index: 0;
 }
 
-.gridsystem1 #Starsystem {
+#gridsystem1 #Starsystem {
   cursor: pointer;
   top: 32vw;
   margin-top: 100px;
@@ -683,7 +691,7 @@ Grid System 1 Style
   }
 }
 
-.gridsystem1 #Powerstation {
+#gridsystem1 #Powerstation {
   cursor: pointer;
   perspective: 200;
   position: absolute;
@@ -693,7 +701,7 @@ Grid System 1 Style
   z-index: 2050;
 }
 
-.gridsystem1 #Powerstation:hover {
+#gridsystem1 #Powerstation:hover {
   filter: invert(2%) sepia(1%) saturate(128%) hue-rotate(-10deg)
     brightness(114%) contrast(87%);
 }
@@ -737,7 +745,7 @@ Grid System 1 Style
   }
 }
 
-.gridsystem1 .Rocket {
+#gridsystem1 .Rocket {
   position: absolute;
   width: 23vw;
   top: 50vw;
@@ -779,7 +787,7 @@ Grid System 1 Style
   }
 }
 
-.gridsystem1 #Particle {
+#gridsystem1 #Particle {
   position: absolute;
   width: 50vw;
   left: 40%;
@@ -932,7 +940,7 @@ Grid System 1 Style
 }
 
 /* REVEAL ON SCROLL */
-.gridsystem2 {
+#gridsystem2 {
   width: 100vw;
   position: relative;
   text-align: center;
@@ -999,9 +1007,11 @@ Grid System 1 Style
 
 .Train {
   opacity: 0;
+  animation-play-state: paused;
 }
 .Train2 {
   opacity: 0;
+  animation-play-state: paused;
 }
 
 .Train.active {
@@ -1009,6 +1019,7 @@ Grid System 1 Style
   animation-fill-mode: forwards;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
+  animation-play-state: running;
   float: left;
   opacity: 1;
 }
@@ -1104,21 +1115,21 @@ Screen Sizes
     line-height: 20px;
   }
 
-  .gridsystem1 #RadiationText {
+  #gridsystem1 #RadiationText {
     width: 40vw;
     top: 5vw;
     margin-top: 70px;
     left: 6vw;
   }
 
-  .gridsystem1 #DeepSpaceText {
+  #gridsystem1 #DeepSpaceText {
     top: 38vw;
     margin-top: 200px;
     right: 20vw;
     width: 30vw;
   }
 
-  .gridsystem1 #GeoText {
+  #gridsystem1 #GeoText {
     width: 50vw;
     left: 14vw;
     margin-left: 10vw;
@@ -1126,7 +1137,7 @@ Screen Sizes
     margin-top: 130px;
   }
 
-  .gridsystem1 #LowEarthText {
+  #gridsystem1 #LowEarthText {
     width: 35vw;
     top: 60vw;
     margin-top: 100px;
@@ -1134,13 +1145,13 @@ Screen Sizes
     margin-right: 70px;
   }
 
-  .gridsystem1 #AirplaneText {
+  #gridsystem1 #AirplaneText {
     margin-left: 10vw;
     top: 65vw;
     margin-top: 200px;
   }
 
-  .gridsystem1 #sunanim {
+  #gridsystem1 #sunanim {
     top: 70px;
     margin-top: 0px;
   }
@@ -1187,21 +1198,21 @@ Screen Sizes
     font-size: 12px;
     line-height: 14px;
   }
-  .gridsystem1 #RadiationText {
+  #gridsystem1 #RadiationText {
     width: 40vw;
     top: 5vw;
     margin-top: 70px;
     left: 6vw;
   }
 
-  .gridsystem1 #DeepSpaceText {
+  #gridsystem1 #DeepSpaceText {
     top: 40vw;
     margin-top: 200px;
     right: 20vw;
     width: 35vw;
   }
 
-  .gridsystem1 #GeoText {
+  #gridsystem1 #GeoText {
     width: 50vw;
     left: 14vw;
     margin-left: 10vw;
@@ -1209,7 +1220,7 @@ Screen Sizes
     margin-top: 180px;
   }
 
-  .gridsystem1 #LowEarthText {
+  #gridsystem1 #LowEarthText {
     width: 40vw;
     top: 60vw;
     margin-top: 100px;
@@ -1217,7 +1228,7 @@ Screen Sizes
     margin-right: 50px;
   }
 
-  .gridsystem1 #AirplaneText {
+  #gridsystem1 #AirplaneText {
     margin-left: 10vw;
     top: 65vw;
     margin-top: 200px;
@@ -1339,7 +1350,7 @@ Screen Sizes
     -webkit-animation: Trainmovesml 1s ease-in-out infinite alternate;
   }
 
-  .gridsystem1 .Rocket {
+  #gridsystem1 .Rocket {
     animation: flyanim2 5s 2s ease-in-out forwards;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -1367,7 +1378,7 @@ Screen Sizes
     width: 200px;
     opacity: 0;
   }
-  .gridsystem1 .Rocket {
+  #gridsystem1 .Rocket {
     top: 9vw;
   }
 
@@ -1407,21 +1418,21 @@ Screen Sizes
     line-height: 11px;
   }
 
-  .gridsystem1 #RadiationText {
+  #gridsystem1 #RadiationText {
     width: 40vw;
     top: 5vw;
     margin-top: 70px;
     left: 6vw;
   }
 
-  .gridsystem1 #DeepSpaceText {
+  #gridsystem1 #DeepSpaceText {
     top: 40vw;
     margin-top: 180px;
     right: 20vw;
     width: 35vw;
   }
 
-  .gridsystem1 #GeoText {
+  #gridsystem1 #GeoText {
     width: 50vw;
     left: 14vw;
     margin-left: 10vw;
@@ -1429,7 +1440,7 @@ Screen Sizes
     margin-top: 130px;
   }
 
-  .gridsystem1 #LowEarthText {
+  #gridsystem1 #LowEarthText {
     width: 37vw;
     top: 60vw;
     margin-top: 120px;
@@ -1437,7 +1448,7 @@ Screen Sizes
     margin-right: 50px;
   }
 
-  .gridsystem1 #AirplaneText {
+  #gridsystem1 #AirplaneText {
     margin-left: 10vw;
     top: 65vw;
     margin-top: 220px;
@@ -1453,18 +1464,18 @@ Screen Sizes
     margin-right: -50px;
   }
 
-  .gridsystem1 #Planet1 {
+  #gridsystem1 #Planet1 {
     left: 7vw;
     top: 9vw;
     margin-top: 120px;
   }
 
-  .gridsystem1 #Planet2 {
+  #gridsystem1 #Planet2 {
     top: 20vw;
     margin-top: 160px;
   }
 
-  .gridsystem1 #Powerstation {
+  #gridsystem1 #Powerstation {
     margin-right: 40px;
     margin-top: 62vw;
   }
@@ -1474,7 +1485,7 @@ Screen Sizes
   .starsystem {
     width: 50vw;
   }
-  .gridsystem1 #Starsystem {
+  #gridsystem1 #Starsystem {
     margin-top: 60px;
   }
 
@@ -1497,7 +1508,7 @@ Screen Sizes
   .satellite {
     width: 45vw;
   }
-  .gridsystem1 #Satellite {
+  #gridsystem1 #Satellite {
     right: 1vw;
     margin-right: 2px;
   }
@@ -1603,21 +1614,21 @@ Screen Sizes
     font-size: 0.5rem;
   }
 
-  .gridsystem1 #RadiationText {
+  #gridsystem1 #RadiationText {
     width: 40vw;
     top: 5vw;
     margin-top: 70px;
     left: 6vw;
   }
 
-  .gridsystem1 #DeepSpaceText {
+  #gridsystem1 #DeepSpaceText {
     top: 40vw;
     margin-top: 170px;
     right: 20vw;
     width: 35vw;
   }
 
-  .gridsystem1 #GeoText {
+  #gridsystem1 #GeoText {
     width: 50vw;
     left: 14vw;
     margin-left: 10vw;
@@ -1625,14 +1636,14 @@ Screen Sizes
     margin-top: 100px;
   }
 
-  .gridsystem1 #LowEarthText {
+  #gridsystem1 #LowEarthText {
     width: 40vw;
     top: 62vw;
     margin-top: 110px;
     right: 43vw;
   }
 
-  .gridsystem1 #AirplaneText {
+  #gridsystem1 #AirplaneText {
     margin-left: 10vw;
     top: 65vw;
     margin-top: 220px;
@@ -1646,7 +1657,7 @@ Screen Sizes
     z-index: 3010;
   }
 
-  .gridsystem1 #Planet1 {
+  #gridsystem1 #Planet1 {
     left: 7vw;
     top: 9vw;
     margin-top: 120px;
@@ -1675,21 +1686,21 @@ Screen Sizes
     font-size: 0.5rem;
   }
 
-  .gridsystem1 #RadiationText {
+  #gridsystem1 #RadiationText {
     width: 50vw;
     top: 5vw;
     margin-top: 70px;
     left: 6vw;
   }
 
-  .gridsystem1 #DeepSpaceText {
+  #gridsystem1 #DeepSpaceText {
     top: 40vw;
     margin-top: 180px;
     right: 20vw;
     width: 35vw;
   }
 
-  .gridsystem1 #GeoText {
+  #gridsystem1 #GeoText {
     width: 42vw;
     left: 14vw;
     margin-left: 30vw;
@@ -1697,7 +1708,7 @@ Screen Sizes
     margin-top: 130px;
   }
 
-  .gridsystem1 #LowEarthText {
+  #gridsystem1 #LowEarthText {
     width: 40vw;
     top: 50vw;
     margin-top: 120px;
@@ -1705,7 +1716,7 @@ Screen Sizes
     margin-right: 50px;
   }
 
-  .gridsystem1 #AirplaneText {
+  #gridsystem1 #AirplaneText {
     margin-left: 10vw;
     top: 65vw;
   }
@@ -1717,7 +1728,7 @@ Screen Sizes
     margin-right: 125px;
   }
 
-  .gridsystem1 #Powerstation {
+  #gridsystem1 #Powerstation {
     margin-right: 150px;
     margin-top: 65vw;
   }
