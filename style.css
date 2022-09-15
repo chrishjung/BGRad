@@ -1294,8 +1294,8 @@ Screen Sizes
   .Train.active {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    animation: Trainmovesml 5s ease-in 2s;
-    -webkit-animation: Trainmovesml 5s ease-in 2s;
+    animation: Trainmovesml 7s ease-in 8s;
+    -webkit-animation: Trainmovesml 7s ease-in 8s;
     animation-fill-mode: forwards;
     opacity: 0;
   }
