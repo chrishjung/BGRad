@@ -168,7 +168,6 @@ Grid System 1 Style
 .paused * {
   animation: none !important;
   transition: none !important;
-  
 }
 
 /* Grid System 1 Text */
@@ -1015,6 +1014,7 @@ Grid System 1 Style
 }
 
 .Train.active {
+  will-change: transform;
   animation: Trainmove 20s linear;
   animation-fill-mode: forwards;
   -webkit-transform: translateZ(0);
@@ -1026,17 +1026,13 @@ Grid System 1 Style
 
 @keyframes Trainmove {
   0% {
-    transition: transform;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    transform: translateX(150%);
+    transform: translate3d(130%, 0px, 0px);
+    -webkit-transform: translate3d(130%, 0px, 0px);
   }
 
   100% {
-    transition: transform;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    transform: translateX(-100%);
+    -webkit-transform: translate3d(-100%, 0px, 0px);
+    transform: translate3d(-100%, 0px, 0px);
   }
 }
 
