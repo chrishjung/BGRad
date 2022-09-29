@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Helvetica:wght@300;400;700;800&display=swap");
 
 /* =================
 BODY STYLE 
@@ -112,10 +112,11 @@ Welcome Modal
   font-size: 1.25rem;
   font-weight: bold;
   color: white;
+  padding-bottom: 15px;
 }
 
 .modal-welcome {
-  overflow: scroll; 
+  overflow: scroll;
   height: calc(90vh - 100px);
   font-family: Helvetica;
   letter-spacing: 1.5px;
@@ -174,7 +175,7 @@ Grid System 1 Style
 
 /* Grid System 1 Text */
 #TextTitle {
-  font-family: Almarai;
+  font-family: Helvetica;
   font-weight: 600px;
   letter-spacing: 2px;
   font-size: 24px;
@@ -191,7 +192,7 @@ Grid System 1 Style
 }
 
 #h3 {
-  font-family: Almarai;
+  font-family: Helvetica;
   margin-bottom: 0px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -208,7 +209,7 @@ Grid System 1 Style
 }
 
 #h4 {
-  font-family: Almarai;
+  font-family: Helvetica;
   transform: rotate(270deg);
   position: fixed;
   letter-spacing: 2px;
@@ -254,10 +255,10 @@ Grid System 1 Style
   position: absolute;
   width: 35vw;
   top: 5vw;
-  margin-top: 70px;
+  padding-top: 25px;
   left: 6vw;
   opacity: 0;
-  z-index: 4010;
+  z-index: 0;
 }
 
 #gridsystem1 #DeepSpaceText {
@@ -268,7 +269,7 @@ Grid System 1 Style
   right: 20vw;
   width: 30em;
   opacity: 0;
-  z-index: 4010;
+  z-index: 0;
 }
 
 #gridsystem1 #GeoText {
@@ -280,7 +281,7 @@ Grid System 1 Style
   top: 32vw;
   margin-top: 180px;
   opacity: 0;
-  z-index: 4011;
+  z-index: 0;
 }
 
 #gridsystem1 #LowEarthText {
@@ -292,7 +293,7 @@ Grid System 1 Style
   right: 32vw;
   margin-right: 50px;
   opacity: 0;
-  z-index: 4010;
+  z-index: 0;
 }
 
 #gridsystem1 #AirplaneText {
@@ -302,7 +303,7 @@ Grid System 1 Style
   top: 65vw;
   margin-top: 200px;
   opacity: 0;
-  z-index: 4010;
+  z-index: 0;
 }
 
 /* Grid System 1 Images */
@@ -438,6 +439,12 @@ Grid System 1 Style
   z-index: 990;
 }
 
+#Asteroid:hover {
+  cursor: pointer;
+  filter: invert(2%) sepia(1%) saturate(128%) hue-rotate(-10deg)
+    brightness(114%) contrast(87%);
+}
+
 @keyframes slidediagonal {
   0% {
     transition: transform;
@@ -478,7 +485,7 @@ Grid System 1 Style
 }
 
 #gridsystem1 .sidelinetext {
-  font-family: Almarai;
+  font-family: Helvetica;
   letter-spacing: 3px;
   font-weight: 600;
   font-size: 19px;
@@ -500,6 +507,10 @@ Grid System 1 Style
   z-index: 990;
 }
 
+#Planet1:hover {
+  cursor: pointer;
+  filter: saturate(105%) hue-rotate(-10deg) brightness(114%);
+}
 #mars {
   animation: 2s ease-out 0.3s slideInFromLeft;
   animation-fill-mode: forwards;
@@ -568,6 +579,7 @@ Grid System 1 Style
 }
 
 #gridsystem1 #Satellite:hover {
+  cursor: pointer;
   filter: invert(2%) sepia(1%) saturate(128%) hue-rotate(-10deg)
     brightness(114%) contrast(87%);
 }
@@ -763,11 +775,16 @@ Grid System 1 Style
   position: absolute;
   width: 23vw;
   top: 50vw;
-  margin-top: 400px;
+  margin-top: 200px;
   right: 0px;
   margin-right: -10vw;
   animation: 1.5s ease-out 0s slideInFromRight;
   z-index: 990;
+}
+
+.Rocket:hover {
+  cursor: pointer;
+  filter: saturate(108%) hue-rotate(-10deg) brightness(114%) contrast(87%);
 }
 
 .Rocket.active {
@@ -1081,7 +1098,7 @@ Screen Sizes
 
 @media (max-width: 1200px) {
   #TextTitle {
-    font-family: Almarai;
+    font-family: Helvetica;
     font-weight: 500;
     letter-spacing: 2px;
     font-size: 18px;
@@ -1095,7 +1112,7 @@ Screen Sizes
   }
 
   #h3 {
-    font-family: Almarai;
+    font-family: Helvetica;
     font-weight: 600;
     letter-spacing: 2px;
     font-size: 24px;
@@ -1130,7 +1147,6 @@ Screen Sizes
   #gridsystem1 #RadiationText {
     width: 40vw;
     top: 5vw;
-    margin-top: 70px;
     left: 6vw;
   }
 
@@ -1203,11 +1219,9 @@ Screen Sizes
     padding: 0px 5px;
   }
 
-
   #gridsystem1 #RadiationText {
     width: 40vw;
     top: 5vw;
-    margin-top: 70px;
     left: 6vw;
   }
 
@@ -1360,7 +1374,7 @@ Screen Sizes
     animation: flyanim2 5s 2s ease-in-out forwards;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    margin-top: 450px;
+    margin-top: 250px;
   }
 
   .Rocket.active {
@@ -1383,9 +1397,6 @@ Screen Sizes
   #GroundLevel {
     width: 200px;
     opacity: 0;
-  }
-  #gridsystem1 .Rocket {
-    top: 9vw;
   }
 
   .sidetext {
@@ -1417,13 +1428,12 @@ Screen Sizes
   }
   .modal-welcome {
     padding: 5px 10px;
- 
   }
 
   #gridsystem1 #RadiationText {
     width: 40vw;
     top: 5vw;
-    margin-top: 70px;
+    padding-top: 50px;
     left: 6vw;
   }
 
@@ -1618,7 +1628,7 @@ Screen Sizes
   #gridsystem1 #RadiationText {
     width: 40vw;
     top: 5vw;
-    margin-top: 70px;
+
     left: 6vw;
   }
 
@@ -1644,7 +1654,10 @@ Screen Sizes
     right: 42vw;
   }
 
-  #gridsystem1 #AirplaneText {
+  #gridsystem1 .Rocket {
+    margin-top: 275px;
+  }
+  #AirplaneText {
     margin-left: 10vw;
     top: 65vw;
     margin-top: 220px;
@@ -1690,7 +1703,6 @@ Screen Sizes
   #gridsystem1 #RadiationText {
     width: 50vw;
     top: 5vw;
-    margin-top: 70px;
     left: 6vw;
   }
 

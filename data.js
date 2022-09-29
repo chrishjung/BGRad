@@ -4,76 +4,74 @@ function closeModal() {
   document.getElementById("overlay").style =
     " transition: opacity 2s; opacity:0; pointer-events: none;"
 
-
-  var element = document.getElementById("gridsystem1");
-  element.classList.remove("paused");
-var element = document.getElementById("gridsystem2");
-  element.classList.remove("paused");
-
+  var element = document.getElementById("gridsystem1")
+  element.classList.remove("paused")
+  var element = document.getElementById("gridsystem2")
+  element.classList.remove("paused")
 }
 
 function displayRadiationText() {
   document.getElementById("RadiationText").style =
-    " transition: opacity 2s; opacity:1"
+    " transition: opacity 2s; opacity:1; z-index: 4010;"
   animationDuration = "1s"
 }
 
 function hideRadiationText() {
   document.getElementById("RadiationText").style =
-    "transition: opacity 0.5s; opacity:0"
+    "transition: opacity 0.5s; opacity:0; z-index: 0;"
 }
 
 function displayDeepSpaceText() {
   document.getElementById("DeepSpaceText").style =
-    " transition: opacity 2s; opacity:1"
+    " transition: opacity 2s; opacity:1; z-index: 4010;"
   animationDuration = "1s"
 }
 
 function hideDeepSpaceText() {
   document.getElementById("DeepSpaceText").style =
-    "transition: opacity 0.5s; opacity:0"
+    "transition: opacity 0.5s; opacity:0; z-index: 0;"
 }
 
 function displayLowEarthText() {
   document.getElementById("LowEarthText").style =
-    " transition: opacity 2s; opacity:1"
+    " transition: opacity 2s; opacity:1; z-index: 4010;"
   animationDuration = "1s"
 }
 
 function hideLowEarthText() {
   document.getElementById("LowEarthText").style =
-    "transition: opacity 0.5s; opacity:0"
+    "transition: opacity 0.5s; opacity:0; z-index: 0;"
 }
 
 function AirplaneText() {
   document.getElementById("AirplaneText").style =
-    " transition: opacity 2s; opacity:1"
+    " transition: opacity 2s; opacity:1; z-index: 4010;"
   animationDuration = "1s"
 }
 
 function hideAirplaneText() {
   document.getElementById("AirplaneText").style =
-    "transition: opacity 0.5s; opacity:0"
+    "transition: opacity 0.5s; opacity:0; z-index: 0;"
 }
 function displayGeoText() {
   document.getElementById("GeoText").style =
-    " transition: opacity 2s; opacity:1"
+    " transition: opacity 2s; opacity:1; z-index: 4010;"
   animationDuration = "1s"
 }
 
 function hideGeoText() {
   document.getElementById("GeoText").style =
-    "transition: opacity 0.5s; opacity:0"
+    "transition: opacity 0.5s; opacity:0; z-index: 0;"
 }
 function GroundLevelText() {
   document.getElementById("GroundLevel").style =
-    " transition: opacity 2s; opacity:1"
+    " transition: opacity 2s; opacity:1; z-index: 4010;"
   animationDuration = "1s"
 }
 
 function hideGroundLevelText() {
   document.getElementById("GroundLevel").style =
-    "transition: opacity 0.5s; opacity:0"
+    "transition: opacity 0.5s; opacity:0; z-index: 0;"
 }
 
 function textEnglish() {
