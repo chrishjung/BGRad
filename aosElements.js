@@ -117,8 +117,8 @@ const observeMountains = new IntersectionObserver(
       if (!entry1.isIntersecting) return
       // console.log(entry.target)
       entry1.target.classList.toggle("active", entry1.isIntersecting)
+      observeMountains.unobserve(entry.target)
     })
-    observeMountains.unobserve(trainElement)
   },
   {
     threshold: 0.5,
