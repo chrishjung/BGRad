@@ -99,9 +99,10 @@ const particleShower = document.querySelector(".particleShower")
 const observeParticle = new IntersectionObserver(
   entries => {
     entries.forEach(entry => {
+      if (!entry.isIntersecting) return
       // console.log(entry.target)
       entry.target.classList.toggle("active", entry.isIntersecting)
-      //observeParticle.unobserve(entry.target)
+      observeParticle.unobserve(entry.target)
     })
   },
   {
@@ -113,10 +114,11 @@ const observeParticle = new IntersectionObserver(
 const observeMountains = new IntersectionObserver(
   entries => {
     entries.forEach(entry1 => {
+      if (!entry1.isIntersecting) return
       // console.log(entry.target)
       entry1.target.classList.toggle("active", entry1.isIntersecting)
     })
-    // observeMountains.unobserve(trainElement)
+    observeMountains.unobserve(trainElement)
   },
   {
     threshold: 0.5,
