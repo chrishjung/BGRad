@@ -77,7 +77,7 @@ function psecondVisable(element) {
 }
 
 let pmainElements = Array.from(document.querySelectorAll(".pMain"))
-console.log(aosElements)
+//console.log(aosElements)
 window.addEventListener("scroll", throttle(scanElements, 50))
 function scanElements() {
   pmainElements.forEach(element => {
