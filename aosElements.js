@@ -119,7 +119,10 @@ const scrollTrackingTimeline = new ScrollTimeline({
 
 scrollTracker.animate(
   {
-    transform: ["translateY(45vh) rotate(270deg)", "translateY(0vh) rotate(270deg)"],
+    transform: [
+      "translateY(45vh) rotate(270deg)",
+      "translateY(0vh) rotate(270deg)",
+    ],
   },
   {
     duration: 1,
