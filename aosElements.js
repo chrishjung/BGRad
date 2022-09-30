@@ -19,7 +19,7 @@ function carVisable(element) {
 }
 
 let rocketElements = Array.from(
-  document.querySelectorAll(".Rocket, .afterburn, .pThird")
+  document.querySelectorAll(".Rocket, .afterburn")
 )
 //console.log(aosElements);
 window.addEventListener("scroll", throttle(scanElementsrocket, 50))
@@ -40,61 +40,25 @@ function rocketVisable(element) {
     : false
 }
 
-let trainElements = Array.from(document.querySelectorAll(".Train"))
+//let trainElements = Array.from(document.querySelectorAll(".Train"))
 //console.log(aosElements);
-window.addEventListener("scroll", throttle(scanElementstrain, 50))
-function scanElementstrain() {
-  trainElements.forEach(element => {
-    if (trainVisable(element)) {
-      element.classList.add("active")
-    } else {
-      element.classList.remove("active")
-    }
-  })
-}
-function trainVisable(element) {
-  const elementDiv = element.getBoundingClientRect()
-  let distanceFromToptrain = 50
-  return elementDiv.top - window.innerHeight < distanceFromToptrain
-    ? true
-    : false
-}
-
-let psecondElements = Array.from(document.querySelectorAll(".pSecond"))
-//console.log(aosElements);
-window.addEventListener("scroll", throttle(scanElements2, 50))
-function scanElements2() {
-  psecondElements.forEach(element => {
-    if (psecondVisable(element)) {
-      element.classList.add("active")
-    } else {
-      element.classList.remove("active")
-    }
-  })
-}
-function psecondVisable(element) {
-  const elementDiv = element.getBoundingClientRect()
-  let distanceFromTop2 = 0
-  return elementDiv.top - window.innerHeight < distanceFromTop2 ? true : false
-}
-
-let pmainElements = Array.from(document.querySelectorAll(".pMain"))
-//console.log(aosElements)
-window.addEventListener("scroll", throttle(scanElements, 50))
-function scanElements() {
-  pmainElements.forEach(element => {
-    if (pmainVisable(element)) {
-      element.classList.add("active")
-    } else {
-      element.classList.remove("active")
-    }
-  })
-}
-function pmainVisable(element) {
-  const elementDiv = element.getBoundingClientRect()
-  let distanceFromTop = -600
-  return elementDiv.top - window.innerHeight < distanceFromTop ? true : false
-}
+//window.addEventListener("scroll", throttle(scanElementstrain, 50))
+//function scanElementstrain() {
+// trainElements.forEach(element => {
+//   if (trainVisable(element)) {
+//     element.classList.add("active")
+//   } else {
+//     element.classList.remove("active")
+//   }
+// })
+//}
+//function trainVisable(element) {
+// const elementDiv = element.getBoundingClientRect()
+// let distanceFromToptrain = 50
+// return elementDiv.top - window.innerHeight < distanceFromToptrain
+//   ? true
+//   : false
+//}
 
 function throttle(fn, delay) {
   let lastCall = 0
@@ -111,6 +75,7 @@ function throttle(fn, delay) {
 }
 
 const scrollTracker = document.querySelector(".sidetext")
+
 const scrollTrackingTimeline = new ScrollTimeline({
   source: document.scrollingElement,
   orientation: "block",
@@ -129,3 +94,20 @@ scrollTracker.animate(
     timeline: scrollTrackingTimeline,
   }
 )
+const trainElement = document.querySelector(".Mountains")
+const particleShower = document.querySelector(".particleShower")
+const option = {}
+const observer = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      console.log(entry.target)
+      entry.target.classList.toggle("active", entry.isIntersecting)
+    })
+  },
+  {
+    threshold: 0.5,
+  }
+)
+
+observer.observe(particleShower)
+observer.observe(trainElement)

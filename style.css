@@ -827,12 +827,12 @@ Grid System 1 Style
   margin-top: 200px;
 }
 
-.pMain {
+.particleShower > svg > g > #pmain {
   opacity: 0;
   stroke-dasharray: 4000;
 }
 
-.pMain.active {
+.particleShower.active > svg > g > #pmain {
   opacity: 1;
   stroke-dasharray: 4000;
   animation: maindash 10s linear;
@@ -860,64 +860,89 @@ Grid System 1 Style
   }
 }
 
-.pSecond {
+.particleShower > svg > g > #psecond {
   opacity: 0;
 }
 
-.pSecond.active {
+.particleShower.active > svg > g > #psecond {
   opacity: 1;
   animation: secdash 10s linear;
 }
 
 @keyframes secdash {
   0% {
-    stroke-dasharray: 2500;
-    stroke-dashoffset: 2500;
+    stroke-dasharray: 2100;
+    stroke-dashoffset: 2100;
   }
 
-  15% {
-    stroke-dasharray: 2500;
-    stroke-dashoffset: 2500;
+  45% {
+    stroke-dasharray: 2100;
+    stroke-dashoffset: 2100;
   }
 
-  50% {
-    stroke-dashoffset: 5000;
+  75% {
+    stroke-dashoffset: 4200;
   }
 
   100% {
-    stroke-dashoffset: 5000;
+    stroke-dashoffset: 4200;
   }
 }
 
-.pThird {
+.particleShower > svg > g > #pthird {
   opacity: 0;
 }
 
-.pThird.active {
+.particleShower.active > svg > g > #pthird {
   opacity: 1;
-  stroke-dasharray: 2500;
+  stroke-dasharray: 2000;
   animation: thirddash 10s linear;
 }
 
 @keyframes thirddash {
   0% {
-    stroke-dasharray: 2500;
-    stroke-dashoffset: 2500;
+    stroke-dasharray: 1300;
+    stroke-dashoffset: 1300;
   }
 
-  25% {
-    stroke-dasharray: 2500;
-    stroke-dashoffset: 2500;
+  75% {
+    stroke-dasharray: 1300;
+    stroke-dashoffset: 1300;
   }
 
-  60% {
-    stroke-dasharray: 2500;
-    stroke-dashoffset: 5000;
+  90% {
+    stroke-dasharray: 1300;
+    stroke-dashoffset: 2600;
+  }
+  100% {
+    stroke-dasharray: 1300;
+    stroke-dashoffset: 2600;
+  }
+}
+
+.particleShower > svg > g > #pfourth {
+  opacity: 0;
+}
+
+.particleShower.active > svg > g > #pfourth {
+  opacity: 1;
+  animation: fourthdash 10s linear;
+}
+
+@keyframes fourthdash {
+  0% {
+    stroke-dasharray: 1400;
+    stroke-dashoffset: 1400;
+  }
+
+  90% {
+    stroke-dasharray: 1400;
+    stroke-dashoffset: 1400;
   }
 
   100% {
-    stroke-dasharray: 2500;
-    stroke-dashoffset: 5000;
+    stroke-dasharray: 1400;
+    stroke-dashoffset: 2800;
   }
 }
 
@@ -1035,16 +1060,16 @@ Grid System 1 Style
   animation-play-state: paused;
 }
 
-.Train {
+.Mountains > svg > g > .Train {
   opacity: 0;
   animation-play-state: paused;
 }
-.Train2 {
+.Mountains > svg > g > .Train2 {
   opacity: 0;
   animation-play-state: paused;
 }
 
-.Train.active {
+.Mountains.active > svg > g > .Train {
   will-change: transform;
   -webkit-animation: Trainmove 20s linear;
   animation: Trainmove 20s linear;
@@ -1068,11 +1093,11 @@ Grid System 1 Style
   }
 }
 
-.Car {
+.Mountains > svg > g > .Car {
   opacity: 0;
 }
 
-.Car.active {
+.Mountains.active > svg > g > .Car {
   animation: Carmove 20s ease-out;
   animation-fill-mode: forwards;
   position: relative;
@@ -1273,7 +1298,7 @@ Screen Sizes
     animation: none;
   }
 
-  #Car {
+  .Mountains.active > svg > g > .Car {
     cursor: pointer;
     animation: none;
     -webkit-transform: translate3D(50%, 0, 0);
@@ -1281,12 +1306,12 @@ Screen Sizes
     opacity: 1;
   }
 
-  .pMain {
+  .particleShower > svg > g > #pmain {
     opacity: 0;
     animation: maindashsm 12s ease-out infinite;
   }
 
-  .pMain.active {
+  .particleShower.active > svg > g > #pmain {
     opacity: 0;
     animation: maindashsm 12s ease-out infinite;
   }
@@ -1313,7 +1338,7 @@ Screen Sizes
     }
   }
 
-  .Train.active {
+  .Mountains.active > svg > g > .Train {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     animation: Trainmovesml 7s ease-in 8s;
@@ -1321,7 +1346,7 @@ Screen Sizes
     animation-fill-mode: forwards;
     opacity: 0;
   }
-  .Train {
+  .Mountains > svg > g > .Train {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     animation: Trainmovesml 7s ease-in 8s;
@@ -1329,7 +1354,7 @@ Screen Sizes
     animation-fill-mode: forwards;
     opacity: 0;
   }
-  .Train2 {
+  .Mountains > svg > g > .Train2 {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     animation: Train2movesml 10s linear 4s;
@@ -1525,12 +1550,12 @@ Screen Sizes
     margin-right: 2px;
   }
 
-  .pSecond {
+  .particleShower > svg > g > #psecond {
     opacity: 0;
     animation: secdashsm 12s ease-out infinite;
   }
 
-  .pSecond.active {
+  .particleShower.active > svg > g > #psecond {
     opacity: 0;
     animation: secdashsm 12s ease-out infinite;
   }
@@ -1557,12 +1582,12 @@ Screen Sizes
     }
   }
 
-  .pThird {
+  .particleShower > svg > g > #pthird {
     opacity: 0;
     animation: thirddashsm 12s ease-out infinite;
   }
 
-  .pThird.active {
+  .particleShower.active > svg > g > #pthird {
     opacity: 0;
     animation: thirddashsm 12s ease-out infinite;
   }
