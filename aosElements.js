@@ -96,18 +96,31 @@ scrollTracker.animate(
 )
 const trainElement = document.querySelector(".Mountains")
 const particleShower = document.querySelector(".particleShower")
-const option = {}
-const observer = new IntersectionObserver(
+const observeParticle = new IntersectionObserver(
   entries => {
     entries.forEach(entry => {
-      console.log(entry.target)
+      // console.log(entry.target)
       entry.target.classList.toggle("active", entry.isIntersecting)
+      observeParticle.unobserve(entry.target)
     })
+  },
+  {
+    threshold: 0.3,
+    rootMargin: "-200px 0px 0px 0px",
+  }
+)
+
+const observeMountains = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry1 => {
+      // console.log(entry.target)
+      entry1.target.classList.toggle("active", entry1.isIntersecting)
+    })
+    // observeMountains.unobserve(trainElement)
   },
   {
     threshold: 0.5,
   }
 )
-
-observer.observe(particleShower)
-observer.observe(trainElement)
+observeParticle.observe(particleShower)
+observeMountains.observe(trainElement)

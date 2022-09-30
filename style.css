@@ -1601,30 +1601,29 @@ Screen Sizes
       opacity: 1;
     }
   }
-}
 
-.particleShower.active > svg > g > #pfourth {
-  opacity: 0;
-  animation: fourthdashsm 12s ease-out infinite;
-}
-
-@keyframes fourthdashsm {
-  0% {
+  .particleShower.active > svg > g > #pfourth {
     opacity: 0;
+    animation: fourthdashsm 12s ease-out infinite;
   }
 
-  75% {
-    opacity: 0;
-  }
+  @keyframes fourthdashsm {
+    0% {
+      opacity: 0;
+    }
 
-  95% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
+    75% {
+      opacity: 0;
+    }
+
+    95% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
-
 @media (max-width: 480px) {
   .modal {
     width: 85vw;
