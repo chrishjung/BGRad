@@ -101,7 +101,7 @@ const observeParticle = new IntersectionObserver(
     entries.forEach(entry => {
       // console.log(entry.target)
       entry.target.classList.toggle("active", entry.isIntersecting)
-      observeParticle.unobserve(entry.target)
+      //observeParticle.unobserve(entry.target)
     })
   },
   {
