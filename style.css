@@ -116,14 +116,15 @@ Welcome Modal
 }
 
 .modal-welcome {
-  overflow: scroll;
-  height: calc(90vh - 100px);
+  overflow-y: scroll;
+  height: calc(85vh - 200px);
   font-family: Helvetica;
   letter-spacing: 1.5px;
   font-weight: 100;
   font-style: normal;
   font-size: 18px;
   padding: 10px 20px;
+  margin-bottom: 20px;
   line-height: 30px;
   color: white;
   transition: opacity 0.7s;
@@ -999,7 +1000,7 @@ Grid System 1 Style
   z-index: 3000;
 }
 
-#Car:hover #Headlights {
+#Car:hover #Headlight {
   filter: saturate(80%) hue-rotate(10deg) brightness(134%) contrast(77%);
   opacity: 0.1;
 }
@@ -1365,7 +1366,7 @@ Screen Sizes
       opacity: 0;
     }
   }
-  .Headlights {
+  #Headlight {
     animation: Trainmovesml 1s ease-in-out infinite alternate;
     -webkit-animation: Trainmovesml 1s ease-in-out infinite alternate;
   }
@@ -1428,6 +1429,7 @@ Screen Sizes
   }
   .modal-welcome {
     padding: 5px 10px;
+    margin-bottom: 10px;
   }
 
   #gridsystem1 #RadiationText {
