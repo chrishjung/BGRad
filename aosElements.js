@@ -1,3 +1,5 @@
+import "./scroll-timeline.js"
+
 let carElements = Array.from(document.querySelectorAll(".Car"))
 //console.log(aosElements);
 window.addEventListener("scroll", throttle(scanElementscar, 50))
@@ -94,14 +96,6 @@ function pmainVisable(element) {
   return elementDiv.top - window.innerHeight < distanceFromTop ? true : false
 }
 
-const sidetext = document.querySelector(".sidetext")
-
-window.addEventListener("scroll", () => {
-  const scrolled = window.pageYOffset
-  const val = scrolled * 0.5
-  sidetext.style.transform = `translateY(${-2 * val}%) rotate(270deg)`
-})
-
 function throttle(fn, delay) {
   let lastCall = 0
   return (...arg) => {
@@ -115,3 +109,20 @@ function throttle(fn, delay) {
     return fn.apply(context, ...arg)
   }
 }
+
+const scrollTracker = document.querySelector(".sidetext")
+const scrollTrackingTimeline = new ScrollTimeline({
+  source: document.scrollingElement,
+  orientation: "block",
+  scrollOffsets: [CSS.percent(0), CSS.percent(100)],
+})
+
+scrollTracker.animate(
+  {
+    transform: ["translateY(45vh) rotate(270deg)", "translateY(0vh) rotate(270deg)"],
+  },
+  {
+    duration: 1,
+    timeline: scrollTrackingTimeline,
+  }
+)
