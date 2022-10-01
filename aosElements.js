@@ -1,4 +1,4 @@
-import "./scroll-timeline.js"
+
 
 let carElements = Array.from(document.querySelectorAll(".Car"))
 //console.log(aosElements);
@@ -74,26 +74,6 @@ function throttle(fn, delay) {
   }
 }
 
-const scrollTracker = document.querySelector(".sidetext")
-
-const scrollTrackingTimeline = new ScrollTimeline({
-  source: document.scrollingElement,
-  orientation: "block",
-  scrollOffsets: [CSS.percent(0), CSS.percent(100)],
-})
-
-scrollTracker.animate(
-  {
-    transform: [
-      "translateY(45vh) rotate(270deg)",
-      "translateY(0vh) rotate(270deg)",
-    ],
-  },
-  {
-    duration: 1,
-    timeline: scrollTrackingTimeline,
-  }
-)
 const trainElement = document.querySelector(".Mountains")
 const particleShower = document.querySelector(".particleShower")
 const observeParticle = new IntersectionObserver(
@@ -113,10 +93,10 @@ const observeParticle = new IntersectionObserver(
 
 const observeMountains = new IntersectionObserver(
   entries => {
-    entries.forEach(entry1 => {
-      if (!entry1.isIntersecting) return
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return
       // console.log(entry.target)
-      entry1.target.classList.toggle("active", entry1.isIntersecting)
+      entry.target.classList.toggle("active", entry.isIntersecting)
       observeMountains.unobserve(entry.target)
     })
   },

@@ -23,11 +23,6 @@ BODY STYLE
   z-index: 7000;
 }
 
-.sidetext {
-  transform-origin: 0 0;
-  top: 40vh;
-  margin-left: 2.5vw;
-}
 
 html,
 body {
@@ -1097,7 +1092,7 @@ Grid System 1 Style
 
 .triumfLogo {
   position: absolute;
-  bottom: 5vh;
+  bottom: 3vh;
   left: 4.5vw;
 z-index: 5000;
 }
@@ -1116,10 +1111,6 @@ Screen Sizes
     padding: 0px 15px;
   }
 
-  .sidetext {
-    top: 50vh;
-    margin-left: 2.1vw;
-  }
 
   #h3 {
     font-family: Helvetica;
@@ -1202,10 +1193,7 @@ Screen Sizes
 }
 
 @media (max-width: 1000px) {
-  .sidetext {
-    top: 40vh;
-    margin-left: 1.6vw;
-  }
+
 
   #TextTitle {
     font-size: 1.05rem;
@@ -1401,10 +1389,7 @@ Screen Sizes
     opacity: 0;
   }
 
-  .sidetext {
-    top: 30vh;
-    margin-left: 1.6vw;
-  }
+ 
 
   #TextTitle {
     font-size: 0.8rem;
@@ -1617,10 +1602,7 @@ Screen Sizes
   .sun {
     width: 40vw;
   }
-  .sidetext {
-    top: 20vh;
-    margin-left: 1.2vw;
-  }
+
 
   .smalltext {
     font-size: 12px;
@@ -1691,10 +1673,7 @@ Screen Sizes
   }
 
   @media (max-width: 380px) {
-    .sidetext {
-      top: 30vh;
-      margin-left: 0.3vw;
-    }
+
 
     #TextTitle {
       font-size: 0.5rem;
