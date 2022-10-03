@@ -1,0 +1,16 @@
+Triumf Background Radiation Pages
+
+The majority of the images are in .SVG format with their vector code pasted directly into the html document. this allows for quick loading and animation of elements within an image. Animated elements are given unique IDs that can be animated in the style.css file.
+
+The Particle Shower animation is a uniquely complex animation as it requires multiple lines to be triggered and revealed with speccific timing. The lines had to be edited, grouped and named in AI or Figma. The Div container is needed to trigger the javascript command and the individual vecotr groups can be controlled by css styles. There are currently 8 groups controlling 147 lines. There are dozens of lines representing the squiggley lines in the particle shower image. The time and math it would take to draw each line for all the different aspect sizes would be a large undertaking. The solution used is animating the spacing of a giant dashed line to give the illusion that the particle lines are being drawn. 
+
+style.css
+This file contains all the major visual modifications to the webpage. It contains all of the text formatting, animations, element placements and responsive resising of elements. The responsive resizing occurs at many different aspect rations to retain readability and the general compsition of image elements. 
+
+data.js
+This file contains all of the javascript click events. It retains the click events for pop-ups, language toggle and texts toggles. 
+
+aosElements.js
+This file contains all of the javascript with scroll events. It represents the more complex image animations that rely on screen placement to trigger an animation. the animations that only have one animation cycle will have an unobserve command right after an "action" trigger. If you delete the unobserve command it will animated whenever the page is scrolled back into an active position. 
+
+
