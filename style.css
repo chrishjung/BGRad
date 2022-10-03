@@ -561,6 +561,7 @@ Grid System 1 Style
 
 @keyframes satAcross {
   0% {
+<<<<<<< HEAD
    transform: translateX(90%);
     opacity: 100%;
   }
@@ -587,6 +588,29 @@ Grid System 1 Style
 
   100% {
    transform: translateX(-250%) translateY(0px) ;
+=======
+    transform: translateX(90%);
+    opacity: 100%;
+  }
+
+  20% {
+    transform: translateX(20%) translateY(25px);
+  }
+  25% {
+    transform: translateX(5%) translateY(35px);
+  }
+
+  50% {
+    transform: translateX(-80%) translateY(-20px);
+  }
+
+  75% {
+    transform: translateX(-165%) translateY(10px);
+  }
+
+  100% {
+    transform: translateX(-250%) translateY(0px);
+>>>>>>> e3574afc1f281761ad0fa4902bd4eb5839936fe2
     opacity: 100%;
   }
 }
@@ -1694,7 +1718,11 @@ Screen Sizes
     opacity: 0;
     animation: secdashsm 12s ease-out infinite;
   }
+<<<<<<< HEAD
     .particleShower > svg > g > #psecondlong {
+=======
+  .particleShower > svg > g > #psecondlong {
+>>>>>>> e3574afc1f281761ad0fa4902bd4eb5839936fe2
     opacity: 0;
     animation: secdashsm 12s ease-out infinite;
   }
@@ -1730,22 +1758,31 @@ Screen Sizes
     }
   }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> e3574afc1f281761ad0fa4902bd4eb5839936fe2
   .particleShower.active > svg > g > #pthird {
     opacity: 0;
     animation: thirddashsm 12s ease-out infinite;
   }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> e3574afc1f281761ad0fa4902bd4eb5839936fe2
   .particleShower.active > svg > g > #pthirdsquiggle {
     opacity: 0;
     animation: thirddashsm 12s ease-out infinite;
   }
 
+<<<<<<< HEAD
  
 
+=======
+>>>>>>> e3574afc1f281761ad0fa4902bd4eb5839936fe2
   .particleShower.active > svg > g > #pthirdfork {
     opacity: 0;
     animation: thirddashsm 12s ease-out infinite;
@@ -1778,7 +1815,11 @@ Screen Sizes
     animation: fourthdashsm 12s ease-out infinite;
   }
 
+<<<<<<< HEAD
     .particleShower.active > svg > g > #pfourthfork {
+=======
+  .particleShower.active > svg > g > #pfourthfork {
+>>>>>>> e3574afc1f281761ad0fa4902bd4eb5839936fe2
     opacity: 0;
     animation: fourthdashsm 12s ease-out infinite;
   }
