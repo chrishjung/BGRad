@@ -23,7 +23,6 @@ BODY STYLE
   z-index: 7000;
 }
 
-
 html,
 body {
   max-width: 100%;
@@ -546,7 +545,7 @@ Grid System 1 Style
   z-index: 990;
 }
 
-#Satellite {
+.satellite {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -554,13 +553,40 @@ Grid System 1 Style
   margin-right: 25px;
   top: 33vw;
   margin-top: 175px;
-  z-index: 3100;
+  z-index: 1000;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  animation: 3s ease-out 3s slideInFromRight forwards;
+  animation: 90s linear satAcross infinite;
 }
 
-#Satellite:hover {
+@keyframes satAcross {
+  0% {
+    transform: translateX(90%);
+    opacity: 100%;
+  }
+
+  20% {
+    transform: translateX(20%) translateY(25px);
+  }
+  25% {
+    transform: translateX(5%) translateY(35px);
+  }
+
+  50% {
+    transform: translateX(-80%) translateY(-20px);
+  }
+
+  75% {
+    transform: translateX(-165%) translateY(10px);
+  }
+
+  100% {
+    transform: translateX(-250%) translateY(0px);
+    opacity: 100%;
+  }
+}
+
+.satellite:hover {
   cursor: pointer;
   filter: invert(2%) sepia(1%) saturate(128%) hue-rotate(-10deg)
     brightness(114%) contrast(87%);
@@ -845,21 +871,79 @@ Grid System 1 Style
 
 @keyframes secdash {
   0% {
-    stroke-dasharray: 2100;
-    stroke-dashoffset: 2100;
+    stroke-dasharray: 700;
+    stroke-dashoffset: 700;
   }
 
   45% {
-    stroke-dasharray: 2100;
-    stroke-dashoffset: 2100;
+    stroke-dasharray: 700;
+    stroke-dashoffset: 700;
   }
 
-  75% {
-    stroke-dashoffset: 4200;
+  65% {
+    stroke-dashoffset: 1400;
   }
 
   100% {
-    stroke-dashoffset: 4200;
+    stroke-dashoffset: 1400;
+  }
+}
+
+.particleShower > svg > g > #psecondshort {
+  opacity: 0;
+}
+
+.particleShower.active > svg > g > #psecondshort {
+  opacity: 1;
+  animation: secshortdash 10s linear;
+}
+
+@keyframes secshortdash {
+  0% {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+  }
+
+  45% {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+  }
+
+  65% {
+    stroke-dashoffset: 1000;
+  }
+
+  100% {
+    stroke-dashoffset: 1000;
+  }
+}
+
+.particleShower > svg > g > #psecondlong {
+  opacity: 0;
+}
+
+.particleShower.active > svg > g > #psecondlong {
+  opacity: 1;
+  animation: seclongdash 10s linear;
+}
+
+@keyframes seclongdash {
+  0% {
+    stroke-dasharray: 1300;
+    stroke-dashoffset: 1300;
+  }
+
+  45% {
+    stroke-dasharray: 1300;
+    stroke-dashoffset: 1300;
+  }
+
+  75% {
+    stroke-dashoffset: 2600;
+  }
+
+  100% {
+    stroke-dashoffset: 2600;
   }
 }
 
@@ -869,28 +953,87 @@ Grid System 1 Style
 
 .particleShower.active > svg > g > #pthird {
   opacity: 1;
-  stroke-dasharray: 2000;
   animation: thirddash 10s linear;
 }
 
 @keyframes thirddash {
   0% {
-    stroke-dasharray: 1300;
-    stroke-dashoffset: 1300;
+    stroke-dasharray: 975;
+    stroke-dashoffset: 975;
   }
 
   75% {
-    stroke-dasharray: 1300;
-    stroke-dashoffset: 1300;
+    stroke-dasharray: 975;
+    stroke-dashoffset: 975;
   }
 
   90% {
-    stroke-dasharray: 1300;
-    stroke-dashoffset: 2600;
+    stroke-dasharray: 975;
+    stroke-dashoffset: 1950;
   }
   100% {
-    stroke-dasharray: 1300;
-    stroke-dashoffset: 2600;
+    stroke-dasharray: 975;
+    stroke-dashoffset: 1950;
+  }
+}
+
+.particleShower > svg > g > #pthirdfork {
+  opacity: 0;
+}
+
+.particleShower.active > svg > g > #pthirdfork {
+  opacity: 1;
+  animation: thirdforkdash 10s linear;
+}
+
+@keyframes thirdforkdash {
+  0% {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+  }
+
+  65% {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+  }
+
+  80% {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 1000;
+  }
+}
+
+.particleShower > svg > g > #pthirdsquiggle {
+  opacity: 0;
+}
+
+.particleShower.active > svg > g > #pthirdsquiggle {
+  opacity: 1;
+  animation: thirdsquiggledash 10s linear;
+}
+
+@keyframes thirdsquiggledash {
+  0% {
+    stroke-dasharray: 150;
+    stroke-dashoffset: 150;
+  }
+
+  65% {
+    stroke-dasharray: 150;
+    stroke-dashoffset: 150;
+  }
+
+  80% {
+    stroke-dasharray: 150;
+    stroke-dashoffset: 300;
+  }
+  100% {
+    stroke-dasharray: 150;
+    stroke-dashoffset: 300;
   }
 }
 
@@ -905,21 +1048,51 @@ Grid System 1 Style
 
 @keyframes fourthdash {
   0% {
-    stroke-dasharray: 1400;
-    stroke-dashoffset: 1400;
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
   }
 
   90% {
-    stroke-dasharray: 1400;
-    stroke-dashoffset: 1400;
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
   }
 
   100% {
-    stroke-dasharray: 1400;
-    stroke-dashoffset: 2800;
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 2400;
   }
 }
 
+.particleShower > svg > g > #pfourthfork {
+  opacity: 0;
+}
+
+.particleShower.active > svg > g > #pfourthfork {
+  opacity: 1;
+  animation: fourthforkdash 10s linear;
+}
+
+@keyframes fourthforkdash {
+  0% {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+  }
+
+  85% {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+  }
+
+  95% {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 1000;
+  }
+
+  100% {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 1000;
+  }
+}
 #starsys1 {
   animation: startwink 5s ease-in-out infinite;
   transform-origin: absolute;
@@ -1094,7 +1267,7 @@ Grid System 1 Style
   position: absolute;
   bottom: 3vh;
   left: 4.5vw;
-z-index: 5000;
+  z-index: 5000;
 }
 
 /* =================
@@ -1110,7 +1283,6 @@ Screen Sizes
     line-height: 1.75rem;
     padding: 0px 15px;
   }
-
 
   #h3 {
     font-family: Helvetica;
@@ -1193,8 +1365,6 @@ Screen Sizes
 }
 
 @media (max-width: 1000px) {
-
-
   #TextTitle {
     font-size: 1.05rem;
     line-height: 1.25rem;
@@ -1389,8 +1559,6 @@ Screen Sizes
     opacity: 0;
   }
 
- 
-
   #TextTitle {
     font-size: 0.8rem;
     line-height: 0.8rem;
@@ -1521,7 +1689,24 @@ Screen Sizes
     opacity: 0;
     animation: secdashsm 12s ease-out infinite;
   }
+  .particleShower > svg > g > #psecondlong {
+    opacity: 0;
+    animation: secdashsm 12s ease-out infinite;
+  }
 
+  .particleShower.active > svg > g > #psecondlong {
+    opacity: 0;
+    animation: secdashsm 12s ease-out infinite;
+  }
+  .particleShower > svg > g > #psecondshort {
+    opacity: 0;
+    animation: secdashsm 12s ease-out infinite;
+  }
+
+  .particleShower.active > svg > g > #psecondshort {
+    opacity: 0;
+    animation: secdashsm 12s ease-out infinite;
+  }
   @keyframes secdashsm {
     0% {
       opacity: 0;
@@ -1540,12 +1725,17 @@ Screen Sizes
     }
   }
 
-  .particleShower > svg > g > #pthird {
+  .particleShower.active > svg > g > #pthird {
     opacity: 0;
     animation: thirddashsm 12s ease-out infinite;
   }
 
-  .particleShower.active > svg > g > #pthird {
+  .particleShower.active > svg > g > #pthirdsquiggle {
+    opacity: 0;
+    animation: thirddashsm 12s ease-out infinite;
+  }
+
+  .particleShower.active > svg > g > #pthirdfork {
     opacity: 0;
     animation: thirddashsm 12s ease-out infinite;
   }
@@ -1577,6 +1767,11 @@ Screen Sizes
     animation: fourthdashsm 12s ease-out infinite;
   }
 
+  .particleShower.active > svg > g > #pfourthfork {
+    opacity: 0;
+    animation: fourthdashsm 12s ease-out infinite;
+  }
+
   @keyframes fourthdashsm {
     0% {
       opacity: 0;
@@ -1602,7 +1797,6 @@ Screen Sizes
   .sun {
     width: 40vw;
   }
-
 
   .smalltext {
     font-size: 12px;
@@ -1673,8 +1867,6 @@ Screen Sizes
   }
 
   @media (max-width: 380px) {
-
-
     #TextTitle {
       font-size: 0.5rem;
     }
