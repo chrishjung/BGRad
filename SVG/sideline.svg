@@ -1,1 +1,68 @@
-<?xml version="1.0" encoding="UTF-8"?><svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 23.87 864.3"><defs><style>.cls-1{letter-spacing:.05em;}.cls-2{fill:url(#linear-gradient);opacity:.4;}.cls-3{letter-spacing:.05em;}.cls-4{letter-spacing:-.04em;}.cls-5{fill:url(#linear-gradient-2);}.cls-6{fill:#fff;font-family:HelveticaNeue-Bold, 'Helvetica Neue';font-size:10.91px;}</style><linearGradient id="linear-gradient" x1="11.94" y1="863.61" x2="11.94" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4ac7e9" stop-opacity="0"/><stop offset=".54" stop-color="#f7941d"/><stop offset=".63" stop-color="#ea7a20"/><stop offset=".88" stop-color="#ca3829"/><stop offset="1" stop-color="#be1e2d"/></linearGradient><linearGradient id="linear-gradient-2" x1="13.95" y1="864.3" x2="13.95" y2=".69" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4ac7e9" stop-opacity=".3"/><stop offset=".54" stop-color="#f7941d"/><stop offset=".63" stop-color="#ea7a20"/><stop offset=".88" stop-color="#ca3829"/><stop offset="1" stop-color="#be1e2d"/></linearGradient></defs><g id="Cascade_and_Flux"><rect class="cls-2" x="0" y="0" width="23.87" height="863.61" rx="11.94" ry="11.94"/><rect class="cls-5" x="4.04" y=".69" width="19.84" height="863.61" rx="9.92" ry="9.92"/><text class="cls-6" transform="translate(18.24 697.2) rotate(-90) scale(1.22 1)"><tspan class="cls-1" x="0" y="0">RADI</tspan><tspan class="cls-4" x="28.85" y="0">A</tspan><tspan class="cls-3" x="35.86" y="0">TION FLUX</tspan></text></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_2_00000010990045628735927490000010212739159081352084_"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23.9 864.3"
+	 style="enable-background:new 0 0 23.9 864.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.4;fill:url(#SVGID_1_);enable-background:new    ;}
+	.st1{fill:url(#SVGID_00000030470208458501115440000018342892934886540956_);}
+	.st2{enable-background:new    ;}
+	.st3{fill:#FFFFFF;}
+</style>
+<g id="Cascade_and_Flux">
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="11.935" y1="0.39" x2="11.935" y2="864" gradientTransform="matrix(1 0 0 -1 0 864)">
+		<stop  offset="0" style="stop-color:#4AC7E9;stop-opacity:0"/>
+		<stop  offset="0.54" style="stop-color:#F7941D"/>
+		<stop  offset="0.63" style="stop-color:#EA7A20"/>
+		<stop  offset="0.88" style="stop-color:#CA3829"/>
+		<stop  offset="1" style="stop-color:#BE1E2D"/>
+	</linearGradient>
+	<path class="st0" d="M11.9,0L11.9,0c6.6,0,11.9,5.3,11.9,11.9v839.7c0,6.6-5.3,11.9-11.9,11.9l0,0c-6.6,0-11.9-5.3-11.9-11.9V11.9
+		C0,5.3,5.3,0,11.9,0z"/>
+	
+		<linearGradient id="SVGID_00000088108606463296650500000012373945135524742816_" gradientUnits="userSpaceOnUse" x1="13.96" y1="-0.3" x2="13.96" y2="863.31" gradientTransform="matrix(1 0 0 -1 0 864)">
+		<stop  offset="0" style="stop-color:#4AC7E9;stop-opacity:0.3"/>
+		<stop  offset="0.54" style="stop-color:#F7941D"/>
+		<stop  offset="0.63" style="stop-color:#EA7A20"/>
+		<stop  offset="0.88" style="stop-color:#CA3829"/>
+		<stop  offset="1" style="stop-color:#BE1E2D"/>
+	</linearGradient>
+	<path style="fill:url(#SVGID_00000088108606463296650500000012373945135524742816_);" d="M14,0.7L14,0.7c5.5,0,9.9,4.4,9.9,9.9
+		v843.8c0,5.5-4.4,9.9-9.9,9.9h0c-5.5,0-9.9-4.4-9.9-9.9V10.6C4,5.1,8.5,0.7,14,0.7z"/>
+	<g class="st2">
+		<path class="st3" d="M10.5,691.2c0-0.4,0.1-0.8,0.2-1.2s0.3-0.6,0.5-0.9c0.2-0.2,0.4-0.4,0.7-0.6c0.3-0.1,0.5-0.2,0.8-0.2
+			c0.5,0,0.9,0.1,1.2,0.4s0.6,0.6,0.8,1.2h0c0.1-0.3,0.1-0.5,0.3-0.6c0.1-0.2,0.3-0.3,0.4-0.4s0.3-0.2,0.5-0.2
+			c0.2,0,0.4-0.1,0.6-0.1c0.1,0,0.3,0,0.4,0s0.3,0,0.5,0c0.2,0,0.3-0.1,0.5-0.1s0.3-0.1,0.4-0.2v2.1c-0.2,0.1-0.5,0.2-0.9,0.2
+			c-0.3,0-0.7,0.1-1,0.1c-0.4,0.1-0.7,0.2-0.9,0.5c-0.2,0.2-0.3,0.6-0.3,1.1v2.1h3v2.1h-7.8V691.2z M14,691.9c0-0.5-0.1-0.8-0.3-1.1
+			c-0.2-0.2-0.5-0.4-0.9-0.4c-0.4,0-0.7,0.1-0.8,0.4c-0.2,0.2-0.3,0.6-0.3,1.1v2.3H14V691.9z"/>
+		<path class="st3" d="M10.5,681.3l7.8-3.6v2.2l-1.7,0.7v3.6l1.7,0.7v2.1l-7.8-3.6V681.3z M15.2,681.1l-2.9,1.2v0l2.9,1.2V681.1z"/>
+		<path class="st3" d="M10.5,672.1c0-0.6,0.1-1.2,0.2-1.7c0.2-0.5,0.4-1,0.7-1.4c0.3-0.4,0.7-0.7,1.2-0.9c0.5-0.2,1-0.3,1.7-0.3
+			c0.6,0,1.1,0.1,1.6,0.3c0.5,0.2,0.9,0.4,1.2,0.8c0.3,0.4,0.6,0.8,0.8,1.3c0.2,0.5,0.3,1.2,0.3,1.9v4.1h-7.8V672.1z M16.8,672.3
+			c0-0.3,0-0.6-0.1-0.9s-0.2-0.5-0.4-0.8s-0.4-0.4-0.7-0.5c-0.3-0.1-0.7-0.2-1.1-0.2c-0.4,0-0.7,0-1.1,0.1c-0.3,0.1-0.6,0.2-0.8,0.5
+			s-0.4,0.5-0.5,0.8c-0.1,0.4-0.2,0.8-0.2,1.3v1.5h4.9V672.3z"/>
+		<path class="st3" d="M10.5,663.6h7.8v2.1h-7.8V663.6z"/>
+	</g>
+	<g class="st2">
+		<path class="st3" d="M10.5,656.3l7.8-3.6v2.2l-1.7,0.7v3.6l1.7,0.7v2.1l-7.8-3.6V656.3z M15.2,656.2l-2.9,1.2v0l2.9,1.2V656.2z"/>
+	</g>
+	<g class="st2">
+		<path class="st3" d="M11.9,653.3h-1.4v-7.8h1.4v2.8h6.3v2.1h-6.3V653.3z"/>
+		<path class="st3" d="M10.5,641.6h7.8v2.1h-7.8V641.6z"/>
+		<path class="st3" d="M12.8,639.2c-0.5-0.2-0.9-0.5-1.3-0.9c-0.4-0.4-0.7-0.9-0.9-1.5c-0.2-0.6-0.3-1.2-0.3-2c0-0.7,0.1-1.4,0.3-2
+			s0.5-1.1,0.9-1.5c0.4-0.4,0.8-0.7,1.3-0.9s1-0.3,1.6-0.3c0.6,0,1.1,0.1,1.6,0.3c0.5,0.2,0.9,0.5,1.3,0.9c0.4,0.4,0.6,0.9,0.9,1.5
+			s0.3,1.2,0.3,2c0,0.7-0.1,1.4-0.3,2c-0.2,0.6-0.5,1.1-0.9,1.5c-0.4,0.4-0.8,0.7-1.3,0.9c-0.5,0.2-1,0.3-1.6,0.3
+			C13.8,639.6,13.3,639.4,12.8,639.2z M15.3,637.3c0.3-0.1,0.6-0.2,0.8-0.4c0.2-0.2,0.4-0.5,0.6-0.8c0.1-0.3,0.2-0.7,0.2-1.2
+			c0-0.5-0.1-0.9-0.2-1.2c-0.1-0.3-0.3-0.6-0.6-0.8c-0.2-0.2-0.5-0.4-0.8-0.4c-0.3-0.1-0.6-0.1-1-0.1c-0.3,0-0.7,0-1,0.1
+			c-0.3,0.1-0.6,0.2-0.9,0.4s-0.5,0.5-0.6,0.8c-0.1,0.3-0.2,0.7-0.2,1.2c0,0.5,0.1,0.9,0.2,1.2c0.1,0.3,0.3,0.6,0.6,0.8
+			s0.5,0.4,0.9,0.4c0.3,0.1,0.7,0.1,1,0.1C14.7,637.5,15,637.4,15.3,637.3z"/>
+		<path class="st3" d="M10.5,626l5.2-4v0h-5.2v-2h7.8v2.1l-5.2,4v0h5.2v2h-7.8V626z"/>
+		<path class="st3" d="M10.5,606.5h1.4v4.6h1.8v-4H15v4h3.2v2.1h-7.8V606.5z"/>
+		<path class="st3" d="M10.5,602.6h6.4v-4.6h1.4v6.7h-7.8V602.6z"/>
+		<path class="st3" d="M17.6,589.1c0.5,0.7,0.8,1.7,0.8,3c0,1.3-0.3,2.3-0.8,3c-0.5,0.7-1.3,1.1-2.4,1.1h-4.8v-2.1h4.8
+			c0.2,0,0.4,0,0.6-0.1c0.2,0,0.4-0.1,0.5-0.3c0.2-0.1,0.3-0.3,0.4-0.6c0.1-0.3,0.1-0.6,0.1-1c0-0.7-0.1-1.3-0.4-1.5
+			c-0.3-0.3-0.7-0.4-1.3-0.4h-4.8V588h4.8C16.3,588,17.1,588.4,17.6,589.1z"/>
+		<path class="st3" d="M10.5,586.3v-2.4l2.5-1.9l-2.5-1.9v-2.3l3.7,3l4.1-3.3v2.5l-2.7,2.1l2.7,2.1v2.3l-4.1-3.3L10.5,586.3z"/>
+	</g>
+</g>
+</svg>
